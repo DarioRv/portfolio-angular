@@ -9,7 +9,8 @@ import { MenuItem } from '@interfaces/menu-item.interface';
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css',
   host: {
-    class: 'fixed top-5 right-5 z-10',
+    class:
+      'fixed top-5 right-1/2 translate-x-1/2 md:right-5 md:translate-x-0 z-10',
   },
 })
 export class NavbarComponent {
