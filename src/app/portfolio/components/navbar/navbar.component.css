@@ -1,0 +1,14 @@
+ul {
+  background-image: url("/images/72657885_9791314.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* el active debe tener como un efecto difuminante o glass */
+.active {
+  background: rgba(202, 29, 218, 0.514);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+}

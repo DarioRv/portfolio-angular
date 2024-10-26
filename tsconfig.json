@@ -19,10 +19,17 @@
     "importHelpers": true,
     "target": "ES2022",
     "module": "ES2022",
-    "lib": [
-      "ES2022",
-      "dom"
-    ]
+    "lib": ["ES2022", "dom"],
+    "baseUrl": "./src",
+    "paths": {
+      "@components/*": ["app/portfolio/components/*"],
+      "@services/*": ["app/portfolio/services/*"],
+      "@pages/*": ["app/portfolio/pages/*"],
+      "@interfaces/*": ["app/portfolio/interfaces/*"],
+      "@pipes/*": ["app/portfolio/pipes/*"],
+      "@data/*": ["app/portfolio/data/*"]
+    },
+    "resolveJsonModule": true
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
