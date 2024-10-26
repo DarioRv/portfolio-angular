@@ -1,7 +1,27 @@
-<nav>
-  <ul class="flex gap-3 p-4 bg-[#222] rounded-xl w-fit">
+<nav class="group">
+  <button
+    class="md:hidden w-12 h-10 flex flex-col justify-between mb-2 bg-[#222] rounded p-2"
+    (click)="toggleMenu()"
+  >
+    <div
+      class="bg-white h-[2px] w-full rounded transition-transform duration-500 origin-left"
+      [ngClass]="{ 'rotate-45': visible }"
+    ></div>
+    <div
+      class="bg-white h-[2px] w-full rounded transition-opacity duration-500"
+      [ngClass]="{ 'opacity-0': visible }"
+    ></div>
+    <div
+      class="bg-white h-[2px] w-full rounded transition-transform duration-500 origin-left"
+      [ngClass]="{ '-rotate-45': visible }"
+    ></div>
+  </button>
+  <ul
+    class="hidden md:flex flex-col md:flex-row gap-3 p-4 bg-[#222] rounded-xl w-fit"
+    [ngClass]="{ hidden: !visible }"
+  >
     @for (item of menuItems; track $index) {
-    <li>
+    <li class="mb-3 md:mb-0">
       <a
         class="py-2 px-4 rounded-xl hover:text-orange-500 transition-colors"
         [routerLink]="item.routerLink"

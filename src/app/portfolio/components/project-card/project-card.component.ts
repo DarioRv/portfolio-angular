@@ -11,6 +11,9 @@ import { ImagePipe } from '@pipes/image.pipe';
   imports: [ImagePipe, IconPipe, NgStyle, NgClass, RouterLink],
   templateUrl: './project-card.component.html',
   styles: ``,
+  host: {
+    class: 'mb-10 md:mb-0',
+  },
 })
 export class ProjectCardComponent {
   public project = input.required<Project>();
