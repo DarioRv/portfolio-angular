@@ -1,0 +1,16 @@
+.levitar {
+  position: relative; /* Asegúrate de que la imagen pueda moverse */
+  animation: levitar 3s ease-in-out infinite; /* Animación de 3 segundos que se repite infinitamente */
+}
+
+@keyframes levitar {
+  0% {
+    transform: translateY(0); /* Posición inicial */
+  }
+  50% {
+    transform: translateY(-20px); /* Sube 20px */
+  }
+  100% {
+    transform: translateY(0); /* Vuelve a la posición inicial */
+  }
+}

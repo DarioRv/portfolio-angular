@@ -1,11 +1,11 @@
 <nav>
-  <ul class="flex gap-3 p-4 bg-[#333] rounded-xl w-fit">
+  <ul class="flex gap-3 p-4 bg-[#222] rounded-xl w-fit">
     @for (item of menuItems; track $index) {
     <li>
       <a
-        class="py-2 px-4 rounded-xl"
+        class="py-2 px-4 rounded-xl hover:text-orange-500 transition-colors"
         [routerLink]="item.routerLink"
-        routerLinkActive="glass"
+        routerLinkActive="border border-orange-500 text-orange-500 bg-orange-500/15"
         >{{ item.label }}</a
       >
     </li>
