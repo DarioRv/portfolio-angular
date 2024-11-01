@@ -16,8 +16,12 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-
-  background-color: #111;
+  background: #252244;
+  background: radial-gradient(
+    circle farthest-corner at top center,
+    #252244 0%,
+    #222222 47%
+  );
   color: #fff;
 }
 

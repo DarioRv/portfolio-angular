@@ -1,1 +1,15 @@
-<p>projects works!</p>
+<section class="my-10 md:my-20 px-4 max-w-[1200px] mx-auto pt-36">
+  <h1
+    class="text-5xl md:text-7xl font-bold text-primary-500 text-center md:text-left mb-10"
+  >
+    Proyectos
+  </h1>
+  <p class="text-white/90 text-center md:text-left">
+    Aquí encontrarás algunos de los proyectos en los que he trabajado.
+  </p>
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-5">
+    @for (project of projects; track $index) {
+    <project-card [project]="project"></project-card>
+    }
+  </div>
+</section>

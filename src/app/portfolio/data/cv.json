@@ -135,7 +135,7 @@
         "Aplicación web que tiene por objetivo controlar la asistencia de los alumnos a clases, logrando obtener una agilidad y reducción de tiempo para los profesores que realizan esta tarea."
       ],
       "featured": true,
-      "image": "proyecto-asistio",
+      "images": ["proyecto-asistio"],
       "github": "https://github.com/DarioRv/sistema-asistencia-angular",
       "demo": "https://asistio-a77d7.web.app",
       "technologies": [
@@ -191,8 +191,12 @@
         "Sitio web de la empresa Kepler Dynamics, dedicada al desarrollo de software a medida. El sitio cuenta con información sobre la empresa, los servicios que ofrece y un formulario de contacto."
       ],
       "featured": true,
-      "image": "proyecto-kepler",
-      "github": "private",
+      "images": [
+        "proyecto-kepler",
+        "proyecto-kepler-2",
+        "proyecto-kepler-3",
+        "proyecto-kepler-4"
+      ],
       "demo": "https://kepler-dynamics.com",
       "technologies": [
         {
@@ -222,7 +226,7 @@
       "description": [
         "Cluster de bases de datos MySQL con replicación maestro-esclavo y balanceo de carga. El cluster está compuesto por un servidor maestro y dos servidores esclavos, y el balanceo de carga se realiza con HAProxy."
       ],
-      "image": "proyecto-mysql-cluster",
+      "images": ["proyecto-mysql-cluster.webp"],
       "github": "https://github.com/DarioRv/cluster-postgres",
       "technologies": [
         {
@@ -233,9 +237,21 @@
         },
         {
           "label": "HAProxy",
-          "icon": "haproxy",
-          "color": "rgb(255, 0, 0)",
-          "backgroundColor": "rgba(255, 0, 0, 0.1)"
+          "icon": "ha-proxy",
+          "color": "rgb(0, 134, 232)",
+          "backgroundColor": "rgba(0, 134, 232, 0.1)"
+        },
+        {
+          "label": "Grafana",
+          "icon": "grafana",
+          "color": "rgb(243, 172, 82)",
+          "backgroundColor": "rgba(243, 172, 82, 0.1)"
+        },
+        {
+          "label": "Prometheus",
+          "icon": "prometheus",
+          "color": "rgb(243, 116, 82)",
+          "backgroundColor": "rgba(243, 116, 82, 0.1)"
         },
         {
           "label": "Docker",

@@ -1,1 +1,75 @@
-<p>project works!</p>
+<section class="my-10 md:my-20 px-4 max-w-[1200px] mx-auto pt-36">
+  @if (project) {
+  <div
+    class="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-40 place-content-between"
+  >
+    <div class="col-span-2">
+      <!-- O aquí -->
+      <h1 class="text-3xl md:text-5xl font-bold text-center md:text-left mb-5">
+        {{ project.title }}
+      </h1>
+      @for (item of project.description; track $index) {
+      <p class="text-white/70 mb-3">{{ item }}</p>
+      }
+      <div class="flex flex-col mt-10">
+        <img
+          [ngStyle]="{ 'view-transition-name': project.key }"
+          class="rounded-xl aspect-video shadow-lg"
+          [src]="selectedImage | image"
+          [alt]="project.title"
+        />
+        <div class="flex justify-center gap-3 my-4">
+          @for (image of project.images; track $index) {
+          <img
+            class="w-32 rounded-xl aspect-video cursor-pointer hover:scale-105 transition-transform p-1"
+            [ngClass]="{
+              'border border-primary-500': selectedImage === image
+            }"
+            (click)="selectImage(image)"
+            [src]="image | image"
+            [alt]="project.title"
+          />
+          }
+        </div>
+      </div>
+      <!-- aquí -->
+    </div>
+    <div class="flex flex-col">
+      <div>
+        <h3 class="text-xl">Tecnologías usadas</h3>
+        <div class="flex flex-wrap gap-2 mt-3 mb-5">
+          @for (tech of project.technologies; track $index) {
+          <tech-chip [tech]="tech" />
+          }
+        </div>
+      </div>
+      <div>
+        <h3 class="text-xl mb-3">Enlaces</h3>
+        <div class="flex gap-3">
+          @if (project.github) {
+          <a
+            class="px-4 py-2 flex items-center gap-2 hover:text-primary-500 hover:bg-primary-500/15 rounded-full"
+            [href]="project.github"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <mat-icon>code</mat-icon>
+            Repositorio
+          </a>
+          } @if (project.demo) {
+          <a
+            class="px-4 py-2 flex items-center gap-2 hover:text-primary-500 hover:bg-primary-500/15 rounded-full"
+            [href]="project.demo"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <mat-icon class="rotate-45">link</mat-icon>
+            Demo
+          </a>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+  }
+</section>

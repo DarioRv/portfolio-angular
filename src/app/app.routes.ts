@@ -24,6 +24,7 @@ export const routes: Routes = [
       {
         path: 'projects',
         component: ProjectsComponent,
+        title: 'Proyectos',
       },
       {
         path: 'projects/:key',
