@@ -3,7 +3,7 @@
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
       <div class="col-span-2">
         <h1
-          class="text-5xl md:text-7xl font-bold text-orange-500 text-center md:text-left"
+          class="text-5xl md:text-7xl font-bold text-primary-500 text-center md:text-left"
         >
           {{ cv.name }}
         </h1>
@@ -18,7 +18,7 @@
         <div class="flex justify-center md:justify-start gap-3 mt-5">
           @for (item of cv.socialNetworks; track $index) {
           <div
-            class="border border-[#333] hover:border-orange-500 rounded p-2 hover:-translate-y-1 transition-transform"
+            class="border border-[#333] hover:border-primary-500 rounded p-2 hover:-translate-y-1 transition-transform"
           >
             <a
               class="flex gap-2"
@@ -60,7 +60,7 @@
   >
     @for (item of cv.softSkills; track $index) {
     <div
-      class="px-4 py-2 rounded-xl text-lg md:text-xl text-wrap md:text-nowrap text-center border border-orange-500/40 text-orange-500/90"
+      class="px-4 py-2 rounded-xl text-lg md:text-xl text-wrap md:text-nowrap text-center border border-primary-500/40 text-primary-500/90"
     >
       {{ item }}
     </div>
@@ -98,7 +98,7 @@
     }
   </div>
   <a
-    class="block mt-10 text-center text-orange-500 border-2 border-orange-500 hover:bg-orange-500/15 transition-colors py-3 rounded"
+    class="block mt-10 text-center text-primary-500 border-2 border-primary-500 hover:bg-primary-500/15 transition-colors py-3 rounded"
     routerLink="/projects"
   >
     Ver todos los proyectos
