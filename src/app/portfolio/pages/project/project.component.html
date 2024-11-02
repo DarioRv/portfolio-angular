@@ -16,6 +16,8 @@
           class="rounded-xl aspect-video shadow-lg"
           [src]="selectedImage | image"
           [alt]="project.title"
+          width="100%"
+          height="auto"
         />
         <div class="flex flex-wrap justify-center gap-3 my-4">
           @for (image of project.images; track $index) {
@@ -27,6 +29,8 @@
             (click)="selectImage(image)"
             [src]="image | image"
             [alt]="project.title"
+            width="100%"
+            height="auto"
           />
           }
         </div>

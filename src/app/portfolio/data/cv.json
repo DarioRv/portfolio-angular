@@ -135,7 +135,12 @@
         "Aplicación web que tiene por objetivo controlar la asistencia de los alumnos a clases, logrando obtener una agilidad y reducción de tiempo para los profesores que realizan esta tarea."
       ],
       "featured": true,
-      "images": ["proyecto-asistio"],
+      "images": [
+        "proyecto-asistio.webp",
+        "proyecto-asistio-2.webp",
+        "proyecto-asistio-3.webp",
+        "proyecto-asistio-4.webp"
+      ],
       "github": "https://github.com/DarioRv/sistema-asistencia-angular",
       "demo": "https://asistio-a77d7.web.app",
       "technologies": [
@@ -192,10 +197,11 @@
       ],
       "featured": true,
       "images": [
-        "proyecto-kepler",
-        "proyecto-kepler-2",
-        "proyecto-kepler-3",
-        "proyecto-kepler-4"
+        "proyecto-kepler.webp",
+        "proyecto-kepler-2.webp",
+        "proyecto-kepler-3.webp",
+        "proyecto-kepler-4.webp",
+        "proyecto-kepler-5.webp"
       ],
       "demo": "https://kepler-dynamics.com",
       "technologies": [
@@ -226,7 +232,11 @@
       "description": [
         "Cluster de bases de datos MySQL con replicación maestro-esclavo y balanceo de carga. El cluster está compuesto por un servidor maestro y dos servidores esclavos, y el balanceo de carga se realiza con HAProxy."
       ],
-      "images": ["proyecto-mysql-cluster.webp"],
+      "images": [
+        "proyecto-cluster-postgres.webp",
+        "proyecto-cluster-postgres-2.webp",
+        "proyecto-cluster-postgres-3.webp"
+      ],
       "github": "https://github.com/DarioRv/cluster-postgres",
       "technologies": [
         {

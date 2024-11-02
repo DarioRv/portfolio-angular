@@ -18,10 +18,11 @@ body {
   font-style: normal;
   background: #252244;
   background: radial-gradient(
-    circle farthest-corner at top center,
+    ellipse 80% 80% at 50% -10%,
     #252244 0%,
-    #222222 47%
+    #030712 70%
   );
+  background-color: #030712;
   color: #fff;
 }
 
