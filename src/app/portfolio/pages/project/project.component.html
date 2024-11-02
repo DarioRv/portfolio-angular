@@ -4,7 +4,6 @@
     class="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-40 place-content-between"
   >
     <div class="col-span-2">
-      <!-- O aquí -->
       <h1 class="text-3xl md:text-5xl font-bold text-center md:text-left mb-5">
         {{ project.title }}
       </h1>
@@ -18,7 +17,7 @@
           [src]="selectedImage | image"
           [alt]="project.title"
         />
-        <div class="flex justify-center gap-3 my-4">
+        <div class="flex flex-wrap justify-center gap-3 my-4">
           @for (image of project.images; track $index) {
           <img
             class="w-32 rounded-xl aspect-video cursor-pointer hover:scale-105 transition-transform p-1"
@@ -32,7 +31,6 @@
           }
         </div>
       </div>
-      <!-- aquí -->
     </div>
     <div class="flex flex-col">
       <div>
