@@ -226,11 +226,11 @@
       ]
     },
     {
-      "title": "MySQL Cluster",
-      "key": "mysql-cluster",
-      "summary": "Cluster de bases de datos MySQL",
+      "title": "PostgreSQL Cluster",
+      "key": "postgresql-cluster",
+      "summary": "Cluster de bases de datos PostgreSQL",
       "description": [
-        "Cluster de bases de datos MySQL con replicación maestro-esclavo y balanceo de carga. El cluster está compuesto por un servidor maestro y dos servidores esclavos, y el balanceo de carga se realiza con HAProxy."
+        "Cluster de bases de datos PostgreSQL con balanceo de carga y monitoreo de rendimiento. El proyecto incluye un servidor HAProxy para el balanceo de carga, una base de datos PostgreSQL y un servidor Grafana para el monitoreo de rendimiento."
       ],
       "images": [
         "proyecto-cluster-postgres.webp",
@@ -240,8 +240,8 @@
       "github": "https://github.com/DarioRv/cluster-postgres",
       "technologies": [
         {
-          "label": "MySQL",
-          "icon": "mysql",
+          "label": "PostgreSQL",
+          "icon": "postgresql",
           "color": "rgb(29, 142, 248)",
           "backgroundColor": "rgba(29, 142, 248, 0.1)"
         },
