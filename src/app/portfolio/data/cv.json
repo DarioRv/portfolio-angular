@@ -271,5 +271,63 @@
         }
       ]
     }
+  ],
+  "education": [
+    {
+      "title": "Analista Programador Universitario",
+      "institution": "Universidad Nacional de Jujuy",
+      "period": "2022 - actualidad",
+      "description": [
+        "Durante mi formación, he desarrollado una sólida base en lógica, estructuras de datos y programación orientada a objetos, así como en el uso de frameworks esenciales como Spring Boot, Express.js y Angular.",
+        "Mis proyectos incluyen un sistema de control de tickets y una plataforma inmobiliaria, fortaleciendo mi experiencia en aplicaciones full stack."
+      ],
+      "logo": "logo-fi-unju.webp"
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Nest: Desarrollo backend escalable con Node",
+      "institution": "DevTalles",
+      "institutionUrl": "https://devtalles.com",
+      "date": "2024",
+      "url": "https://cursos.devtalles.com/certificates/xoxkmm9wae",
+      "logo": "devtalles"
+    },
+    {
+      "title": "Programación Orientada a Objetos con Java",
+      "institution": "TodoCode",
+      "institutionUrl": "https://todocodeacademy.com/course/programacion-orientada-a-objetos-con-java",
+      "date": "2023",
+      "url": "https://www.coursera.org/account/accomplishments/certificate/7ZQZQZQZQZQZ",
+      "logo": "coursera"
+    },
+    {
+      "title": "Desarrollo de aplicaciones web con Spring Boot",
+      "institution": "Coursera",
+      "date": "2021",
+      "url": "https://www.coursera.org/account/accomplishments/certificate/7ZQZQZQZQZQZ",
+      "logo": "coursera"
+    },
+    {
+      "title": "Desarrollo de aplicaciones web con Spring Boot",
+      "institution": "Coursera",
+      "date": "2021",
+      "url": "https://www.coursera.org/account/accomplishments/certificate/7ZQZQZQZQZQZ",
+      "logo": "coursera"
+    },
+    {
+      "title": "Desarrollo de aplicaciones web con Spring Boot",
+      "institution": "Coursera",
+      "date": "2021",
+      "url": "https://www.coursera.org/account/accomplishments/certificate/7ZQZQZQZQZQZ",
+      "logo": "coursera"
+    },
+    {
+      "title": "Desarrollo de aplicaciones web con Spring Boot",
+      "institution": "Coursera",
+      "date": "2021",
+      "url": "https://www.coursera.org/account/accomplishments/certificate/7ZQZQZQZQZQZ",
+      "logo": "coursera"
+    }
   ]
 }

@@ -1,0 +1,18 @@
+<article
+  class="flex flex-col p-4 shadow border-l-4 border-primary-500 bg-primary-500/10 rounded-tr-lg rounded-br-lg"
+>
+  <strong class="w-fit self-end mb-5">{{ education().period }}</strong>
+  <div class="flex items-center gap-3 mb-5">
+    <img
+      class="size-20 rounded"
+      [src]="education().logo | image"
+      alt="Logo de {{ education().institution }}"
+    />
+    <h5 class="text-xl">
+      <strong>{{ education().title }}</strong>
+    </h5>
+  </div>
+  @for (item of education().description; track $index) {
+  <p class="mb-3">{{ item }}</p>
+  }
+</article>
