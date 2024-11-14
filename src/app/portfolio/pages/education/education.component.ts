@@ -4,11 +4,16 @@ import cv from '@data/cv.json';
 import { Education } from '@interfaces/education.interface';
 import { CertificationCardComponent } from '@components/certification-card/certification-card.component';
 import { Certification } from '@interfaces/certification.interface';
+import { DecorationComponent } from '../../components/decoration/decoration.component';
 
 @Component({
   selector: 'education',
   standalone: true,
-  imports: [EducationCardComponent, CertificationCardComponent],
+  imports: [
+    EducationCardComponent,
+    CertificationCardComponent,
+    DecorationComponent,
+  ],
   templateUrl: './education.component.html',
   styles: ``,
 })

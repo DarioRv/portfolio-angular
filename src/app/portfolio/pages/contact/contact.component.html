@@ -1,1 +1,83 @@
-<p>contact works!</p>
+<section class="my-10 md:my-20 px-4 max-w-[1200px] mx-auto pt-36">
+  <h1
+    class="text-5xl md:text-7xl font-bold text-primary-500 text-center md:text-left mb-10 shadow"
+  >
+    Contacto
+  </h1>
+  <form
+    [formGroup]="contactForm"
+    class="flex flex-col md:grid md:grid-cols-2 gap-5"
+    (ngSubmit)="onSubmit()"
+  >
+    <div class="mb-3">
+      <label for="name" class="block text-white/70">Nombre</label>
+      <input
+        class="w-full rounded-lg border border-[#333] bg-[#282828] p-2 focus:border-primary-500 outline-none"
+        type="text"
+        id="name"
+        name="name"
+        autocomplete="off"
+        maxlength="50"
+        formControlName="name"
+      />
+      <div class="flex">
+        <div class="flex-grow">
+          @if (name.touched && name.hasError('required')) {
+          <span class="text-red-400/90 text-sm">Campo requerido</span>
+          }
+        </div>
+        <span class="text-white/70 text-sm self-end">
+          {{ name.value.length }}/50
+        </span>
+      </div>
+    </div>
+    <div class="mb-3">
+      <label for="email" class="block text-white/70">Correo</label>
+      <input
+        class="w-full rounded-lg border border-[#333] bg-[#282828] p-2 focus:border-primary-500 outline-none"
+        type="email"
+        id="email"
+        name="email"
+        autocomplete="off"
+        formControlName="email"
+      />
+      <div class="flex flex-col">
+        @if (email.touched && email.hasError('required')) {
+        <span class="text-red-400/90 text-sm">Campo requerido</span>
+        } @if (email.touched && email.hasError('email')) {
+        <span class="text-red-400/90 text-sm">El correo no es válido</span>
+        }
+      </div>
+    </div>
+    <div class="mb-3 md:col-span-2">
+      <label for="message" class="block text-white/70">Mensaje</label>
+      <textarea
+        class="w-full rounded-lg border border-[#333] bg-[#282828] p-2 focus:border-primary-500 outline-none"
+        id="message"
+        name="message"
+        maxlength="500"
+        formControlName="message"
+      ></textarea>
+      <div class="flex">
+        <div class="flex-grow">
+          @if (message.touched && message.hasError('required')) {
+          <span class="text-red-400/90 text-sm">Campo requerido</span>
+          } @if (message.touched && message.hasError('minlength')) {
+          <span class="text-red-400/90 text-sm">
+            Mínimo {{ message.errors!["minlength"].requiredLength }} caracteres
+          </span>
+          }
+        </div>
+        <span class="text-white/70 text-sm self-end">
+          {{ message.value.length }}/500
+        </span>
+      </div>
+    </div>
+    <button
+      class="bg-primary-600 text-white/90 rounded-lg px-4 py-2 hover:bg-primary-700 transition-colors col-span-2"
+      type="submit"
+    >
+      Enviar
+    </button>
+  </form>
+</section>

@@ -5,5 +5,5 @@ export interface Certification {
   description?: string[];
   date: string;
   url?: string;
-  logo: string;
+  logo?: string;
 }

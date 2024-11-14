@@ -1,38 +1,48 @@
-<article class="rounded-lg py-4">
-  <h5
-    class="text-center md:text-start text-lg md:text-xl mb-3 text-balance text-[#f72579]"
-  >
-    <strong>{{ certification().title }}</strong>
-  </h5>
-  <p class="text-white/70 text-center md:text-start">
-    Emitido por @if (certification().institutionUrl) {
-    <strong>
+<article class="h-full flex flex-row gap-4 rounded-lg">
+  <div class="flex flex-col items-center relative px-4">
+    <span
+      class="block size-3 rounded-full bg-primary-500 absolute top-16"
+    ></span>
+    <span class="block w-[2px] h-full bg-[#333]"></span>
+  </div>
+  <div class="flex flex-col p-4 flex-grow">
+    <strong class="w-fit self-start mb-5 bg-white/70 text-black rounded px-2">
+      {{ certification().date }}
+    </strong>
+    <h5 class="text-lg md:text-xl text-balance text-primary-500">
+      <strong>{{ certification().title }}</strong>
+    </h5>
+    <p class="text-white/90 mb-5">
+      Emitido por @if (certification().institutionUrl) {
+      <strong>
+        <a
+          class="hover:underline"
+          [href]="certification().institutionUrl"
+          target="_blank"
+        >
+          {{ certification().institution }}
+        </a>
+      </strong>
+      } @else {
+      <span>
+        <strong>{{ certification().institution }}</strong>
+      </span>
+      }
+    </p>
+    @if (certification().description) { @for (p of certification().description;
+    track $index) {
+    <p class="mb-3 text-white/70">{{ p }}</p>
+    } }
+
+    <div class="mt-4">
       <a
-        class="text-[#f72579]/70 hover:underline"
-        [href]="certification().institutionUrl"
+        class="text-[#f72579]/70 rounded-full px-4 py-2 hover:bg-[#f72579]/15 flex items-center gap-2 w-fit"
+        [href]="certification().url"
         target="_blank"
       >
-        {{ certification().institution }}
+        Ver certificado
+        <mat-icon>chevron_right</mat-icon>
       </a>
-    </strong>
-    } @else {
-    <span class="text-[#f72579]/70">
-      <strong>{{ certification().institution }}</strong>
-    </span>
-    } en <strong>{{ certification().date }}</strong>
-  </p>
-  <p>
-    {{ certification().description }}
-  </p>
-
-  <div class="mt-4 flex justify-center md:justify-start">
-    <a
-      class="text-[#f72579]/70 rounded-full px-4 py-2 hover:bg-[#f72579]/15 flex items-center gap-2 w-fit"
-      [href]="certification().url"
-      target="_blank"
-    >
-      <mat-icon>north_east</mat-icon>
-      Ver certificado
-    </a>
+    </div>
   </div>
 </article>

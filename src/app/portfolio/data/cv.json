@@ -23,103 +23,96 @@
       "icon": "gmail"
     }
   ],
-  "skills": [
-    {
-      "label": "HTML",
-      "icon": "html5",
-      "color": "rgba(255, 99, 71)"
-    },
-    {
-      "label": "CSS",
-      "icon": "css",
-      "color": "rgba(0, 191, 255)"
-    },
-    {
-      "label": "Javascript",
-      "icon": "javascript",
-      "color": "rgba(255, 215, 0)"
-    },
-    {
-      "label": "Typescript",
-      "icon": "typescript",
-      "color": "rgba(33, 107, 255)"
-    },
-    {
-      "label": "Node",
-      "icon": "nodejs",
-      "color": "rgba(68, 170, 68)"
-    },
-    {
-      "label": "Angular",
-      "icon": "angular",
-      "color": "rgba(221, 0, 49)"
-    },
-    {
-      "label": "Angular Material",
-      "icon": "angular-material",
-      "color": "rgba(232, 176, 0)"
-    },
-    {
-      "label": "RxJs",
-      "icon": "rxjs",
-      "color": "rgba(1, 255)"
-    },
-    {
-      "label": "NestJS",
-      "icon": "nestjs",
-      "color": "rgba(221, 0, 49)"
-    },
-    {
-      "label": "Java",
-      "icon": "java",
-      "color": "rgba(222, 135, )"
-    },
-    {
-      "label": "Spring",
-      "icon": "spring",
-      "color": "rgba(109, 179, 63)"
-    },
-    {
-      "label": "MySQL",
-      "icon": "mysql",
-      "color": "rgba(68, 121, 161)"
-    },
-    {
-      "label": "MongoDB",
-      "icon": "mongodb",
-      "color": "rgba(0, 205, 25)"
-    },
-    {
-      "label": "Type ORM",
-      "icon": "type-orm",
-      "color": "rgba(0, 0, 0)"
-    },
-    {
-      "label": "Hibernate",
-      "icon": "hibernate",
-      "color": "rgba(205, 192, 0)"
-    },
-    {
-      "label": "Git",
-      "icon": "git",
-      "color": "rgba(255, 87, 51)"
-    },
-    {
-      "label": "Docker",
-      "icon": "docker",
-      "color": "rgba(0, 134, 232)"
-    },
-    {
-      "label": "JWT",
-      "icon": "jwt",
-      "color": "rgba(255, 255, 255)"
-    },
-    {
-      "label": "Figma",
-      "icon": "figma",
-      "color": "rgba(0, 0, 0)"
-    }
-  ],
+  "skills": {
+    "languages": [
+      {
+        "label": "HTML",
+        "icon": "html5",
+        "color": "rgba(255, 99, 71)"
+      },
+      {
+        "label": "CSS",
+        "icon": "css",
+        "color": "rgba(0, 191, 255)"
+      },
+      {
+        "label": "Javascript",
+        "icon": "javascript",
+        "color": "rgba(255, 215, 0)"
+      },
+      {
+        "label": "Typescript",
+        "icon": "typescript",
+        "color": "rgba(33, 107, 255)"
+      },
+      {
+        "label": "Java",
+        "icon": "java",
+        "color": "rgba(222, 135, )"
+      }
+    ],
+    "frameworks": [
+      {
+        "label": "Angular",
+        "icon": "angular",
+        "color": "rgba(221, 0, 49)"
+      },
+      {
+        "label": "Angular Material",
+        "icon": "angular-material",
+        "color": "rgba(232, 176, 0)"
+      },
+      {
+        "label": "Spring",
+        "icon": "spring",
+        "color": "rgba(109, 179, 63)"
+      },
+      {
+        "label": "NestJS",
+        "icon": "nestjs",
+        "color": "rgba(221, 0, 49)"
+      }
+    ],
+    "databases": [
+      {
+        "label": "MySQL",
+        "icon": "mysql",
+        "color": "rgba(68, 121, 161)"
+      },
+      {
+        "label": "MongoDB",
+        "icon": "mongodb",
+        "color": "rgba(0, 205, 25)"
+      },
+      {
+        "label": "Type ORM",
+        "icon": "type-orm",
+        "color": "rgba(0, 0, 0)"
+      }
+    ],
+    "others": [
+      {
+        "label": "Git",
+        "icon": "git",
+        "color": "rgba(255, 87, 51)"
+      },
+      {
+        "label": "Docker",
+        "icon": "docker",
+        "color": "rgba(0, 134, 232)"
+      },
+      {
+        "label": "JWT",
+        "icon": "jwt",
+        "color": "rgba(255, 255, 255)"
+      },
+      {
+        "label": "Figma",
+        "icon": "figma",
+        "color": "rgba(0, 0, 0)"
+      }
+    ]
+  },
   "softSkills": [
     "Diseño UI/UX",
     "Aplicaciones Web",
@@ -291,43 +284,32 @@
       "institutionUrl": "https://devtalles.com",
       "date": "2024",
       "url": "https://cursos.devtalles.com/certificates/xoxkmm9wae",
-      "logo": "devtalles"
+      "description": [
+        "Aprendí a desarrollar aplicaciones backend escalables con Node.js y NestJS, utilizando buenas prácticas y patrones de diseño para lograr un código limpio y mantenible.",
+        "El curso incluyó la creación de una API REST con autenticación JWT, la implementación de pruebas unitarias y la conexión con bases de datos SQL y NoSQL mediante ORMs como Prisma y TypeORM."
+      ]
     },
     {
       "title": "Programación Orientada a Objetos con Java",
       "institution": "TodoCode",
       "institutionUrl": "https://todocodeacademy.com/course/programacion-orientada-a-objetos-con-java",
+      "date": "2024",
+      "url": "https://todocodeacademy.com/certificate/certificado-curso-poo-con-java-aed",
+      "description": [
+        "Profundicé los conceptos fundamentales de la programación orientada a objetos y su aplicación en el desarrollo de aplicaciones Java.",
+        "El curso incluyó la creación de clases, objetos, herencia, polimorfismo, encapsulamiento, interfaces y colecciones, así como la conexión con bases de datos con JPA."
+      ]
+    },
+    {
+      "title": "Angular: De cero a experto",
+      "institution": "DevTalles",
+      "institutionUrl": "https://devtalles.com",
       "date": "2023",
-      "url": "https://www.coursera.org/account/accomplishments/certificate/7ZQZQZQZQZQZ",
-      "logo": "coursera"
-    },
-    {
-      "title": "Desarrollo de aplicaciones web con Spring Boot",
-      "institution": "Coursera",
-      "date": "2021",
-      "url": "https://www.coursera.org/account/accomplishments/certificate/7ZQZQZQZQZQZ",
-      "logo": "coursera"
-    },
-    {
-      "title": "Desarrollo de aplicaciones web con Spring Boot",
-      "institution": "Coursera",
-      "date": "2021",
-      "url": "https://www.coursera.org/account/accomplishments/certificate/7ZQZQZQZQZQZ",
-      "logo": "coursera"
-    },
-    {
-      "title": "Desarrollo de aplicaciones web con Spring Boot",
-      "institution": "Coursera",
-      "date": "2021",
-      "url": "https://www.coursera.org/account/accomplishments/certificate/7ZQZQZQZQZQZ",
-      "logo": "coursera"
-    },
-    {
-      "title": "Desarrollo de aplicaciones web con Spring Boot",
-      "institution": "Coursera",
-      "date": "2021",
-      "url": "https://www.coursera.org/account/accomplishments/certificate/7ZQZQZQZQZQZ",
-      "logo": "coursera"
+      "url": "https://todocodeacademy.com/certificate/certificado-curso-poo-con-java-aed",
+      "description": [
+        "Aprendí los fundamentos básicos de Angular, incluyendo componentes, servicios, rutas, formularios reactivos y comunicación con APIs REST. Además, profundicé en conceptos avanzados como lazy loading, guards, interceptors y animaciones.",
+        "Desarrollé varias aplicaciones durante el curso, aplicando todo lo aprendido y siguiendo las mejores prácticas."
+      ]
     }
   ]
 }

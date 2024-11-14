@@ -4,12 +4,22 @@ import { RouterLink } from '@angular/router';
 import { ProjectCardComponent } from '@components/project-card/project-card.component';
 import cv from '@data/cv.json';
 import { IconPipe } from '@pipes/icon.pipe';
-import { ImagePipe } from '@pipes/image.pipe';
+import { SkillsComponent } from '../../components/skills/skills.component';
+import { MatIconModule } from '@angular/material/icon';
+import { DecorationComponent } from '../../components/decoration/decoration.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [IconPipe, ImagePipe, ProjectCardComponent, RouterLink, NgStyle],
+  imports: [
+    IconPipe,
+    ProjectCardComponent,
+    RouterLink,
+    NgStyle,
+    SkillsComponent,
+    MatIconModule,
+    DecorationComponent,
+  ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
