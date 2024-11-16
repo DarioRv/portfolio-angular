@@ -1,11 +1,5 @@
-import { Component, inject } from '@angular/core';
-import {
-  FormBuilder,
-  FormControl,
-  ReactiveFormsModule,
-  Validators,
-} from '@angular/forms';
-import { Router } from '@angular/router';
+import { Component } from '@angular/core';
+import { FormControl, ReactiveFormsModule, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -15,47 +9,30 @@ import { Router } from '@angular/router';
   styles: ``,
 })
 export class ContactComponent {
-  private readonly fb = inject(FormBuilder);
-  private readonly router = inject(Router);
-  public contactForm = this.fb.group({
-    name: ['', [Validators.required]],
-    email: ['', [Validators.required, Validators.email]],
-    message: [
-      '',
-      [
-        Validators.required,
-        Validators.minLength(10),
-        Validators.maxLength(500),
-      ],
-    ],
-  });
+  public name = new FormControl('', [Validators.required]);
+  public email = new FormControl('', [Validators.required, Validators.email]);
+  public message = new FormControl('', [
+    Validators.required,
+    Validators.minLength(10),
+    Validators.maxLength(500),
+  ]);
 
   success: boolean = false;
   error: boolean = false;
 
-  get name(): FormControl {
-    return this.contactForm.get('name') as FormControl;
-  }
-
-  get email(): FormControl {
-    return this.contactForm.get('email') as FormControl;
-  }
-
-  get message(): FormControl {
-    return this.contactForm.get('message') as FormControl;
-  }
-
   onSubmit(event: Event): void {
     event.preventDefault();
-    if (this.contactForm.invalid) {
-      this.contactForm.markAllAsTouched();
+    if (this.name.invalid || this.email.invalid || this.message.invalid) {
+      this.name.markAsTouched();
+      this.email.markAsTouched();
+      this.message.markAsTouched();
       return;
     }
 
     const formData = new URLSearchParams();
-    formData.append('name', this.name.value);
-    formData.append('email', this.email.value);
-    formData.append('message', this.message.value);
+    formData.append('name', this.name.value!);
+    formData.append('email', this.email.value!);
+    formData.append('message', this.message.value!);
 
     fetch('/', {
       method: 'POST',
@@ -70,11 +47,7 @@ export class ContactComponent {
     this.success = true;
     setTimeout(() => {
       this.success = false;
-      this.contactForm.reset({
-        email: '',
-        name: '',
-        message: '',
-      });
+      this.resetForm();
     }, 5000);
   }
 
@@ -83,5 +56,11 @@ export class ContactComponent {
     setTimeout(() => {
       this.error = false;
     }, 5000);
+  }
+
+  resetForm(): void {
+    this.name.reset();
+    this.email.reset();
+    this.message.reset();
   }
 }
