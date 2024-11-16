@@ -1,7 +1,6 @@
 import { Routes } from '@angular/router';
 import { LayoutComponent } from './portfolio/layouts/layout/layout.component';
 import { HomeComponent } from '@pages/home/home.component';
-import { AboutComponent } from '@pages/about/about.component';
 import { ProjectsComponent } from '@pages/projects/projects.component';
 import { EducationComponent } from '@pages/education/education.component';
 import { ContactComponent } from '@pages/contact/contact.component';
@@ -15,28 +14,27 @@ export const routes: Routes = [
       {
         path: 'home',
         component: HomeComponent,
-        title: 'Inicio',
-      },
-      {
-        path: 'about',
-        component: AboutComponent,
+        title: 'Inicio - Darío Vidal',
       },
       {
         path: 'projects',
         component: ProjectsComponent,
-        title: 'Proyectos',
+        title: 'Proyectos - Darío Vidal',
       },
       {
         path: 'projects/:key',
         component: ProjectComponent,
+        title: 'Proyecto - Darío Vidal',
       },
       {
         path: 'education',
         component: EducationComponent,
+        title: 'Educación - Darío Vidal',
       },
       {
         path: 'contact',
         component: ContactComponent,
+        title: 'Contacto - Darío Vidal',
       },
       {
         path: '**',
