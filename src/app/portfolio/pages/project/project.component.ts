@@ -1,5 +1,5 @@
 import { NgClass, NgStyle } from '@angular/common';
-import { Component, inject } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
 
@@ -8,7 +8,7 @@ import { Project } from '@interfaces/project.interface';
 import { IconPipe } from '@pipes/icon.pipe';
 import { ImagePipe } from '@pipes/image.pipe';
 import cv from '@data/cv.json';
-import { Title } from '@angular/platform-browser';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'project',
@@ -25,8 +25,21 @@ import { Title } from '@angular/platform-browser';
   templateUrl: './project.component.html',
   styles: ``,
 })
-export class ProjectComponent {
+export class ProjectComponent implements OnInit {
   private readonly route = inject(ActivatedRoute);
+  private readonly title = inject(Title);
+  private readonly meta = inject(Meta);
+
+  ngOnInit(): void {
+    if (this.project) {
+      this.title.setTitle(`${this.project?.title} - Darío Vidal`);
+      this.meta.updateTag({
+        name: 'description',
+        content: this.project.summary,
+      });
+    }
+  }
+
   public project: Project | undefined = cv.projects.find(
     (project) => project.key === this.route.snapshot.params['key']
   );
