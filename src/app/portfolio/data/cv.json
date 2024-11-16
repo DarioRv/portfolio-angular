@@ -2,9 +2,8 @@
   "name": "Dario Vidal",
   "summary": "Desarrollador Web Full Stack",
   "about": [
-    "Soy un desarrollador web full stack con experiencia en el desarrollo de aplicaciones web. Me apasiona la tecnología y la programación, y disfruto trabajando en equipo para lograr los objetivos propuestos.",
-    "Mis habilidades incluyen el desarrollo de aplicaciones web con tecnologías como HTML, CSS, JavaScript, Angular, Astro, Node.js, Express, Spring, MongoDB, MySQL, entre otras. También tengo experiencia en el diseño de interfaces de usuario y en la creación de prototipos con Figma.",
-    "Estoy en constante aprendizaje y me gusta estar al tanto de las últimas tendencias en tecnología. Siempre estoy buscando nuevos desafíos y oportunidades para crecer profesionalmente."
+    "Soy un desarrollador web full stack con experiencia en el desarrollo de aplicaciones web. Me dedico a la creación de soluciones tecnológicas innovadoras y de alta calidad, utilizando las últimas tecnologías y herramientas del mercado.",
+    "Me gusta trabajar en equipo y enfrentar nuevos desafíos, siempre busco ofrecer la mejor solución a los problemas que se presentan. Mi objetivo es seguir creciendo profesionalmente y aportar valor a los proyectos en los que participo."
   ],
   "socialNetworks": [
     {
@@ -123,9 +122,10 @@
     {
       "title": "ASIST.IO",
       "key": "asistio",
-      "summary": "Sistema de asistencia a clases",
+      "summary": "Sistema de gestión de cursos y control de asistencias a clases.",
       "description": [
-        "Aplicación web que tiene por objetivo controlar la asistencia de los alumnos a clases, logrando obtener una agilidad y reducción de tiempo para los profesores que realizan esta tarea."
+        "Aplicación web que permite controlar la asistencia de los alumnos a clases, logrando obtener una agilidad y reducción de tiempo para los profesores que realizan esta tarea. El sistema cuenta con un panel de administración para la gestión de alumnos y cursos, y un control de registro de asistencias y ausencias.",
+        "El proyecto incluye un backend desarrollado en Java con Spring Boot, y un frontend desarrollado en Angular con Angular Material. Además, se utilizó JWT para la autenticación y MySQL como base de datos."
       ],
       "featured": true,
       "images": [
@@ -184,9 +184,9 @@
     {
       "title": "Kepler Dynamics",
       "key": "kepler-dynamics",
-      "summary": "Sitio web de empresa de desarrollo de software",
+      "summary": "Sitio web sobre una empresa que ofrece servicios de desarrollo de software a medida.",
       "description": [
-        "Sitio web de la empresa Kepler Dynamics, dedicada al desarrollo de software a medida. El sitio cuenta con información sobre la empresa, los servicios que ofrece y un formulario de contacto."
+        "Sitio web de la empresa Kepler Dynamics, dedicada al desarrollo de software a medida. El sitio cuenta con información sobre la empresa, los servicios que ofrece, formulario de contacto e internacionalización en inglés y español."
       ],
       "featured": true,
       "images": [
@@ -221,9 +221,10 @@
     {
       "title": "PostgreSQL Cluster",
       "key": "postgresql-cluster",
-      "summary": "Cluster de bases de datos PostgreSQL",
+      "summary": "Monitoreo y balanceo de carga en un cluster de bases de datos PostgreSQL.",
       "description": [
-        "Cluster de bases de datos PostgreSQL con balanceo de carga y monitoreo de rendimiento. El proyecto incluye un servidor HAProxy para el balanceo de carga, una base de datos PostgreSQL y un servidor Grafana para el monitoreo de rendimiento."
+        "Un cluster de bases de datos permite mejorar la disponibilidad y escalabilidad de las aplicaciones que utilizan esta tecnología, garantizando un alto rendimiento y una mayor tolerancia a fallos.",
+        "Cluster contiente bases de datos PostgreSQL con balanceo de carga y monitoreo de rendimiento. Se utilizó HAProxy para el balanceo de carga, Grafana y Prometheus para el monitoreo, y Docker para la creación de contenedores."
       ],
       "images": [
         "proyecto-cluster-postgres.webp",
@@ -279,21 +280,10 @@
   ],
   "certifications": [
     {
-      "title": "Nest: Desarrollo backend escalable con Node",
-      "institution": "DevTalles",
-      "institutionUrl": "https://devtalles.com",
-      "date": "2024",
-      "url": "https://cursos.devtalles.com/certificates/xoxkmm9wae",
-      "description": [
-        "Aprendí a desarrollar aplicaciones backend escalables con Node.js y NestJS, utilizando buenas prácticas y patrones de diseño para lograr un código limpio y mantenible.",
-        "El curso incluyó la creación de una API REST con autenticación JWT, la implementación de pruebas unitarias y la conexión con bases de datos SQL y NoSQL mediante ORMs como Prisma y TypeORM."
-      ]
-    },
-    {
       "title": "Programación Orientada a Objetos con Java",
       "institution": "TodoCode",
       "institutionUrl": "https://todocodeacademy.com/course/programacion-orientada-a-objetos-con-java",
-      "date": "2024",
+      "date": "Noviembre de 2024",
       "url": "https://todocodeacademy.com/certificate/certificado-curso-poo-con-java-aed",
       "description": [
         "Profundicé los conceptos fundamentales de la programación orientada a objetos y su aplicación en el desarrollo de aplicaciones Java.",
@@ -301,10 +291,21 @@
       ]
     },
     {
+      "title": "Nest: Desarrollo backend escalable con Node",
+      "institution": "DevTalles",
+      "institutionUrl": "https://devtalles.com",
+      "date": "Agosto de 2024",
+      "url": "https://cursos.devtalles.com/certificates/xoxkmm9wae",
+      "description": [
+        "Aprendí a desarrollar aplicaciones backend escalables con Node.js y NestJS, utilizando buenas prácticas y patrones de diseño para lograr un código limpio y mantenible.",
+        "El curso incluyó la creación de una API REST con autenticación JWT, la implementación de pruebas unitarias y la conexión con bases de datos SQL y NoSQL mediante ORMs como Prisma y TypeORM."
+      ]
+    },
+    {
       "title": "Angular: De cero a experto",
       "institution": "DevTalles",
       "institutionUrl": "https://devtalles.com",
-      "date": "2023",
+      "date": "Septiembre de 2023",
       "url": "https://todocodeacademy.com/certificate/certificado-curso-poo-con-java-aed",
       "description": [
         "Aprendí los fundamentos básicos de Angular, incluyendo componentes, servicios, rutas, formularios reactivos y comunicación con APIs REST. Además, profundicé en conceptos avanzados como lazy loading, guards, interceptors y animaciones.",

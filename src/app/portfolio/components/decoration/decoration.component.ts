@@ -7,6 +7,9 @@ import { Component, computed, input } from '@angular/core';
   imports: [NgClass],
   templateUrl: './decoration.component.html',
   styles: ``,
+  host: {
+    class: '-z-10',
+  },
 })
 export class DecorationComponent {
   public color = input('bg-primary-500');
