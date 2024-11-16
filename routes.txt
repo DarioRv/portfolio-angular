@@ -1,0 +1,7 @@
+/home
+/projects
+/project/asistio
+/project/kepler-dynamics
+/project/postgresql-cluster
+/education
+/contact
