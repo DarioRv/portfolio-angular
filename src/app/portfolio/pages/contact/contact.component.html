@@ -4,11 +4,17 @@
   >
     Contacto
   </h1>
+  <p class="text-lg text-white/90 text-center md:text-left mb-5">
+    Contacta conmigo para cualquier duda o propuesta de trabajo.
+  </p>
   <form
     [formGroup]="contactForm"
     class="flex flex-col md:grid md:grid-cols-2 gap-5"
-    (ngSubmit)="onSubmit()"
+    (ngSubmit)="onSubmit($event)"
+    method="POST"
+    data-netlify="true"
   >
+    <input type="hidden" name="form-name" value="contact" />
     <div class="mb-3">
       <label for="name" class="block text-white/70">Nombre</label>
       <input
@@ -80,4 +86,18 @@
       Enviar
     </button>
   </form>
+
+  @if (success) {
+  <div
+    class="bg-green-500/15 text-green-500 rounded text-center mt-10 w-fit mx-auto p-4"
+  >
+    Mensaje enviado correctamente
+  </div>
+  } @if (error) {
+  <div
+    class="bg-red-500/15 text-red-500 rounded text-center mt-10 w-fit mx-auto p-4"
+  >
+    El mensaje no se ha podido enviar. Inténtalo de nuevo más tarde.
+  </div>
+  }
 </section>
