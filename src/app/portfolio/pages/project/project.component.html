@@ -1,4 +1,6 @@
-<section class="my-10 md:my-20 px-4 max-w-[1200px] mx-auto pt-12 md:pt-36">
+<section
+  class="my-10 md:my-20 px-4 max-w-[1200px] mx-auto pt-12 md:pt-36 fade-in"
+>
   @if (project) {
   <div
     class="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-40 place-content-between"
@@ -13,7 +15,7 @@
       <div class="flex flex-col mt-10">
         <img
           [ngStyle]="{ 'view-transition-name': project.key }"
-          class="rounded-xl aspect-video shadow-lg"
+          class="rounded-xl aspect-video shadow-lg slit-in-vertical"
           [src]="selectedImage | image"
           [alt]="project.title"
           width="100%"
@@ -36,7 +38,7 @@
         </div>
       </div>
     </div>
-    <div class="flex flex-col">
+    <div class="flex flex-col slide-in-right">
       <div>
         <h3 class="text-xl">Tecnologías usadas</h3>
         <div class="flex flex-wrap gap-2 mt-3 mb-5">
