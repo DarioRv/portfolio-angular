@@ -14,27 +14,28 @@ export const routes: Routes = [
       {
         path: 'home',
         component: HomeComponent,
-        title: 'Inicio - Darío Vidal',
+        title: 'Darío Vidal - Desarrollador Web Full Stack',
       },
       {
         path: 'projects',
         component: ProjectsComponent,
-        title: 'Proyectos - Darío Vidal',
+        title: 'Darío Vidal - Proyectos',
+        pathMatch: 'full',
       },
       {
         path: 'projects/:key',
         component: ProjectComponent,
-        title: 'Proyecto - Darío Vidal',
+        title: 'Darío Vidal - Proyecto',
       },
       {
         path: 'education',
         component: EducationComponent,
-        title: 'Educación - Darío Vidal',
+        title: 'Darío Vidal - Educación',
       },
       {
         path: 'contact',
         component: ContactComponent,
-        title: 'Contacto - Darío Vidal',
+        title: 'Darío Vidal - Contacto',
       },
       {
         path: '**',

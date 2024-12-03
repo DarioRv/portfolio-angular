@@ -1,11 +1,10 @@
 import { NgClass, NgStyle } from '@angular/common';
 import { Component, inject, OnInit } from '@angular/core';
-import { ActivatedRoute, RouterLink } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
 
 import { TechChipComponent } from '@components/tech-chip/tech-chip.component';
 import { Project } from '@interfaces/project.interface';
-import { IconPipe } from '@pipes/icon.pipe';
 import { ImagePipe } from '@pipes/image.pipe';
 import cv from '@data/cv.json';
 import { Meta, Title } from '@angular/platform-browser';
@@ -13,15 +12,7 @@ import { Meta, Title } from '@angular/platform-browser';
 @Component({
   selector: 'project',
   standalone: true,
-  imports: [
-    ImagePipe,
-    IconPipe,
-    TechChipComponent,
-    RouterLink,
-    NgStyle,
-    NgClass,
-    MatIconModule,
-  ],
+  imports: [ImagePipe, TechChipComponent, NgStyle, NgClass, MatIconModule],
   templateUrl: './project.component.html',
   styles: ``,
 })
@@ -31,13 +22,7 @@ export class ProjectComponent implements OnInit {
   private readonly meta = inject(Meta);
 
   ngOnInit(): void {
-    if (this.project) {
-      this.title.setTitle(`${this.project?.title} - Darío Vidal`);
-      this.meta.updateTag({
-        name: 'description',
-        content: this.project.summary,
-      });
-    }
+    this.setTitleAndMeta();
   }
 
   public project: Project | undefined = cv.projects.find(
@@ -48,5 +33,15 @@ export class ProjectComponent implements OnInit {
 
   public selectImage(image: string): void {
     this.selectedImage = image;
+  }
+
+  private setTitleAndMeta(): void {
+    if (this.project) {
+      this.title.setTitle(`Darío Vidal - Proyecto ${this.project?.title}`);
+      this.meta.updateTag({
+        name: 'description',
+        content: this.project.summary,
+      });
+    }
   }
 }
