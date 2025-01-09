@@ -17,6 +17,10 @@
           </p>
           }
         </div>
+        <div class="flex gap-3">
+          <download-cv-button />
+          <copy-to-clipboard [textToCopy]="cv.email" label="Copiar email" />
+        </div>
         <div class="flex justify-center md:justify-start gap-3 mt-5">
           @for (item of cv.socialNetworks; track $index) {
           <div
