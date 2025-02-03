@@ -2,8 +2,8 @@
   "name": "Dario Vidal",
   "summary": "Desarrollador Web Full Stack",
   "about": [
-    "Soy un desarrollador web full stack con experiencia en el desarrollo de aplicaciones web. Me dedico a la creación de soluciones tecnológicas innovadoras y de alta calidad, utilizando las últimas tecnologías y herramientas del mercado.",
-    "Me gusta trabajar en equipo y enfrentar nuevos desafíos, siempre busco ofrecer la mejor solución a los problemas que se presentan. Mi objetivo es seguir creciendo profesionalmente y aportar valor a los proyectos en los que participo."
+    "Soy un desarrollador web full stack con experiencia en el desarrollo de aplicaciones web. Me especializo en el desarrollo de aplicaciones web con Angular y Spring Boot, utilizando las mejores prácticas para garantizar un rendimiento óptimo y una calidad excepcional.",
+    "Me gusta trabajar en equipo y enfrentar nuevos desafíos, siempre busco ofrecer la mejor solución a los problemas que se presentan. Mi objetivo es aportar valor a los proyectos en los que participo y crecer profesionalmente en el mundo del desarrollo de software."
   ],
   "email": "dariorvidal.27@gmail.com",
   "socialNetworks": [
@@ -73,11 +73,6 @@
         "color": "rgba(0, 0, 0)"
       },
       {
-        "label": "Astro",
-        "icon": "astro",
-        "color": "rgba(189, 82, 243)"
-      },
-      {
         "label": "Tailwind",
         "icon": "tailwindcss",
         "color": "rgba(6, 182, 212)"
@@ -98,16 +93,6 @@
         "label": "MongoDB",
         "icon": "mongodb",
         "color": "rgba(0, 205, 25)"
-      },
-      {
-        "label": "Type ORM",
-        "icon": "type-orm",
-        "color": "rgba(0, 0, 0)"
-      },
-      {
-        "label": "Hibernate",
-        "icon": "hibernate",
-        "color": "rgba(0, 0, 0)"
       }
     ],
     "others": [
@@ -130,11 +115,6 @@
         "label": "Figma",
         "icon": "figma",
         "color": "rgba(0, 0, 0)"
-      },
-      {
-        "label": "Jira",
-        "icon": "jira",
-        "color": "rgba(6, 182, 212)"
       }
     ]
   },
@@ -306,9 +286,31 @@
   ],
   "certifications": [
     {
+      "title": "Angular Pro: Lleva tus bases al siguiente nivel",
+      "institution": "DevTalles",
+      "institutionUrl": "https://devtalles.com",
+      "date": "Enero de 2025",
+      "url": "https://cursos.devtalles.com/certificates/fuean1jztq",
+      "description": [
+        "Profundicé mis conocimientos en Angular, aprendiendo a desarrollar aplicaciones más complejas y escalables con buenas prácticas de programación y arquitectura.",
+        "Desarrollé aplicaciones que incluyen zoneless, testing, internacionalización, server side rendering, static site generation y TanStack Query para el manejo de solicitudes HTTP."
+      ]
+    },
+    {
+      "title": "Microservicios con Spring Cloud",
+      "institution": "TodoCode",
+      "institutionUrl": "https://todocodeacademy.com",
+      "date": "Enero de 2025",
+      "url": "https://todocodeacademy.com/certificate/h3t-2/",
+      "description": [
+        "Aprendí a desarrollar aplicaciones basadas en microservicios con Spring Cloud, utilizando herramientas como Eureka, Feign y Docker para la creación de servicios escalables y tolerantes a fallos.",
+        "Apliqué buenas prácticas de diseño de microservicios y patrones de arquitectura como Service Registry, Service Discovery, Load Balancing, Circuit Breaker, API Gateway y Configuration Server."
+      ]
+    },
+    {
       "title": "Programación Orientada a Objetos con Java",
       "institution": "TodoCode",
-      "institutionUrl": "https://todocodeacademy.com/course/programacion-orientada-a-objetos-con-java",
+      "institutionUrl": "https://todocodeacademy.com",
       "date": "Noviembre de 2024",
       "url": "https://todocodeacademy.com/certificate/certificado-curso-poo-con-java-aed",
       "description": [
@@ -332,7 +334,6 @@
       "institution": "DevTalles",
       "institutionUrl": "https://devtalles.com",
       "date": "Septiembre de 2023",
-      "url": "https://todocodeacademy.com/certificate/certificado-curso-poo-con-java-aed",
       "description": [
         "Aprendí los fundamentos básicos de Angular, incluyendo componentes, servicios, rutas, formularios reactivos y comunicación con APIs REST. Además, profundicé en conceptos avanzados como lazy loading, guards, interceptors y animaciones.",
         "Desarrollé varias aplicaciones durante el curso, aplicando todo lo aprendido y siguiendo las mejores prácticas."
