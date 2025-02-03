@@ -44,11 +44,23 @@
           }
         </div>
       </div>
-      <img
-        class="size-11/12 levitar hidden lg:block"
-        [src]="'angular' | icon"
-        alt="Logo de Angular"
-      />
+      <div class="relative hidden lg:block">
+        <img
+          class="size-2/3 levitar absolute left-0 right-0 mx-auto angular-drop-shadow"
+          [src]="'angular' | icon"
+          alt="Logo de Angular"
+        />
+        <img
+          class="size-1/4 levitar absolute left-10 bottom-24 spring-drop-shadow"
+          [src]="'spring' | icon"
+          alt="Logo de Spring"
+        />
+        <img
+          class="size-1/4 levitar absolute right-10 bottom-24 nest-drop-shadow"
+          [src]="'nestjs' | icon"
+          alt="Logo de NestJS"
+        />
+      </div>
     </div>
   </div>
 </main>
