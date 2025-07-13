@@ -20,7 +20,7 @@
   <p class="text-white/70 text-pretty">{{ project().summary }}</p>
   <div class="flex flex-wrap gap-2 mt-3">
     @for (tech of project().technologies; track $index) {
-    <tech-chip [tech]="tech"></tech-chip>
+      <tech-chip [tech]="tech"></tech-chip>
     }
   </div>
 </a>

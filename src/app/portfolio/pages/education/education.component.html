@@ -11,7 +11,7 @@
   </p>
   <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
     @for (item of education; track $index) {
-    <education-card [education]="item" />
+      <education-card [education]="item" />
     }
   </div>
   <decoration
@@ -34,7 +34,7 @@
   </h2>
   <div class="grid grid-cols-1">
     @for (item of certifications; track $index) {
-    <certification-card [certification]="item" />
+      <certification-card [certification]="item" />
     }
   </div>
 </section>

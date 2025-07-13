@@ -13,36 +13,39 @@
       <strong>{{ certification().title }}</strong>
     </h5>
     <p class="text-white/90 mb-5">
-      Emitido por @if (certification().institutionUrl) {
-      <strong>
-        <a
-          class="hover:underline"
-          [href]="certification().institutionUrl"
-          target="_blank"
-        >
-          {{ certification().institution }}
-        </a>
-      </strong>
+      Emitido por
+      @if (certification().institutionUrl) {
+        <strong>
+          <a
+            class="hover:underline"
+            [href]="certification().institutionUrl"
+            target="_blank"
+          >
+            {{ certification().institution }}
+          </a>
+        </strong>
       } @else {
-      <span>
-        <strong>{{ certification().institution }}</strong>
-      </span>
+        <span>
+          <strong>{{ certification().institution }}</strong>
+        </span>
       }
     </p>
-    @if (certification().description) { @for (p of certification().description;
-    track $index) {
-    <p class="mb-3 text-white/70">{{ p }}</p>
-    } } @if (certification().url) {
-    <div class="mt-4">
-      <a
-        class="text-primary-500/70 rounded-full px-4 py-2 hover:bg-primary-500/15 flex items-center gap-2 w-fit"
-        [href]="certification().url"
-        target="_blank"
-      >
-        Ver certificado
-        <mat-icon>chevron_right</mat-icon>
-      </a>
-    </div>
+    @if (certification().description) {
+      @for (p of certification().description; track $index) {
+        <p class="mb-3 text-white/70">{{ p }}</p>
+      }
+    }
+    @if (certification().url) {
+      <div class="mt-4">
+        <a
+          class="text-primary-500/70 rounded-full px-4 py-2 hover:bg-primary-500/15 flex items-center gap-2 w-fit"
+          [href]="certification().url"
+          target="_blank"
+        >
+          Ver certificado
+          <mat-icon>chevron_right</mat-icon>
+        </a>
+      </div>
     }
   </div>
 </article>

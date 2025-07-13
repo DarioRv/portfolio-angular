@@ -12,9 +12,9 @@
         </p>
         <div class="mt-10">
           @for (p of cv.about; track $index) {
-          <p class="mb-3 text-white/70 text-center md:text-left md:text-lg">
-            {{ p }}
-          </p>
+            <p class="mb-3 text-white/70 text-center md:text-left md:text-lg">
+              {{ p }}
+            </p>
           }
         </div>
         <div class="flex gap-3">
@@ -23,24 +23,24 @@
         </div>
         <div class="flex justify-center md:justify-start gap-3 mt-5">
           @for (item of cv.socialNetworks; track $index) {
-          <div
-            class="border border-[#333] hover:border-primary-500 rounded p-2 hover:-translate-y-1 transition-transform"
-          >
-            <a
-              class="flex gap-2"
-              [href]="item.url"
-              target="_blank"
-              rel="noopener noreferrer"
+            <div
+              class="border border-[#333] hover:border-primary-500 rounded p-2 hover:-translate-y-1 transition-transform"
             >
-              <img
-                class="size-6"
-                [src]="item.icon | icon"
-                [alt]="item.name"
-                width="24px"
-                height="24px"
-              />
-            </a>
-          </div>
+              <a
+                class="flex gap-2"
+                [href]="item.url"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  class="size-6"
+                  [src]="item.icon | icon"
+                  [alt]="item.name"
+                  width="24px"
+                  height="24px"
+                />
+              </a>
+            </div>
           }
         </div>
       </div>
@@ -100,7 +100,7 @@
   </h2>
   <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-5">
     @for (project of projects; track $index) {
-    <project-card [project]="project"></project-card>
+      <project-card [project]="project"></project-card>
     }
   </div>
   <a
