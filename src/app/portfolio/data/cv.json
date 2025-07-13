@@ -109,7 +109,7 @@
       {
         "label": "JWT",
         "icon": "jwt",
-        "color": "rgba(255, 255, 255)"
+        "color": "rgba(255, 255, 255, 0.7)"
       },
       {
         "label": "Figma",
@@ -176,7 +176,7 @@
         {
           "label": "JWT",
           "icon": "jwt",
-          "color": "rgb(255, 255, 255)",
+          "color": "rgba(255, 255, 255, 0.7)",
           "backgroundColor": "rgba(255, 255, 255, 0.1)"
         },
         {

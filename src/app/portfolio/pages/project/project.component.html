@@ -1,5 +1,5 @@
 <section
-  class="my-10 md:my-20 px-4 max-w-[1200px] mx-auto pt-12 md:pt-36 fade-in"
+  class="my-10 md:my-20 px-4 max-w-[1200px] mx-auto pt-12 md:pt-26 fade-in"
 >
   @if (project) {
     <div
@@ -7,7 +7,7 @@
     >
       <div class="col-span-2">
         <h1
-          class="text-3xl md:text-5xl font-bold text-center md:text-left mb-5"
+          class="text-primary-500 text-3xl md:text-5xl font-bold text-center md:text-left mb-5"
         >
           {{ project.title }}
         </h1>
@@ -17,7 +17,7 @@
         <div class="flex flex-col mt-10">
           <img
             [ngStyle]="{ 'view-transition-name': project.key }"
-            class="rounded-xl aspect-video shadow-lg slit-in-vertical"
+            class="rounded-xl aspect-video shadow-lg slit-in-vertical p-1 border-4 border-white/10"
             [src]="selectedImage | image"
             [alt]="project.title"
             width="100%"
@@ -26,7 +26,7 @@
           <div class="flex flex-wrap justify-center gap-3 my-4">
             @for (image of project.images; track $index) {
               <img
-                class="w-32 rounded-xl aspect-video cursor-pointer hover:scale-105 transition-transform p-1"
+                class="w-32 rounded-xl aspect-video cursor-pointer hover:scale-105 hover:border hover:border-white/10 transition-transform p-1"
                 [ngClass]="{
                   'border border-primary-500': selectedImage === image,
                 }"
@@ -40,21 +40,29 @@
           </div>
         </div>
       </div>
-      <div class="flex flex-col slide-in-right">
-        <div>
-          <h3 class="text-xl">Tecnologías usadas</h3>
+      <div class="flex flex-col slide-in-righ">
+        <div class="rounded-xl p-4 mb-5 bg-[#282828]">
+          <h3
+            class="text-white/90 bg-primary-500 w-fit px-2 rounded text-base font-bold"
+          >
+            Tecnologías usadas
+          </h3>
           <div class="flex flex-wrap gap-2 mt-3 mb-5">
             @for (tech of project.technologies; track $index) {
               <tech-chip [tech]="tech" />
             }
           </div>
         </div>
-        <div>
-          <h3 class="text-xl mb-3">Enlaces</h3>
+        <div class="rounded-xl p-4 mb-5 bg-[#282828]">
+          <h3
+            class="text-white/90 bg-primary-500 w-fit px-2 rounded text-base font-bold mb-3"
+          >
+            Enlaces
+          </h3>
           <div class="flex gap-3">
             @if (project.github) {
               <a
-                class="px-4 py-2 flex items-center gap-2 hover:text-primary-500 hover:bg-primary-500/15 rounded-full"
+                class="text-primary-500 px-4 py-2 flex items-center gap-2 hover:bg-primary-500/15 rounded-full"
                 [href]="project.github"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -65,7 +73,7 @@
             }
             @if (project.demo) {
               <a
-                class="px-4 py-2 flex items-center gap-2 hover:text-primary-500 hover:bg-primary-500/15 rounded-full"
+                class="text-primary-500 px-4 py-2 flex items-center gap-2 hover:bg-primary-500/15 rounded-full"
                 [href]="project.demo"
                 target="_blank"
                 rel="noopener noreferrer"
