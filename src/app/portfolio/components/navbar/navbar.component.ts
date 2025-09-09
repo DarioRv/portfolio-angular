@@ -20,6 +20,10 @@ export class NavbarComponent {
       routerLink: '/home',
     },
     {
+      label: 'Experiencia',
+      routerLink: '/experience',
+    },
+    {
       label: 'Proyectos',
       routerLink: '/projects',
     },

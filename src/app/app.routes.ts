@@ -5,6 +5,7 @@ import { ProjectsComponent } from '@pages/projects/projects.component';
 import { EducationComponent } from '@pages/education/education.component';
 import { ContactComponent } from '@pages/contact/contact.component';
 import { ProjectComponent } from '@pages/project/project.component';
+import { ExperienceComponent } from '@pages/experience/experience.component';
 
 export const routes: Routes = [
   {
@@ -15,6 +16,11 @@ export const routes: Routes = [
         path: 'home',
         component: HomeComponent,
         title: 'Inicio - Darío Vidal',
+      },
+      {
+        path: 'experience',
+        component: ExperienceComponent,
+        title: 'Experiencia - Darío Vidal',
       },
       {
         path: 'projects',

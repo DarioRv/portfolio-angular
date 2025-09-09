@@ -124,6 +124,60 @@
     "Trabajo en equipo",
     "Creatividad"
   ],
+  "experience": [
+    {
+      "title": "Desarrollador Web Full Stack",
+      "company": "Techforb",
+      "companyUrl": "https://techforb.com",
+      "companyLogo": "techforb_logo.webp",
+      "period": "Diciembre 2023 - actualidad",
+      "location": "Remoto",
+      "type": "Tiempo completo",
+      "current": true,
+      "description": [
+        "Desarrollo de aplicaciones web full stack utilizando Angular y Spring Boot.",
+        "Implementación de buenas prácticas de programación y arquitectura para garantizar un rendimiento óptimo y una calidad excepcional.",
+        "Colaboración con clientes para entender sus necesidades y ofrecer soluciones personalizadas."
+      ],
+      "achievements": [
+        "Desarrollo de un sistema de gestión de cursos y control de asistencias a clases, mejorando la eficiencia en la administración educativa.",
+        "Creación de un sitio web para una empresa de desarrollo de software a medida, aumentando su visibilidad y alcance en el mercado.",
+        "Implementación de un cluster de bases de datos PostgreSQL con balanceo de carga y monitoreo, mejorando la disponibilidad y escalabilidad de las aplicaciones."
+      ],
+      "technologies": [
+        {
+          "label": "Angular",
+          "icon": "angular",
+          "color": "rgb(221, 0, 49)",
+          "backgroundColor": "rgba(221, 0, 49, 0.1)"
+        },
+        {
+          "label": "Spring Boot",
+          "icon": "spring",
+          "color": "rgb(109, 179, 63)",
+          "backgroundColor": "rgba(109, 179, 63, 0.1)"
+        },
+        {
+          "label": "Java",
+          "icon": "java",
+          "color": "rgb(222, 135, 0)",
+          "backgroundColor": "rgba(222, 135, 0, 0.1)"
+        },
+        {
+          "label": "TypeScript",
+          "icon": "typescript",
+          "color": "rgb(29, 142, 248)",
+          "backgroundColor": "rgba(29, 142, 248, 0.1)"
+        },
+        {
+          "label": "Tailwind CSS",
+          "icon": "tailwindcss",
+          "color": "rgb(6, 182, 212)",
+          "backgroundColor": "rgba(6, 182, 212, 0.1)"
+        }
+      ]
+    }
+  ],
   "projects": [
     {
       "title": "ASIST.IO",

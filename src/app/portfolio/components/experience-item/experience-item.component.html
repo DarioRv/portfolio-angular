@@ -1,0 +1,98 @@
+<article class="h-full flex flex-row gap-4 rounded-lg">
+  <div class="flex flex-col items-center relative px-4">
+    <span
+      class="block size-3 rounded-full bg-primary-500 absolute top-8"
+    ></span>
+    <span class="block w-[2px] h-full bg-[#333]"></span>
+  </div>
+  <div class="flex flex-col gap-3 rounded-md bg-[#282828] p-4">
+    <div class="flex items-center gap-3">
+      <h2 class="text-xl font-bold md:text-2xl text-primary-500">
+        {{ experience().title }}
+      </h2>
+      @if (experience().current) {
+        <span
+          class="text-sm font-bold text-green-500 bg-green-500/20 px-2 py-1 h-fit rounded-md"
+        >
+          Actual
+        </span>
+      }
+      <span
+        class="text-sm font-bold bg-white/70 text-[#282828] px-2 py-1 h-fit rounded-md"
+      >
+        {{ experience().type }}
+      </span>
+    </div>
+    @if (experience().companyUrl) {
+      <a
+        [href]="experience().companyUrl"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex items-center gap-2 text-primary-500 hover:underline text-xl font-bold w-fit"
+      >
+        <img
+          [src]="experience().companyLogo | image"
+          alt="{{ experience().company }} logo"
+          class="w-8 h-8 rounded-full"
+        />
+        {{ experience().company }}
+      </a>
+    } @else {
+      <img
+        [src]="experience().companyLogo | image"
+        alt="{{ experience().company }} logo"
+        class="w-8 h-8 rounded-full"
+      />
+      <h3 class="text-xl font-bold">{{ experience().company }}</h3>
+    }
+    <div class="text-sm text-white/70 flex items-center gap-3">
+      <span class="flex items-center gap-1">
+        <mat-icon class="text-sm">location_on</mat-icon>
+        {{ experience().location }}
+      </span>
+      •
+      <span class="flex items-center gap-1">
+        <mat-icon class="text-sm">calendar_today</mat-icon>
+        {{ experience().period }}
+      </span>
+      •
+      <span class="flex items-center gap-1">
+        <mat-icon class="text-sm">schedule</mat-icon>
+        {{ "8 meses" }}
+      </span>
+    </div>
+    <div class="mt-2">
+      @for (item of experience().description; track $index) {
+        <p class="text-gray-300">
+          {{ item }}
+        </p>
+      }
+    </div>
+
+    <div class="my-4">
+      <h2 class="text-lg md:text-xl font-bold mb-2">
+        <span class="border-primary-500 border-2 rounded w-[2px] mr-2"></span>
+        Logros principales
+      </h2>
+      <ul class="list-disc pl-5">
+        @for (item of experience().achievements; track $index) {
+          <li class="text-white/70 marker:text-primary-500">{{ item }}</li>
+        }
+      </ul>
+    </div>
+
+    <div class="my-4">
+      <h2 class="text-lg md:text-xl font-bold mb-2">
+        <span class="border-primary-500 border-2 rounded w-[2px] mr-2"></span>
+        Tecnologías principales
+      </h2>
+      <ul class="flex flex-wrap gap-2">
+        @for (item of experience().technologies; track $index) {
+          <li class="flex items-center gap-1">
+            <tech-chip [tech]="item"></tech-chip>
+          </li>
+        }
+      </ul>
+    </div>
+  </div>
+</article>
