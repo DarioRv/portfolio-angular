@@ -26,6 +26,7 @@
           class="py-2 px-4 rounded-xl hover:text-white transition-colors"
           [routerLink]="item.routerLink"
           routerLinkActive="border border-white-500 text-white bg-white/15"
+          queryParamsHandling="preserve"
           >{{ item.label }}</a
         >
       </li>
