@@ -14,13 +14,17 @@
       content="Dario Vidal, desarrollador web, desarrollador full stack, desarrollador angular, desarrollador nodejs, angular developer, nodejs developer, nestjs developer, spring developer"
     />
     <meta name="author" content="Darío Vidal" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="icon" type="image/webp" href="favicon.webp" />
     <link rel="canonical" href="https://dariovidal.dev/" />
     <meta name="robots" content="index, follow" />
 
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://dariovidal.dev/" />
+    <meta
+      property="og:image"
+      content="https://dariovidal.dev/images/logo.webp"
+    />
     <meta
       property="og:title"
       content="Darío Vidal | Desarrollador Web Full Stack"
@@ -30,9 +34,13 @@
       content="Desarrollador con +1 año de experiencia en tecnologías como Angular, NestJS, Spring, Node.js, MongoDB, MySQL, entre otras."
     />
 
-    <!-- Twitter -->
+    <!-- Open Graph Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://dariovidal.dev/" />
+    <meta
+      property="twitter:image"
+      content="https://dariovidal.dev/images/logo.webp"
+    />
     <meta
       property="twitter:title"
       content="Darío Vidal | Desarrollador Web Full Stack"
@@ -41,6 +49,70 @@
       property="twitter:description"
       content="Desarrollador con +1 año de experiencia en tecnologías como Angular, NestJS, Spring, Node.js, MongoDB, MySQL, entre otras."
     />
+
+    <!-- JSON-LD for SEO -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Dario Vidal",
+        "image": "https://dariovidal.dev/images/logo.webp",
+        "jobTitle": "Desarrollador Web Full Stack",
+        "description": "Desarrollador con +1 año de experiencia en tecnologías como Angular, NestJS, Spring, Node.js, MongoDB, MySQL, entre otras.",
+        "url": "https://dariovidal.dev",
+        "sameAs": [
+          "https://github.com/DarioRv",
+          "https://linkedin.com/in/dariovidal9"
+        ],
+        "alumniOf": {
+          "@type": "EducationalOrganization",
+          "name": "Facultad de Ingeniería - Universidad Nacional de Jujuy"
+        },
+        "knowsAbout": [
+          "Angular",
+          "NestJS",
+          "Spring",
+          "Node.js",
+          "TypeScript",
+          "JavaScript",
+          "Java",
+          "MongoDB",
+          "MySQL",
+          "PostgreSQL",
+          "Docker",
+          "AWS",
+          "Microservicios"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "email": "contacto@dariovidal.dev",
+          "contactType": "contact"
+        },
+        "@id": "https://dariovidal.dev/#person"
+      }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "url": "https://dariovidal.dev",
+        "name": "Porfolio de Dario Vidal",
+        "description": "Desarrollador con +1 año de experiencia en tecnologías como Angular, NestJS, Spring, Node.js, MongoDB, MySQL, entre otras.",
+        "author": { "@id": "https://dariovidal.dev/#person" },
+        "inLanguage": "es-AR",
+        "publisher": {
+          "@type": "Person",
+          "name": "Darío Vidal"
+        },
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://dariovidal.dev/images/logo.webp",
+          "width": "600",
+          "height": "600"
+        }
+      }
+    </script>
 
     <link
       rel="stylesheet"
