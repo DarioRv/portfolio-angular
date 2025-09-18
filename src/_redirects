@@ -1,0 +1,14 @@
+/*    /index.html   200
+https://dariorv-portfolio.netlify.app/*    https://www.dariovidal.dev/:splat    301!
+
+/projects    /#projects    301
+/education    /#education    301
+/contact    /#contact    301
+
+
+/*
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Content-Security-Policy: upgrade-insecure-requests
