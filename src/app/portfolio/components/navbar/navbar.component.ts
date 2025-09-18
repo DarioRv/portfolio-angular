@@ -17,7 +17,7 @@ export class NavbarComponent {
   menuItems: MenuItem[] = [
     {
       label: 'Inicio',
-      routerLink: '/home',
+      routerLink: '/',
     },
     {
       label: 'Proyectos',

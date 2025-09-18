@@ -1,4 +1,4 @@
-/home
+/
 /projects
 /project/asistio
 /project/kepler-dynamics
