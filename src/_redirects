@@ -1,14 +1,13 @@
-/*    /index.html   200
-https://dariorv-portfolio.netlify.app/*    https://www.dariovidal.dev/:splat    301!
+# Forzar dominio oficial (redirige todo el tráfico del dominio de Netlify al dominio propio con www)
+https://dariorv-portfolio.netlify.app/*   https://www.dariovidal.dev/:splat   301!
 
-/projects    /#projects    301
-/education    /#education    301
-/contact    /#contact    301
+# Forzar HTTPS
+http://dariovidal.dev/*        https://www.dariovidal.dev/:splat   301!
+http://www.dariovidal.dev/*    https://www.dariovidal.dev/:splat   301!
+https://dariovidal.dev/*       https://www.dariovidal.dev/:splat   301!
 
+# Forzar canonical en caso de que quieras quitar el "www"
+https://www.dariovidal.dev/*   https://dariovidal.dev/:splat   301!
 
-/*
-  X-Frame-Options: DENY
-  X-XSS-Protection: 1; mode=block
-  X-Content-Type-Options: nosniff
-  Referrer-Policy: strict-origin-when-cross-origin
-  Content-Security-Policy: upgrade-insecure-requests
+# Redirección para manejar rutas no encontradas y evitar errores 404 en aplicaciones SPA
+/404   /index.html   404
