@@ -8,6 +8,7 @@ import { Project } from '@interfaces/project.interface';
 import { ImagePipe } from '@pipes/image.pipe';
 import cv from '@data/cv.json';
 import { Meta, Title } from '@angular/platform-browser';
+import { SeoService } from '@services/seo.service';
 
 @Component({
   selector: 'project',
@@ -18,16 +19,13 @@ import { Meta, Title } from '@angular/platform-browser';
 })
 export class ProjectComponent implements OnInit {
   private readonly route = inject(ActivatedRoute);
-  private readonly title = inject(Title);
-  private readonly meta = inject(Meta);
+  private readonly seoService = inject(SeoService);
 
   ngOnInit(): void {
     if (this.project) {
-      this.title.setTitle(`${this.project?.title} - Darío Vidal`);
-      this.meta.updateTag({
-        name: 'description',
-        content: this.project.summary,
-      });
+      this.seoService.updateCanonical();
+      this.seoService.updateTitle(`${this.project.title} - Darío Vidal`);
+      this.seoService.updateDescription(this.project.summary);
     }
   }
 
