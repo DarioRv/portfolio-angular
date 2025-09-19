@@ -32,7 +32,7 @@ export class HomeComponent implements OnInit {
   private readonly seoService = inject(SeoService);
 
   ngOnInit(): void {
-    this.seoService.updateTitle('Inicio - Darío Vidal');
+    this.seoService.updateTitle('Darío Vidal - Desarrollador Web Full Stack');
     this.seoService.updateDescription(
       'Desarrollador con +1 año de experiencia en tecnologías como Angular, NestJS, Spring, Node.js, MongoDB, MySQL, entre otras.',
     );
