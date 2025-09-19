@@ -32,6 +32,10 @@ export class HomeComponent implements OnInit {
   private readonly seoService = inject(SeoService);
 
   ngOnInit(): void {
+    this.seoService.updateTitle('Inicio - Darío Vidal');
+    this.seoService.updateDescription(
+      'Desarrollador con +1 año de experiencia en tecnologías como Angular, NestJS, Spring, Node.js, MongoDB, MySQL, entre otras.',
+    );
     this.seoService.updateCanonical();
   }
 }

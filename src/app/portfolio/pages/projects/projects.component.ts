@@ -17,6 +17,10 @@ export class ProjectsComponent implements OnInit {
   private readonly seoService = inject(SeoService);
 
   ngOnInit(): void {
+    this.seoService.updateTitle('Proyectos - Darío Vidal');
+    this.seoService.updateDescription(
+      'Explora una selección de mis proyectos destacados que demuestran mis habilidades en el desarrollo web utilizando tecnologías como Angular, NestJS, Spring, entre otras.',
+    );
     this.seoService.updateCanonical();
   }
 }

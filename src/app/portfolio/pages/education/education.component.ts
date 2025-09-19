@@ -24,6 +24,10 @@ export class EducationComponent implements OnInit {
   private readonly seoService = inject(SeoService);
 
   ngOnInit(): void {
+    this.seoService.updateTitle('Educación - Darío Vidal');
+    this.seoService.updateDescription(
+      'Descubre mi formación académica y certificaciones en tecnologías como Angular, NestJS, Spring, entre otras.',
+    );
     this.seoService.updateCanonical();
   }
 }

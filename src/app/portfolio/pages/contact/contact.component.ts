@@ -17,6 +17,10 @@ export class ContactComponent implements OnInit {
   private readonly seoService = inject(SeoService);
 
   ngOnInit(): void {
+    this.seoService.updateTitle('Contacto - Darío Vidal');
+    this.seoService.updateDescription(
+      'Ponte en contacto conmigo a través de mis redes sociales o envíame un correo electrónico. ¡Estoy abierto a nuevas oportunidades y colaboraciones!',
+    );
     this.seoService.updateCanonical();
   }
 }
