@@ -21,7 +21,7 @@ export class SeoService {
   }
 
   updateCanonical(url?: string) {
-    const canonicalUrl = (url || this.doc.URL) + '/';
+    const canonicalUrl = url || this.doc.URL;
 
     let link: HTMLLinkElement =
       this.doc.querySelector("link[rel='canonical']") ||
