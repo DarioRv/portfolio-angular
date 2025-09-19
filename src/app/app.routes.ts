@@ -15,7 +15,7 @@ export const routes: Routes = [
         path: '',
         component: HomeComponent,
         pathMatch: 'full',
-        title: 'Inicio - Darío Vidal',
+        title: 'Darío Vidal - Desarrollador Web Full Stack',
       },
       {
         path: 'projects',
