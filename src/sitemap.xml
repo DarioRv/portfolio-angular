@@ -11,17 +11,17 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dariovidal.dev/project/asistio</loc>
+    <loc>https://dariovidal.dev/projects/asistio</loc>
     <lastmod>2025-07-12</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://dariovidal.dev/project/kepler-dynamics</loc>
+    <loc>https://dariovidal.dev/projects/kepler-dynamics</loc>
     <lastmod>2025-07-12</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://dariovidal.dev/project/postgresql-cluster</loc>
+    <loc>https://dariovidal.dev/projects/postgresql-cluster</loc>
     <lastmod>2025-07-12</lastmod>
     <priority>0.5</priority>
   </url>

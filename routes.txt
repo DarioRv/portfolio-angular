@@ -1,7 +1,7 @@
 /
 /projects
-/project/asistio
-/project/kepler-dynamics
-/project/postgresql-cluster
+/projects/asistio
+/projects/kepler-dynamics
+/projects/postgresql-cluster
 /education
 /contact
