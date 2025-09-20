@@ -1,5 +1,0 @@
-# Forzar canonical para quitar el "www"
-https://www.dariovidal.dev/* https://dariovidal.dev/:splat  301!
-
-# Redirección para manejar rutas no encontradas y evitar errores 404 en aplicaciones SPA
-/404 /index.html 404
