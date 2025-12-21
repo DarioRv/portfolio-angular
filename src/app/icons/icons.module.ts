@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import {
+  CalendarDays,
   Check,
   ChevronRight,
   Copy,
@@ -9,6 +10,7 @@ import {
   Linkedin,
   LucideAngularModule,
   Mail,
+  University,
 } from 'lucide-angular';
 
 @NgModule({
@@ -23,6 +25,8 @@ import {
       FileText,
       ChevronRight,
       Link,
+      CalendarDays,
+      University,
     }),
   ],
   exports: [LucideAngularModule],

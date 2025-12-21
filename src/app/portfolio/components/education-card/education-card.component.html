@@ -1,21 +1,24 @@
 <article
-  class="flex flex-col p-4 shadow bg-[#282828] rounded-xl rounded-br-lg border-b-4 border-b-gray-950"
+  class="flex flex-col p-4 shadow border border-white/10 rounded-md hover:shadow-lg hover:border-white/15 transition-all duration-300"
 >
-  <strong
-    class="w-fit self-end mb-5 bg-green-500/20 text-green-500 rounded px-2"
-    >{{ education().period }}</strong
-  >
-  <div class="flex items-center gap-3 mb-5">
-    <img
-      class="size-20 rounded"
-      [src]="education().logo | image"
-      alt="Logo de {{ education().institution }}"
-    />
-    <h5 class="text-xl">
-      <strong>{{ education().title }}</strong>
-    </h5>
+  <div class="grid gap-4 md:grid-cols-[minmax(200px,260px)_1fr] items-center">
+    <div class="flex flex-col gap-3 mb-5">
+      <h5 class="text-primary-500 text-base font-bold">
+        {{ education().title }}
+      </h5>
+      <span class="text-white/90 text-sm flex items-center gap-2 font-bold">
+        <i-lucide name="university" size="12"></i-lucide>
+        {{ education().institution }}
+      </span>
+      <span class="text-white/70 text-xs flex items-center gap-2">
+        <i-lucide name="calendar-days" size="12"></i-lucide>
+        {{ education().period }}
+      </span>
+    </div>
+    <div>
+      @for (item of education().description; track $index) {
+        <p class="mb-3 text-white/70 text-sm">{{ item }}</p>
+      }
+    </div>
   </div>
-  @for (item of education().description; track $index) {
-    <p class="mb-3 text-white/90">{{ item }}</p>
-  }
 </article>
