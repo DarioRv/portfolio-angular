@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { IconsModule } from 'app/icons/icons.module';
 
 @Component({
   selector: 'download-cv-button',
   standalone: true,
-  imports: [],
+  imports: [IconsModule],
   templateUrl: './download-cv-button.component.html',
   styles: ``,
 })

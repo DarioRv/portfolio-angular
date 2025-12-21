@@ -9,6 +9,7 @@ import { DecorationComponent } from '../../components/decoration/decoration.comp
 import { CopyToClipboardComponent } from '@components/copy-to-clipboard/copy-to-clipboard.component';
 import { DownloadCvButtonComponent } from '../../components/download-cv-button/download-cv-button.component';
 import { SeoService } from '@services/seo.service';
+import { IconsModule } from 'app/icons/icons.module';
 
 @Component({
   selector: 'app-home',
@@ -19,9 +20,9 @@ import { SeoService } from '@services/seo.service';
     RouterLink,
     SkillsComponent,
     MatIconModule,
-    DecorationComponent,
     CopyToClipboardComponent,
     DownloadCvButtonComponent,
+    IconsModule,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',

@@ -1,23 +1,26 @@
 <a
-  class="group block cursor-pointer"
+  class="group block cursor-pointer transition-colors p-4 rounded-xl hover:bg-white/5 drop-shadow-md"
   [routerLink]="['/projects', project().key]"
 >
   <div class="overflow-hidden rounded-xl mb-8 slit-in-vertical">
     <img
       [ngStyle]="{ 'view-transition-name': project().key }"
-      class="asbolute h-full rounded-xl group-hover:scale-110 aspect-video transition-transform duration-700 shadow-xl"
+      class="asbolute h-full rounded-xl aspect-video transition-transform duration-700 shadow-xl"
       [src]="project().images[0] | image"
       [alt]="project().title"
       width="100%"
       height="auto"
     />
   </div>
-  <h5
-    class="text-xl font-bold mb-2 group-hover:underline group-hover:text-primary-500"
-  >
+  <h5 class="text-xl font-bold mb-2">
     {{ project().title }}
   </h5>
-  <p class="text-white/70 text-pretty">{{ project().summary }}</p>
+  <p
+    class="text-white/70 text-pretty"
+    style="filter: drop-shadow(10px 10px 15px rgba(221, 0, 49, 0.5))"
+  >
+    {{ project().summary }}
+  </p>
   <div class="flex flex-wrap gap-2 mt-3">
     @for (tech of project().technologies; track $index) {
       <tech-chip [tech]="tech"></tech-chip>

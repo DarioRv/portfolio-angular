@@ -1,18 +1,19 @@
 import { NgClass } from '@angular/common';
 import { Component, input, signal } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
+import { IconsModule } from 'app/icons/icons.module';
 
 @Component({
   selector: 'copy-to-clipboard',
   standalone: true,
-  imports: [MatIconModule, NgClass],
+  imports: [MatIconModule, NgClass, IconsModule],
   templateUrl: './copy-to-clipboard.component.html',
   styles: ``,
 })
 export class CopyToClipboardComponent {
   textToCopy = input.required<string>();
   label = input<string>();
-  icon = signal('content_copy');
+  icon = signal('copy');
   textHasCopied = signal(false);
 
   copyToClipboard() {
@@ -25,7 +26,7 @@ export class CopyToClipboardComponent {
     this.icon.set('check');
     this.textHasCopied.set(true);
     setTimeout(() => {
-      this.icon.set('content_copy');
+      this.icon.set('copy');
       this.textHasCopied.set(false);
     }, 3000);
   }

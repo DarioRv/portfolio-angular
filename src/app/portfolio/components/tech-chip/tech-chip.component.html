@@ -1,10 +1,4 @@
-<div
-  class="flex gap-2 items-center px-2 rounded-full"
-  [ngStyle]="{
-    color: tech().color,
-    'background-color': tech().backgroundColor,
-  }"
->
+<div class="flex gap-2 items-center px-2 rounded-full text-white/90">
   <img
     class="size-4"
     [src]="tech().icon | icon"
@@ -12,9 +6,5 @@
     width="16px"
     height="16px"
   />
-  <span
-    class="text-nowrap"
-    [ngStyle]="{ color: tech().color, filter: 'contrast(2)' }"
-    >{{ tech().label }}</span
-  >
+  <span class="text-nowrap text-xs">{{ tech().label }}</span>
 </div>

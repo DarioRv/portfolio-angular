@@ -24,21 +24,16 @@
         <div class="flex justify-center md:justify-start gap-3 mt-5">
           @for (item of cv.socialNetworks; track $index) {
             <div
-              class="border border-[#333] hover:border-primary-500 rounded p-2 hover:-translate-y-1 transition-transform"
+              class="border border-white/20 rounded-full p-1 px-4 hover:scale-110 transition-transform"
             >
               <a
-                class="flex gap-2"
+                class="flex items-center gap-2"
                 [href]="item.url"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img
-                  class="size-6"
-                  [src]="item.icon | icon"
-                  [alt]="item.name"
-                  width="24px"
-                  height="24px"
-                />
+                <i-lucide [name]="item.icon" [size]="16"></i-lucide>
+                <span class="text-white/90 text-sm">{{ item.name }}</span>
               </a>
             </div>
           }
@@ -65,19 +60,11 @@
   </div>
 </main>
 
-<decoration
-  class="absolute left-20 hidden xl:block slide-in-left"
-  color="bg-[#333]"
-/>
-
 <section class="max-w-[1200px] mx-auto my-10 md:my-20 px-4 slide-in-bottom">
   <h2
-    class="text-2xl md:text-4xl font-bold text-white/90 text-center md:text-left mb-10"
+    class="text-2xl md:text-4xl font-bold text-white/90 text-center md:text-left mb-10 border-b border-white/10 pb-3"
   >
     Habilidades
-    <span
-      class="block mx-auto md:mx-0 w-[150px] md:w-1/12 h-3 bg-primary-500 mt-3"
-    ></span>
   </h2>
   <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
     <skills header="Lenguajes" [skills]="cv.skills.languages"></skills>
@@ -87,16 +74,11 @@
   </div>
 </section>
 
-<decoration class="absolute right-20 hidden xl:block slide-in-right" rows="8" />
-
 <section class="max-w-[1200px] mx-auto my-10 md:my-20 px-4 slide-in-bottom">
   <h2
-    class="text-2xl md:text-4xl font-bold text-white/90 text-center md:text-left mb-10"
+    class="text-2xl md:text-4xl font-bold text-white/90 text-center md:text-left mb-10 border-b border-white/10 pb-3"
   >
     Proyectos destacados
-    <span
-      class="block mx-auto md:mx-0 w-[300px] md:w-1/12 h-3 bg-primary-500 mt-3"
-    ></span>
   </h2>
   <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-5">
     @for (project of projects; track $index) {
@@ -104,10 +86,10 @@
     }
   </div>
   <a
-    class="w-fit ml-auto flex items-center gap-3 text-primary-500 hover:bg-primary-500/15 transition-colors py-3 rounded-full px-4"
+    class="w-fit ml-auto flex items-center gap-3 border border-white/20 py-2 rounded-md px-4 mt-8 hover:bg-white hover:text-black transition-colors"
     routerLink="/projects"
   >
     Ver todos los proyectos
-    <mat-icon>chevron_right</mat-icon>
+    <i-lucide name="chevron-right"></i-lucide>
   </a>
 </section>

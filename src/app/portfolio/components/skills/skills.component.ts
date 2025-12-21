@@ -9,7 +9,7 @@ import { IconPipe } from '@pipes/icon.pipe';
   templateUrl: './skills.component.html',
   styles: ``,
   host: {
-    class: 'p-4 mt-5 bg-[#282828] rounded-xl',
+    class: 'p-4 mt-5 border border-white/20 rounded-xl',
   },
 })
 export class SkillsComponent {
