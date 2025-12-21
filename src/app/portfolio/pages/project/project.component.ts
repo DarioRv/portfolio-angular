@@ -1,19 +1,18 @@
 import { NgClass, NgStyle } from '@angular/common';
 import { Component, inject, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { MatIconModule } from '@angular/material/icon';
 
 import { TechChipComponent } from '@components/tech-chip/tech-chip.component';
 import { Project } from '@interfaces/project.interface';
 import { ImagePipe } from '@pipes/image.pipe';
 import cv from '@data/cv.json';
-import { Meta, Title } from '@angular/platform-browser';
 import { SeoService } from '@services/seo.service';
+import { IconsModule } from 'app/icons/icons.module';
 
 @Component({
   selector: 'project',
   standalone: true,
-  imports: [ImagePipe, TechChipComponent, NgStyle, NgClass, MatIconModule],
+  imports: [ImagePipe, TechChipComponent, NgStyle, NgClass, IconsModule],
   templateUrl: './project.component.html',
   styles: ``,
 })
