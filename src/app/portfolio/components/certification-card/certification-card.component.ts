@@ -1,11 +1,11 @@
 import { Component, input } from '@angular/core';
-import { MatIconModule } from '@angular/material/icon';
 import { Certification } from '@interfaces/certification.interface';
+import { IconsModule } from 'app/icons/icons.module';
 
 @Component({
   selector: 'certification-card',
   standalone: true,
-  imports: [MatIconModule],
+  imports: [IconsModule],
   templateUrl: './certification-card.component.html',
   styles: ``,
 })

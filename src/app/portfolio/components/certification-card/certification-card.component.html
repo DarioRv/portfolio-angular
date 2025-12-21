@@ -1,14 +1,16 @@
 <article class="h-full flex flex-row gap-4 rounded-lg">
   <div class="flex flex-col items-center relative px-4">
     <span
-      class="block size-3 rounded-full bg-primary-500 absolute top-16"
-    ></span>
+      class="size-5 rounded-full bg-primary-500/30 absolute top-5 flex items-center justify-center"
+    >
+      <span class="block size-3 rounded-full bg-primary-500 relative"></span>
+    </span>
     <span class="block w-[2px] h-full bg-[#333]"></span>
   </div>
   <div class="flex flex-col p-4 flex-grow">
-    <strong class="w-fit self-start mb-5 bg-white/70 text-black rounded px-2">
+    <!-- <strong class="w-fit self-start mb-5 bg-white/70 text-black rounded px-2">
       {{ certification().date }}
-    </strong>
+    </strong> -->
     <h5 class="text-lg md:text-xl text-balance text-primary-500">
       <strong>{{ certification().title }}</strong>
     </h5>
@@ -38,12 +40,12 @@
     @if (certification().url) {
       <div class="mt-4">
         <a
-          class="text-primary-500/70 rounded-full px-4 py-2 hover:bg-primary-500/15 flex items-center gap-2 w-fit"
+          class="text-white/70 rounded-md px-4 py-2 border border-white/10 flex items-center gap-2 w-fit hover:bg-white/10 hover:text-white transition-colors"
           [href]="certification().url"
           target="_blank"
         >
           Ver certificado
-          <mat-icon>chevron_right</mat-icon>
+          <i-lucide name="external-link" size="16"></i-lucide>
         </a>
       </div>
     }
