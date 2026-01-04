@@ -168,10 +168,6 @@
           "icon": "aws"
         },
         {
-          "label": "Microservicios",
-          "icon": "microservices"
-        },
-        {
           "label": "Jenkins",
           "icon": "jenkins"
         },
