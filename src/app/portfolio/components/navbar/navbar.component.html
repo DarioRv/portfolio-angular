@@ -17,7 +17,7 @@
     ></div>
   </button>
   <ul
-    class="hidden md:flex flex-col md:flex-row gap-3 p-4 bg-primary-500/90 rounded-xl w-fit"
+    class="hidden md:flex flex-col md:flex-row gap-3 p-4 rounded-xl backdrop-blur-2xl w-full"
     [ngClass]="{ hidden: !visible }"
   >
     @for (item of menuItems; track $index) {
@@ -25,8 +25,7 @@
         <a
           class="py-2 px-4 rounded-xl hover:text-white transition-colors"
           [routerLink]="item.routerLink"
-          routerLinkActive="border border-white-500 text-white bg-white/15"
-          [routerLinkActiveOptions]="{ exact: true }"
+          [fragment]="item.fragment"
           queryParamsHandling="preserve"
           >{{ item.label }}</a
         >

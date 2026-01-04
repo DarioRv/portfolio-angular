@@ -1,31 +1,25 @@
 import { Component, inject, OnInit } from '@angular/core';
-import { RouterLink } from '@angular/router';
-import { ProjectCardComponent } from '@components/project-card/project-card.component';
 import cv from '@data/cv.json';
-import { IconPipe } from '@pipes/icon.pipe';
-import { SkillsComponent } from '../../components/skills/skills.component';
-import { MatIconModule } from '@angular/material/icon';
-import { DecorationComponent } from '../../components/decoration/decoration.component';
-import { CopyToClipboardComponent } from '@components/copy-to-clipboard/copy-to-clipboard.component';
-import { DownloadCvButtonComponent } from '../../components/download-cv-button/download-cv-button.component';
 import { SeoService } from '@services/seo.service';
 import { IconsModule } from 'app/icons/icons.module';
+import { ExperienceComponent } from '@pages/sections/experience/experience.component';
+import { ProjectsComponent } from '@pages/sections/projects/projects.component';
+import { EducationComponent } from '@pages/sections/education/education.component';
+import { ContactComponent } from '@pages/sections/contact/contact.component';
+import { AboutComponent } from '@pages/sections/about/about.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
   imports: [
-    IconPipe,
-    ProjectCardComponent,
-    RouterLink,
-    SkillsComponent,
-    MatIconModule,
-    CopyToClipboardComponent,
-    DownloadCvButtonComponent,
     IconsModule,
+    ExperienceComponent,
+    ProjectsComponent,
+    EducationComponent,
+    ContactComponent,
+    AboutComponent,
   ],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css',
 })
 export class HomeComponent implements OnInit {
   public cv = cv;

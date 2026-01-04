@@ -1,12 +1,12 @@
 import { NgClass } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterLink, RouterLinkActive } from '@angular/router';
+import { RouterLink } from '@angular/router';
 import { MenuItem } from '@interfaces/menu-item.interface';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [RouterLink, RouterLinkActive, NgClass],
+  imports: [RouterLink, NgClass],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css',
   host: {
@@ -21,19 +21,23 @@ export class NavbarComponent {
     },
     {
       label: 'Experiencia',
-      routerLink: '/experience',
+      routerLink: '/',
+      fragment: 'experience',
     },
     {
       label: 'Proyectos',
-      routerLink: '/projects',
+      routerLink: '/',
+      fragment: 'projects',
     },
     {
       label: 'Educación',
-      routerLink: '/education',
+      routerLink: '/',
+      fragment: 'education',
     },
     {
       label: 'Contacto',
-      routerLink: '/contact',
+      routerLink: '/',
+      fragment: 'contact',
     },
   ];
 
