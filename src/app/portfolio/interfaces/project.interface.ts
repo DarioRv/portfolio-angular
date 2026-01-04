@@ -13,6 +13,6 @@ export interface Project {
 export interface Technology {
   label: string;
   icon: string;
-  color: string;
-  backgroundColor: string;
+  color?: string;
+  backgroundColor?: string;
 }

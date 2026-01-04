@@ -11,6 +11,7 @@ import {
   Linkedin,
   LucideAngularModule,
   Mail,
+  MapPin,
   University,
 } from 'lucide-angular';
 
@@ -29,6 +30,7 @@ import {
       CalendarDays,
       University,
       ExternalLink,
+      MapPin,
     }),
   ],
   exports: [LucideAngularModule],

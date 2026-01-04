@@ -124,6 +124,72 @@
     "Trabajo en equipo",
     "Creatividad"
   ],
+  "experience": [
+    {
+      "title": "Desarrollador Web Full Stack",
+      "company": "Techforb",
+      "companyUrl": "https://techforb.com",
+      "companyLogo": "techforb_logo.webp",
+      "period": "Diciembre 2023 - actualidad",
+      "location": "Remoto",
+      "type": "Tiempo completo",
+      "current": true,
+      "description": [
+        "Desarrollo de aplicaciones web full stack utilizando Angular y Spring Boot.",
+        "Implementación de buenas prácticas de programación y arquitectura para garantizar un rendimiento óptimo y una calidad excepcional.",
+        "Colaboración con clientes para entender sus necesidades y ofrecer soluciones personalizadas."
+      ],
+      "achievements": [
+        "Desarrollo de aplicaciones web utilizando Angular.",
+        "Desarrollo de APIs REST con NestJS, Spring Boot y Express.",
+        "Integraciones de servicios AWS (S3, SQS, SNS, SES, Lambda).",
+        "Despliegue de aplicaciones mediante Jenkins, Docker y Kubernetes.",
+        "Integración de microservicios."
+      ],
+      "technologies": [
+        {
+          "label": "Angular",
+          "icon": "angular"
+        },
+        {
+          "label": "Spring Boot",
+          "icon": "spring"
+        },
+        {
+          "label": "Java",
+          "icon": "java"
+        },
+        {
+          "label": "NestJS",
+          "icon": "nestjs"
+        },
+        {
+          "label": "AWS",
+          "icon": "aws"
+        },
+        {
+          "label": "Microservicios",
+          "icon": "microservices"
+        },
+        {
+          "label": "Jenkins",
+          "icon": "jenkins"
+        },
+        {
+          "label": "Kubernetes",
+          "icon": "kubernetes"
+        },
+        {
+          "label": "Bitbucket",
+          "icon": "bitbucket"
+        },
+        {
+          "label": "Jira",
+          "icon": "jira"
+        }
+      ]
+    }
+  ],
   "projects": [
     {
       "title": "ASIST.IO",
