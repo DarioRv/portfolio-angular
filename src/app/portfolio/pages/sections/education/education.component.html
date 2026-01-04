@@ -19,9 +19,30 @@
   >
     Certificados
   </h2>
-  <div class="grid grid-cols-1">
-    @for (item of certifications; track $index) {
+  <div class="grid grid-cols-1" [@expandListAnim]="visibleCount">
+    @for (item of visibleCertifications; track $index) {
       <certification-card [certification]="item" />
     }
   </div>
+  @if (certifications.length > 2) {
+    <div class="flex justify-center mt-8 text-sm">
+      @if (hasMore) {
+        <button
+          class="flex gap-2 items-center px-6 py-2 hover:text-white text-white/70 transition"
+          (click)="showMore()"
+        >
+          Ver todas mis certificaciones
+          <i-lucide name="chevron-down" size="16"></i-lucide>
+        </button>
+      } @else {
+        <button
+          class="flex gap-2 items-center px-6 py-2 hover:text-white text-white/70 transition"
+          (click)="showLess()"
+        >
+          Ver menos
+          <i-lucide name="chevron-up" size="16"></i-lucide>
+        </button>
+      }
+    </div>
+  }
 </section>

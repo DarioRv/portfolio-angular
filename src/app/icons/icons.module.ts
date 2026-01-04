@@ -2,7 +2,9 @@ import { NgModule } from '@angular/core';
 import {
   CalendarDays,
   Check,
+  ChevronDown,
   ChevronRight,
+  ChevronUp,
   Copy,
   ExternalLink,
   FileText,
@@ -31,6 +33,8 @@ import {
       University,
       ExternalLink,
       MapPin,
+      ChevronDown,
+      ChevronUp,
     }),
   ],
   exports: [LucideAngularModule],
