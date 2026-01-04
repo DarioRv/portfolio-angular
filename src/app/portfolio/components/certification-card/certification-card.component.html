@@ -34,7 +34,7 @@
     </p>
     @if (certification().description) {
       @for (p of certification().description; track $index) {
-        <p class="mb-3 text-white/70">{{ p }}</p>
+        <p class="mb-3 text-white/70 text-sm">{{ p }}</p>
       }
     }
     @if (certification().url) {
