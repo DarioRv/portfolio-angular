@@ -192,8 +192,7 @@
       "key": "asistio",
       "summary": "Sistema de gestión de cursos y control de asistencias a clases.",
       "description": [
-        "Aplicación web que permite controlar la asistencia de los alumnos a clases, logrando obtener una agilidad y reducción de tiempo para los profesores que realizan esta tarea. El sistema cuenta con un panel de administración para la gestión de alumnos y cursos, y un control de registro de asistencias y ausencias.",
-        "El proyecto incluye un backend desarrollado en Java con Spring Boot, y un frontend desarrollado en Angular con Angular Material. Además, se utilizó JWT para la autenticación y MySQL como base de datos."
+        "Aplicación web para controlar asistencia de alumnos, administrar cursos y gestionar asistencias/ausencias desde un panel centralizado."
       ],
       "featured": true,
       "images": [
@@ -246,6 +245,66 @@
           "icon": "mysql",
           "color": "rgb(29, 142, 248)",
           "backgroundColor": "rgba(29, 142, 248, 0.1)"
+        }
+      ],
+      "overview": {
+        "context": "Proyecto desarrollado como parte de mi formación académica en la Universidad Nacional de Jujuy. El objetivo del proyecto era crear un sistema que permitiera a los profesores gestionar la asistencia de los alumnos a clases de manera eficiente y rápida.",
+        "problem": [
+          "Registro manual lento.",
+          "Falta de visibilidad histórica de asistencias.",
+          "Dificultad para gestionar múltiples cursos y alumnos.",
+          "Errores humanos en el registro de asistencias."
+        ],
+        "solution": "Desarrollé junto a mi equipo una aplicación web que permite a los profesores registrar la asistencia de los alumnos de manera rápida y sencilla. La aplicación cuenta con un panel de administración donde los profesores pueden gestionar los cursos y los alumnos, y un sistema de registro de asistencias que permite marcar la presencia o ausencia de cada alumno con un solo clic.",
+        "results": "El sistema logró reducir significativamente el tiempo que los profesores dedicaban al control de asistencia, permitiéndoles enfocarse en otras tareas académicas. Además, la aplicación mejoró la precisión de los registros de asistencia, minimizando los errores humanos."
+      },
+      "features": [
+        {
+          "title": "Panel de administración",
+          "description": "Gestión de cursos y alumnos, con opciones para agregar, editar y eliminar registros."
+        },
+        {
+          "title": "Registro de asistencias",
+          "description": "Control de asistencias/ausencias por clase con historial."
+        },
+        {
+          "title": "Autenticación segura",
+          "description": "Sistema de inicio de sesión utilizando JWT para proteger el acceso a la aplicación."
+        },
+        {
+          "title": "Reportes",
+          "description": "Visualización rápida y exportable."
+        }
+      ],
+      "architecture": {
+        "description": "La aplicación sigue una arquitectura de cliente-servidor, con un frontend desarrollado en Angular y un backend en Java con Spring Boot. La comunicación entre el cliente y el servidor se realiza a través de una API RESTful, utilizando JSON como formato de intercambio de datos.",
+        "stack": [
+          {
+            "title": "Frontend",
+            "description": "Angular + Angular Material"
+          },
+          {
+            "title": "Backend",
+            "description": "Java + Spring Boot"
+          },
+          {
+            "title": "Base de datos",
+            "description": "MySQL"
+          }
+        ]
+      },
+      "stats": [
+        {
+          "label": "Tiempo operativo",
+          "value": "-40%"
+        },
+        {
+          "label": "Digital",
+          "value": "100%"
+        },
+        {
+          "label": "Eficiencia",
+          "value": "+30%"
         }
       ]
     },

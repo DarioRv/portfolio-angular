@@ -1,70 +1,223 @@
-<section
-  class="my-10 md:my-20 px-4 max-w-[1200px] mx-auto pt-12 md:pt-26 fade-in"
->
-  @if (project) {
-    <h1
-      class="text-primary-500 text-3xl md:text-5xl font-bold text-center md:text-left mb-5"
-    >
-      {{ project.title }}
-    </h1>
-    @for (item of project.description; track $index) {
-      <p class="text-white/70 mb-3">{{ item }}</p>
-    }
+<section class="max-w-6xl mx-auto px-4 py-14 md:py-20">
+  <!-- Breadcrumb -->
+  <div class="text-sm text-white/50 mb-8">
+    <a class="hover:text-white/80 transition">Proyectos</a>
+    <span class="mx-2">/</span>
+    <span class="text-white/70">ASIST.IO</span>
+  </div>
 
-    <div class="flex flex-wrap gap-2 my-5 mt-8">
-      @for (tech of project.technologies; track $index) {
-        <tech-chip [tech]="tech" />
-      }
-    </div>
+  <div class="grid grid-cols-2 gap-3">
+    <div class="mb-10">
+      <div class="flex flex-wrap items-center gap-2 mb-4">
+        <span
+          class="px-3 py-1 rounded-full text-xs border border-white/10 bg-white/5 text-white/70"
+        >
+          Web App
+        </span>
+        <span
+          class="px-3 py-1 rounded-full text-xs border border-white/10 bg-white/5 text-white/70"
+        >
+          Full Stack
+        </span>
+        <span
+          class="px-3 py-1 rounded-full text-xs border border-red-500/20 bg-red-500/10 text-red-200"
+        >
+          Caso de estudio
+        </span>
+      </div>
 
-    <div class="flex gap-3">
-      @if (project.demo) {
-        <a
-          class="flex gap-3 items-center text-sm p-2 bg-white rounded-md text-black hover:bg-white/90 transition-colors"
-          [href]="project.demo"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i-lucide name="link" size="14"></i-lucide>
-          Ver demo
-        </a>
-      }
-      @if (project.github) {
-        <a
-          class="flex gap-2 items-center text-sm p-2 border border-white/10 rounded-md hover:bg-white/5 transition-colors"
-          [href]="project.github"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i-lucide name="github" size="14"></i-lucide>
-          Ver repositorio
-        </a>
-      }
-    </div>
-    <div class="flex flex-col mt-10">
-      <img
-        [ngStyle]="{ 'view-transition-name': project.key }"
-        class="rounded-xl aspect-video shadow-lg slit-in-vertical p-1 border-4 border-white/10 w-2/3 mx-auto"
-        [src]="selectedImage | image"
-        [alt]="project.title"
-        width="100%"
-        height="auto"
-      />
-      <div class="flex flex-wrap justify-center gap-3 my-4">
-        @for (image of project.images; track $index) {
-          <img
-            class="w-32 rounded-xl aspect-video cursor-pointer hover:scale-105 hover:border hover:border-white/10 transition-transform p-1"
-            [ngClass]="{
-              'border border-primary-500': selectedImage === image,
-            }"
-            (click)="selectImage(image)"
-            [src]="image | image"
-            [alt]="project.title"
-            width="100%"
-            height="auto"
-          />
+      <h1
+        class="text-4xl md:text-6xl font-semibold tracking-tight text-red-400"
+      >
+        {{ project?.title }}
+      </h1>
+
+      <p class="mt-5 text-white/70 leading-relaxed max-w-prose">
+        {{ project?.description }}
+      </p>
+
+      <div class="mt-7 flex flex-wrap gap-2">
+        @for (item of project?.technologies; track $index) {
+          <tech-chip [tech]="item" design="simple"></tech-chip>
+        }
+      </div>
+
+      <div class="mt-8 flex flex-wrap gap-3">
+        @if (project?.demo) {
+          <a
+            class="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-white text-black hover:bg-white/90 transition text-sm font-medium"
+            [href]="project?.demo"
+            target="_blank"
+            rel="noopener"
+          >
+            Ver demo
+            <span class="text-black/60">↗</span>
+          </a>
+        }
+
+        @if (project?.github) {
+          <a
+            class="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 transition text-sm"
+            [href]="project?.github"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ver repositorio
+            <span class="text-white/60">↗</span>
+          </a>
         }
       </div>
     </div>
-  }
+
+    <dv-image-galery [images]="project!.images"></dv-image-galery>
+  </div>
+
+  <div class="mt-14">
+    <div class="space-y-12">
+      @if (project?.overview) {
+        <section>
+          <h2 class="text-xl font-semibold">Overview</h2>
+          <div class="space-y-24">
+            @if (project?.overview?.context) {
+              <section class="grid md:grid-cols-[200px_1fr] gap-6">
+                <h3
+                  class="text-sm uppercase tracking-wide text-white/40 border-b border-white/10 pb-1 h-fit font-bold"
+                >
+                  Contexto
+                </h3>
+                <p class="text-white/75 leading-relaxed">
+                  {{ project?.overview?.context }}
+                </p>
+              </section>
+            }
+
+            @if (project?.overview?.problem) {
+              <section class="grid md:grid-cols-[200px_1fr] gap-6">
+                <h3
+                  class="text-sm uppercase tracking-wide text-white/40 border-b border-white/10 pb-1 h-fit font-bold"
+                >
+                  Problema
+                </h3>
+                <ul class="space-y-3 text-white/75">
+                  @for (item of project?.overview?.problem; track $index) {
+                    <li>- {{ item }}</li>
+                  }
+                </ul>
+              </section>
+            }
+
+            @if (project?.overview?.solution) {
+              <section class="grid md:grid-cols-[200px_1fr] gap-6">
+                <h3
+                  class="text-sm uppercase tracking-wide text-white/40 border-b border-white/10 pb-1 h-fit font-bold"
+                >
+                  Solución
+                </h3>
+                <div class="space-y-4 text-white/75">
+                  <p>{{ project?.overview?.solution }}</p>
+                </div>
+              </section>
+            }
+
+            @if (project?.overview?.results) {
+              <section class="grid md:grid-cols-[200px_1fr] gap-6">
+                <h3
+                  class="text-sm uppercase tracking-wide text-white/40 border-b border-white/10 pb-1 h-fit font-bold"
+                >
+                  Resultado
+                </h3>
+                <div class="space-y-3 text-white/75">
+                  <p>
+                    {{ project?.overview?.results }}
+                  </p>
+                </div>
+              </section>
+            }
+          </div>
+        </section>
+      }
+
+      @if (project?.stats) {
+        <section>
+          <div class="flex justify-center gap-12">
+            @for (item of project?.stats; track $index) {
+              <div>
+                <div class="text-2xl font-semibold text-white">
+                  {{ item.value }}
+                </div>
+                <div class="text-sm text-white/50">{{ item.label }}</div>
+              </div>
+            }
+          </div>
+        </section>
+      }
+
+      <!-- Features -->
+      @if (project?.features) {
+        <section>
+          <h2 class="text-xl font-semibold">Funciones principales</h2>
+          <div class="mt-5 grid grid-cols-1 md:grid-cols-2 gap-4">
+            @for (feature of project?.features; track $index) {
+              <div
+                class="rounded-2xl border border-white/10 bg-white/[0.02] p-5"
+              >
+                <div class="text-sm font-medium">{{ feature.title }}</div>
+                <p class="mt-2 text-sm text-white/70">
+                  {{ feature.description }}
+                </p>
+              </div>
+            }
+          </div>
+        </section>
+      }
+
+      <!-- Architecture -->
+      @if (project?.architecture) {
+        <section>
+          <h2 class="text-xl font-semibold">Arquitectura</h2>
+          <div
+            class="mt-5 rounded-2xl border border-white/10 bg-white/[0.02] p-6"
+          >
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+              @for (item of project?.architecture?.stack; track $index) {
+                <div>
+                  <div class="text-white/50">{{ item.title }}</div>
+                  <div class="mt-1 text-white/80">{{ item.description }}</div>
+                </div>
+              }
+            </div>
+
+            <div class="mt-6 h-px bg-white/10"></div>
+
+            <p class="mt-6 text-sm text-white/70 leading-relaxed">
+              {{ project?.architecture?.description }}
+            </p>
+          </div>
+        </section>
+      }
+    </div>
+  </div>
+  <footer class="mt-28 pt-12 border-t border-white/10">
+    <div
+      class="flex flex-col md:flex-row md:items-center md:justify-between gap-6"
+    >
+      <p class="text-white/60 text-sm">¿Te interesa un proyecto similar?</p>
+      <div class="flex gap-3">
+        <a
+          class="px-5 py-2.5 rounded-lg bg-white text-black text-sm font-medium hover:bg-white/90 transition"
+          routerLink="/"
+          fragment="contact"
+        >
+          Contactarme
+        </a>
+        <a
+          class="px-5 py-2.5 rounded-lg border border-white/15 text-sm text-white/80 hover:bg-white/5 transition"
+          routerLink="/"
+          fragment="projects"
+        >
+          Volver a proyectos
+        </a>
+      </div>
+    </div>
+  </footer>
 </section>

@@ -1,20 +1,19 @@
-import { NgClass, NgStyle } from '@angular/common';
 import { Component, inject, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 
-import { TechChipComponent } from '@components/tech-chip/tech-chip.component';
 import { Project } from '@interfaces/project.interface';
-import { ImagePipe } from '@pipes/image.pipe';
 import cv from '@data/cv.json';
 import { SeoService } from '@services/seo.service';
 import { IconsModule } from 'app/icons/icons.module';
+import { ImageGaleryComponent } from '@components/image-galery/image-galery.component';
+import { MatCommonModule } from '@angular/material/core';
+import { TechChipComponent } from '@components/tech-chip/tech-chip.component';
 
 @Component({
   selector: 'project',
   standalone: true,
-  imports: [ImagePipe, TechChipComponent, NgStyle, NgClass, IconsModule],
+  imports: [IconsModule, ImageGaleryComponent, RouterLink, TechChipComponent],
   templateUrl: './project.component.html',
-  styles: ``,
 })
 export class ProjectComponent implements OnInit {
   private readonly route = inject(ActivatedRoute);
@@ -31,10 +30,4 @@ export class ProjectComponent implements OnInit {
   public project: Project | undefined = cv.projects.find(
     (project) => project.key === this.route.snapshot.params['key'],
   );
-
-  public selectedImage: string = this.project?.images[0] || '';
-
-  public selectImage(image: string): void {
-    this.selectedImage = image;
-  }
 }

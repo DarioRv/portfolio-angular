@@ -12,5 +12,6 @@ import { IconPipe } from '@pipes/icon.pipe';
 })
 export class TechChipComponent {
   public tech = input.required<Technology>();
+  public design = input<'default' | 'simple'>('default');
   public styleClass = input<string>();
 }

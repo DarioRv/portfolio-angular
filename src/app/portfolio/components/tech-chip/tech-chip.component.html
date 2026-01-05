@@ -1,12 +1,22 @@
-<div
-  class="flex gap-2 items-center rounded-full text-white/50"
-  [ngClass]="styleClass"
->
-  <img
-    class="h-4 aspect-auto"
-    [src]="tech().icon | icon"
-    [alt]="tech().label"
-    height="16"
-  />
-  <span class="text-nowrap text-xs">{{ tech().label }}</span>
-</div>
+@switch (design()) {
+  @case ("default") {
+    <div
+      class="flex gap-2 items-center rounded-full text-white/50"
+      [ngClass]="styleClass"
+    >
+      <img
+        class="h-4 aspect-auto"
+        [src]="tech().icon | icon"
+        [alt]="tech().label"
+        height="16"
+      />
+      <span class="text-nowrap text-xs">{{ tech().label }}</span>
+    </div>
+  }
+  @case ("simple") {
+    <span
+      class="px-3 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-white/70"
+      >{{ tech().label }}</span
+    >
+  }
+}

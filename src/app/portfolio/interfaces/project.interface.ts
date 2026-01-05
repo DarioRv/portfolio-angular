@@ -8,6 +8,10 @@ export interface Project {
   technologies: Technology[];
   github?: string;
   demo?: string;
+  overview?: OverviewDetails;
+  features?: Feature[];
+  architecture?: Architecture;
+  stats?: Stats[];
 }
 
 export interface Technology {
@@ -15,4 +19,31 @@ export interface Technology {
   icon: string;
   color?: string;
   backgroundColor?: string;
+}
+
+export interface OverviewDetails {
+  context: string;
+  problem: string[];
+  solution: string;
+  results: string;
+}
+
+export interface Feature {
+  title: string;
+  description: string;
+}
+
+export interface Architecture {
+  description: string;
+  stack: ArchitectureStack[];
+}
+
+export interface ArchitectureStack {
+  title: string;
+  description: string;
+}
+
+export interface Stats {
+  label: string;
+  value: string;
 }
