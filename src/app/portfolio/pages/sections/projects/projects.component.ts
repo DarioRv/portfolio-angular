@@ -12,4 +12,17 @@ import { Project } from '@interfaces/project.interface';
 })
 export class ProjectsComponent {
   public projects: Project[] = cv.projects;
+
+  filterByTech(tech: string): void {
+    if (tech === 'all') {
+      this.projects = cv.projects;
+      return;
+    }
+
+    this.projects = this.projects.filter((project) =>
+      project.technologies.some(
+        (technology) => technology.label.toLowerCase() === tech.toLowerCase(),
+      ),
+    );
+  }
 }

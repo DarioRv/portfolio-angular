@@ -13,6 +13,7 @@ import { imageFade } from 'app/portfolio/shared/utils/animations';
 })
 export class ImageGaleryComponent implements OnInit, OnDestroy {
   public images = input.required<string[]>();
+  public design = input<'default' | 'simple'>('default');
   public selectedImage: string = '';
   public progress = 0;
 

@@ -1,14 +1,14 @@
-import { NgStyle } from '@angular/common';
 import { Component, input } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { ImageGaleryComponent } from '@components/image-galery/image-galery.component';
 import { TechChipComponent } from '@components/tech-chip/tech-chip.component';
 import { Project } from '@interfaces/project.interface';
-import { ImagePipe } from '@pipes/image.pipe';
+import { IconsModule } from 'app/icons/icons.module';
 
 @Component({
   selector: 'project-card',
   standalone: true,
-  imports: [ImagePipe, RouterLink, TechChipComponent, NgStyle],
+  imports: [RouterLink, TechChipComponent, IconsModule, ImageGaleryComponent],
   templateUrl: './project-card.component.html',
   styles: ``,
   host: {
