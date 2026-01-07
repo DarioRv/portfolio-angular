@@ -21,16 +21,18 @@ export class SeoService {
   }
 
   updateCanonical(url?: string) {
-    const canonicalUrl = url || this.doc.URL;
+    const rawUrl = url || this.doc.location.href;
 
-    let link: HTMLLinkElement =
-      this.doc.querySelector("link[rel='canonical']") ||
-      this.doc.createElement('link');
-    link.setAttribute('rel', 'canonical');
-    link.setAttribute('href', canonicalUrl);
+    const canonicalUrl = rawUrl.split('#')[0].split('?')[0];
 
-    if (!link.parentNode) {
+    let link = this.doc.querySelector<HTMLLinkElement>("link[rel='canonical']");
+
+    if (!link) {
+      link = this.doc.createElement('link');
+      link.setAttribute('rel', 'canonical');
       this.doc.head.appendChild(link);
     }
+
+    link.setAttribute('href', canonicalUrl);
   }
 }
