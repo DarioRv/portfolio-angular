@@ -1,5 +1,12 @@
-import { NgClass } from '@angular/common';
-import { Component, input, OnDestroy, OnInit } from '@angular/core';
+import { isPlatformBrowser, NgClass } from '@angular/common';
+import {
+  Component,
+  inject,
+  input,
+  OnDestroy,
+  OnInit,
+  PLATFORM_ID,
+} from '@angular/core';
 import { ImagePipe } from '@pipes/image.pipe';
 import { imageFade } from 'app/portfolio/shared/utils/animations';
 
@@ -22,10 +29,13 @@ export class ImageGaleryComponent implements OnInit, OnDestroy {
   private tickMs = 50; // suavidad de la barra
   private timerId: number | null = null;
   private progressId: number | null = null;
+  private readonly platform = inject(PLATFORM_ID);
 
   ngOnInit(): void {
     this.selectedImage = this.images()[0];
-    this.startAutoplay();
+    if (isPlatformBrowser(this.platform)) {
+      this.startAutoplay();
+    }
   }
 
   ngOnDestroy() {
