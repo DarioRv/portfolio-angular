@@ -10,10 +10,6 @@ import { IconsModule } from 'app/icons/icons.module';
   standalone: true,
   imports: [RouterLink, TechChipComponent, IconsModule, ImageGaleryComponent],
   templateUrl: './project-card.component.html',
-  styles: ``,
-  host: {
-    class: 'mb-10 md:mb-0',
-  },
 })
 export class ProjectCardComponent {
   public project = input.required<Project>();
