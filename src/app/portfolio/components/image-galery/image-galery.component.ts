@@ -70,15 +70,26 @@ export class ImageGaleryComponent implements OnInit, OnDestroy {
       this.progress = Math.min(100, this.progress + step);
     }, this.tickMs);
 
-    // cambio de imagen
-    this.timerId = window.setInterval(() => {
+    // calcular tiempo restante basado en el progreso actual
+    const remainingTime = keepProgress
+      ? Math.max(0, ((100 - this.progress) / 100) * this.intervalMs)
+      : this.intervalMs;
+
+    // primer cambio de imagen (tiempo restante)
+    this.timerId = window.setTimeout(() => {
       this.nextImage();
       this.progress = 0;
-    }, this.intervalMs);
+      // continuar con intervalo normal
+      this.timerId = window.setInterval(() => {
+        this.nextImage();
+        this.progress = 0;
+      }, this.intervalMs);
+    }, remainingTime);
   }
 
   private stopAutoplay(resetProgress = true) {
     if (this.timerId) {
+      clearTimeout(this.timerId);
       clearInterval(this.timerId);
       this.timerId = null;
     }
