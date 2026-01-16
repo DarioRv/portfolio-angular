@@ -1,0 +1,55 @@
+<div
+  class="fixed inset-0 z-[9999] bg-black/90 flex items-center justify-center p-4 md:p-8 isolate"
+  (click)="close()"
+>
+  <!-- Backdrop para bloquear interacción -->
+  <div class="fixed inset-0 -z-10" aria-hidden="true"></div>
+
+  <button
+    class="absolute top-4 right-4 w-10 h-10 flex items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 transition z-10"
+    (click)="close()"
+  >
+    <i-lucide name="x"></i-lucide>
+  </button>
+
+  <div
+    class="relative w-full max-w-[1400px] aspect-[16/10] bg-black/40 border border-white/10 rounded-xl overflow-hidden group"
+    (click)="$event.stopPropagation()"
+  >
+    <img
+      [src]="currentImage | image"
+      class="absolute inset-0 w-full h-full object-cover"
+    />
+
+    @if (images().length > 1) {
+      <button
+        (click)="prev()"
+        class="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center rounded-full bg-black/50 text-white/80 hover:bg-black/70 hover:text-white transition opacity-0 group-hover:opacity-100"
+      >
+        <i-lucide name="chevron-left"></i-lucide>
+      </button>
+
+      <button
+        (click)="next()"
+        class="absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center rounded-full bg-black/50 text-white/80 hover:bg-black/70 hover:text-white transition opacity-0 group-hover:opacity-100"
+      >
+        <i-lucide name="chevron-right"></i-lucide>
+      </button>
+
+      <!-- Dots indicadores -->
+      <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+        @for (image of images(); track $index) {
+          <button
+            (click)="goTo($index)"
+            class="w-2.5 h-2.5 rounded-full transition-all"
+            [class]="
+              currentIndex === $index
+                ? 'bg-white scale-110'
+                : 'bg-white/40 hover:bg-white/60'
+            "
+          ></button>
+        }
+      </div>
+    }
+  </div>
+</div>

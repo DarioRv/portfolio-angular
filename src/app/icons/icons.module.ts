@@ -3,9 +3,11 @@ import {
   CalendarDays,
   Check,
   ChevronDown,
+  ChevronLeft,
   ChevronRight,
   ChevronUp,
   Copy,
+  Expand,
   ExternalLink,
   FileText,
   Github,
@@ -15,6 +17,7 @@ import {
   Mail,
   MapPin,
   University,
+  X,
 } from 'lucide-angular';
 
 @NgModule({
@@ -28,6 +31,7 @@ import {
       Check,
       FileText,
       ChevronRight,
+      ChevronLeft,
       Link,
       CalendarDays,
       University,
@@ -35,6 +39,8 @@ import {
       MapPin,
       ChevronDown,
       ChevronUp,
+      Expand,
+      X,
     }),
   ],
   exports: [LucideAngularModule],

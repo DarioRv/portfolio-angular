@@ -6,14 +6,17 @@ import {
   OnDestroy,
   OnInit,
   PLATFORM_ID,
+  signal,
 } from '@angular/core';
 import { ImagePipe } from '@pipes/image.pipe';
 import { imageFade } from 'app/portfolio/shared/utils/animations';
+import { ImageGaleryFullScreenComponent } from '../image-galery-full-screen/image-galery-full-screen.component';
+import { IconsModule } from 'app/icons/icons.module';
 
 @Component({
   selector: 'dv-image-galery',
   standalone: true,
-  imports: [ImagePipe, NgClass],
+  imports: [ImagePipe, NgClass, ImageGaleryFullScreenComponent, IconsModule],
   templateUrl: './image-galery.component.html',
   styleUrl: './image-galery.component.css',
   animations: [imageFade],
@@ -21,8 +24,20 @@ import { imageFade } from 'app/portfolio/shared/utils/animations';
 export class ImageGaleryComponent implements OnInit, OnDestroy {
   public images = input.required<string[]>();
   public design = input<'default' | 'simple'>('default');
+  public allowFullScreen = input(true);
   public selectedImage: string = '';
   public progress = 0;
+  public isFullScreen = signal(false);
+
+  public openFullScreen(): void {
+    this.pause();
+    this.isFullScreen.set(true);
+  }
+
+  public closeFullScreen(): void {
+    this.isFullScreen.set(false);
+    this.resume();
+  }
 
   private autoplay = true;
   private intervalMs = 10000;
