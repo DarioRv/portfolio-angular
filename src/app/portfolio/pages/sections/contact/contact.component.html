@@ -25,6 +25,7 @@
         class="flex items-center gap-1 rounded-xl py-2 px-4 bg-primary-500 mt-8 w-fit"
         [href]="networks[2].url"
         target="_blank"
+        (click)="trackClick('gmail')"
       >
         Enviar correo
         <mat-icon>chevron_right</mat-icon>
@@ -47,6 +48,7 @@
         class="flex items-center gap-1 rounded-xl py-2 px-4 bg-[#fff] text-black mt-8 w-fit"
         [href]="networks[1].url"
         target="_blank"
+        (click)="trackClick('github')"
       >
         Ver perfil de GitHub
         <mat-icon>chevron_right</mat-icon>
@@ -69,6 +71,7 @@
         class="flex items-center gap-1 rounded-xl py-2 px-4 bg-[#0066c8] mt-8 w-fit"
         [href]="networks[0].url"
         target="_blank"
+        (click)="trackClick('linkedin')"
       >
         Visitar perfil
         <mat-icon>chevron_right</mat-icon>

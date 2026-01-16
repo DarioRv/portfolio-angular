@@ -6,8 +6,8 @@ import cv from '@data/cv.json';
 import { SeoService } from '@services/seo.service';
 import { IconsModule } from 'app/icons/icons.module';
 import { ImageGaleryComponent } from '@components/image-galery/image-galery.component';
-import { MatCommonModule } from '@angular/material/core';
 import { TechChipComponent } from '@components/tech-chip/tech-chip.component';
+import { AnalyticsService } from '@services/analytics.service';
 
 @Component({
   selector: 'project',
@@ -18,6 +18,7 @@ import { TechChipComponent } from '@components/tech-chip/tech-chip.component';
 export class ProjectComponent implements OnInit {
   private readonly route = inject(ActivatedRoute);
   private readonly seoService = inject(SeoService);
+  private readonly analitycsService = inject(AnalyticsService);
 
   ngOnInit(): void {
     if (this.project) {
@@ -30,4 +31,11 @@ export class ProjectComponent implements OnInit {
   public project: Project | undefined = cv.projects.find(
     (project) => project.key === this.route.snapshot.params['key'],
   );
+
+  public trackOutboundLink(linkType: string): void {
+    this.analitycsService.event('outbound_link_click', {
+      link_type: linkType,
+      project_name: this.project?.title,
+    });
+  }
 }

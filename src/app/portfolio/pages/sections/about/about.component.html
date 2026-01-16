@@ -31,6 +31,7 @@
                 [href]="item.url"
                 target="_blank"
                 rel="noopener noreferrer"
+                (click)="trackSocialClick(item.name)"
               >
                 <i-lucide [name]="item.icon" [size]="16"></i-lucide>
                 <span class="text-white/90 text-sm">{{ item.name }}</span>

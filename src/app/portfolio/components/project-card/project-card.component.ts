@@ -1,8 +1,9 @@
-import { Component, input } from '@angular/core';
+import { Component, inject, input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { ImageGaleryComponent } from '@components/image-galery/image-galery.component';
 import { TechChipComponent } from '@components/tech-chip/tech-chip.component';
 import { Project } from '@interfaces/project.interface';
+import { AnalyticsService } from '@services/analytics.service';
 import { IconsModule } from 'app/icons/icons.module';
 
 @Component({
@@ -13,4 +14,15 @@ import { IconsModule } from 'app/icons/icons.module';
 })
 export class ProjectCardComponent {
   public project = input.required<Project>();
+  private readonly analyticsService = inject(AnalyticsService);
+
+  public trackProjectCardInteraction(
+    projectName: string,
+    action: string,
+  ): void {
+    this.analyticsService.event('project_card_interaction', {
+      project_name: projectName,
+      action: action,
+    });
+  }
 }

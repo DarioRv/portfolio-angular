@@ -38,6 +38,7 @@
             [href]="project().demo"
             target="_blank"
             rel="noopener"
+            (click)="trackProjectCardInteraction(project().title, 'view_demo')"
           >
             Ver demo
             <i-lucide name="external-link" size="14"></i-lucide>
@@ -49,6 +50,9 @@
             [href]="project().github"
             target="_blank"
             rel="noopener noreferrer"
+            (click)="
+              trackProjectCardInteraction(project().title, 'view_repository')
+            "
           >
             Repositorio
             <i-lucide name="external-link" size="14"></i-lucide>
@@ -57,6 +61,7 @@
         <a
           class="flex gap-2 items-center px-4 py-2 rounded-xl border border-red-500/20 bg-red-500/10 hover:bg-red-500/15 transition text-sm text-red-200"
           [routerLink]="['/projects', project().key]"
+          (click)="trackProjectCardInteraction(project().title, 'view_details')"
         >
           Ver detalle
           <i-lucide name="chevron-right" size="14"></i-lucide>
