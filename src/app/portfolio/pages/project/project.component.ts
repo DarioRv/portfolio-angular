@@ -8,11 +8,18 @@ import { IconsModule } from 'app/icons/icons.module';
 import { ImageGaleryComponent } from '@components/image-galery/image-galery.component';
 import { TechChipComponent } from '@components/tech-chip/tech-chip.component';
 import { AnalyticsService } from '@services/analytics.service';
+import { TrackSectionVisibilityDirective } from '@directives/track-section-visibility.service';
 
 @Component({
   selector: 'project',
   standalone: true,
-  imports: [IconsModule, ImageGaleryComponent, RouterLink, TechChipComponent],
+  imports: [
+    IconsModule,
+    ImageGaleryComponent,
+    RouterLink,
+    TechChipComponent,
+    TrackSectionVisibilityDirective,
+  ],
   templateUrl: './project.component.html',
 })
 export class ProjectComponent implements OnInit {

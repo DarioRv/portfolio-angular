@@ -6,6 +6,7 @@ import { IconsModule } from 'app/icons/icons.module';
 import cv from '@data/cv.json';
 import { IconPipe } from '@pipes/icon.pipe';
 import { AnalyticsService } from '@services/analytics.service';
+import { TrackSectionVisibilityDirective } from '@directives/track-section-visibility.service';
 
 @Component({
   selector: 'dv-about',
@@ -16,6 +17,7 @@ import { AnalyticsService } from '@services/analytics.service';
     DownloadCvButtonComponent,
     IconsModule,
     IconPipe,
+    TrackSectionVisibilityDirective,
   ],
   templateUrl: './about.component.html',
   styleUrl: './about.component.css',

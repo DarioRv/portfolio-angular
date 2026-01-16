@@ -27,6 +27,7 @@
       "@pages/*": ["app/portfolio/pages/*"],
       "@interfaces/*": ["app/portfolio/interfaces/*"],
       "@pipes/*": ["app/portfolio/pipes/*"],
+      "@directives/*": ["app/portfolio/directives/*"],
       "@data/*": ["app/portfolio/data/*"]
     },
     "resolveJsonModule": true

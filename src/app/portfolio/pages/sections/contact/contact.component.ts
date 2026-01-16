@@ -1,13 +1,14 @@
 import { Component, inject } from '@angular/core';
 import { MatIcon } from '@angular/material/icon';
 import cv from '@data/cv.json';
+import { TrackSectionVisibilityDirective } from '@directives/track-section-visibility.service';
 import { IconPipe } from '@pipes/icon.pipe';
 import { AnalyticsService } from '@services/analytics.service';
 
 @Component({
   selector: 'dv-contact',
   standalone: true,
-  imports: [IconPipe, MatIcon],
+  imports: [IconPipe, MatIcon, TrackSectionVisibilityDirective],
   templateUrl: './contact.component.html',
   styles: ``,
 })

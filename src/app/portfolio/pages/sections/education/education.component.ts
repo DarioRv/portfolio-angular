@@ -6,11 +6,17 @@ import { CertificationCardComponent } from '@components/certification-card/certi
 import { Certification } from '@interfaces/certification.interface';
 import { IconsModule } from 'app/icons/icons.module';
 import { expandListAnim } from 'app/portfolio/shared/utils/animations';
+import { TrackSectionVisibilityDirective } from '@directives/track-section-visibility.service';
 
 @Component({
   selector: 'dv-education',
   standalone: true,
-  imports: [EducationCardComponent, CertificationCardComponent, IconsModule],
+  imports: [
+    EducationCardComponent,
+    CertificationCardComponent,
+    IconsModule,
+    TrackSectionVisibilityDirective,
+  ],
   templateUrl: './education.component.html',
   animations: [expandListAnim],
 })
