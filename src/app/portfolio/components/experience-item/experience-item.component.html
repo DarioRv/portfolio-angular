@@ -16,12 +16,16 @@
           {{ experience().title }}
         </h3>
         <div class="flex flex-col gap-1 mt-2">
-          <span class="text-sm text-white/70 flex gap-1 items-center">
-            <lucide-icon name="building" size="16"></lucide-icon>
+          <span
+            class="text-base font-semibold text-white/70 flex gap-1 items-center"
+          >
+            <lucide-icon name="building" size="18"></lucide-icon>
             {{ experience().company }}
           </span>
-          <span class="text-sm text-white/70 flex gap-1 items-center">
-            <lucide-icon name="calendar-days" size="16"></lucide-icon>
+          <span
+            class="text-base font-semibold text-white/70 flex gap-1 items-center"
+          >
+            <lucide-icon name="calendar-days" size="18"></lucide-icon>
             {{ experience().period }}
           </span>
         </div>
@@ -29,10 +33,10 @@
     </div>
 
     <div class="pb-6">
-      <div class="text-sm tracking-wider uppercase font-medium text-white">
+      <div class="text-base tracking-wider uppercase font-medium text-white">
         Responsabilidades
       </div>
-      <ul class="mt-3 space-y-2 text-sm text-white/70 list-disc list-inside">
+      <ul class="mt-3 space-y-2 text-base text-white/70 list-disc list-inside">
         @for (item of experience().achievements; track $index) {
           <li>{{ item }}</li>
         }
@@ -40,7 +44,7 @@
     </div>
 
     <div class="pb-6">
-      <div class="text-sm tracking-wider uppercase font-medium text-white">
+      <div class="text-base tracking-wider uppercase font-medium text-white">
         Tecnologías Utilizadas
       </div>
       <div class="flex flex-wrap gap-2 mt-3">
