@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import {
+  Building,
   CalendarDays,
   Check,
   ChevronDown,
@@ -41,6 +42,7 @@ import {
       ChevronUp,
       Expand,
       X,
+      Building
     }),
   ],
   exports: [LucideAngularModule],

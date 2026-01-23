@@ -1,33 +1,53 @@
-<article class="grid grid-cols-1 md:grid-cols-[120px_1fr] gap-6">
-  <div class="text-sm text-white/50">
-    {{ experience().period.split(" - ")[0] }}<br />
-    <span class="text-white/30">{{ experience().period.split(" - ")[1] }}</span>
-  </div>
-
-  <div>
-    <div
-      class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1"
+<article class="h-full flex flex-row gap-4 rounded-lg">
+  <div class="flex flex-col items-center relative px-4">
+    <span
+      class="size-5 rounded-full bg-primary-500/30 absolute top-5 flex items-center justify-center"
     >
-      <h3 class="text-lg font-medium">{{ experience().title }}</h3>
-      <span class="text-sm text-white/50"> {{ experience().location }} </span>
+      <span class="block size-3 rounded-full bg-primary-500 relative"></span>
+    </span>
+    <span class="block w-[2px] h-full bg-[#333]"></span>
+  </div>
+  <div class="rounded-2xl border border-white/10 p-5 w-full">
+    <div
+      class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 pb-6"
+    >
+      <div>
+        <h3 class="mt-2 text-lg md:text-xl font-semibold text-primary-500">
+          {{ experience().title }}
+        </h3>
+        <div class="flex flex-col gap-1 mt-2">
+          <span class="text-sm text-white/70 flex gap-1 items-center">
+            <lucide-icon name="building" size="16"></lucide-icon>
+            {{ experience().company }}
+          </span>
+          <span class="text-sm text-white/70 flex gap-1 items-center">
+            <lucide-icon name="calendar-days" size="16"></lucide-icon>
+            {{ experience().period }}
+          </span>
+        </div>
+      </div>
     </div>
 
-    <div class="text-sm text-white/60 mt-1">{{ experience().company }}</div>
+    <div class="pb-6">
+      <div class="text-sm tracking-wider uppercase font-medium text-white">
+        Responsabilidades
+      </div>
+      <ul class="mt-3 space-y-2 text-sm text-white/70 list-disc list-inside">
+        @for (item of experience().achievements; track $index) {
+          <li>{{ item }}</li>
+        }
+      </ul>
+    </div>
 
-    <p class="mt-4 text-sm leading-relaxed text-white/70 max-w-prose">
-      {{ experience().description }}
-    </p>
-
-    <ul class="mt-4 space-y-1 text-sm text-white/65">
-      @for (item of experience().achievements; track $index) {
-        <li>- {{ item }}</li>
-      }
-    </ul>
-
-    <div class="mt-4 flex flex-wrap gap-4">
-      @for (item of experience().technologies; track $index) {
-        <tech-chip [tech]="item"></tech-chip>
-      }
+    <div class="pb-6">
+      <div class="text-sm tracking-wider uppercase font-medium text-white">
+        Tecnologías Utilizadas
+      </div>
+      <div class="flex flex-wrap gap-2 mt-3">
+        @for (item of experience().technologies; track $index) {
+          <tech-chip [tech]="item" design="badge"></tech-chip>
+        }
+      </div>
     </div>
   </div>
 </article>

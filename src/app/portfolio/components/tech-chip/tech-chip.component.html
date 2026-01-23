@@ -19,4 +19,18 @@
       >{{ tech().label }}</span
     >
   }
+  @case ("badge") {
+    <div
+      class="flex flex-col items-center gap-2 px-3 py-1 text-sm text-white/70"
+      [ngClass]="styleClass"
+    >
+      <img
+        class="h-6 aspect-auto"
+        [src]="tech().icon | icon"
+        [alt]="tech().label"
+        height="24"
+      />
+      <span class="text-nowrap">{{ tech().label }}</span>
+    </div>
+  }
 }
