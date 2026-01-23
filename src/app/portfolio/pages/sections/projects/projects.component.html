@@ -3,47 +3,15 @@
   id="projects"
   trackSection="projects"
 >
-  <div
-    class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10"
+  <h2
+    class="text-2xl md:text-4xl font-bold text-white/90 text-center md:text-left mb-10 border-b border-white/10 pb-3"
   >
-    <div>
-      <h2 class="text-3xl md:text-5xl font-semibold tracking-tight">
-        Proyectos
-      </h2>
-      <p class="mt-3 text-sm md:text-base text-white/60 max-w-prose">
-        Algunos proyectos seleccionados. Cada uno incluye demo, repositorio y un
-        detalle con capturas.
-      </p>
-    </div>
-
-    <!-- Actions / Filters mock -->
-    <!-- <div class="flex flex-wrap gap-2">
-      <button
-        class="px-3 py-2 rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 transition text-sm"
-        (click)="filterByTech('all')"
-      >
-        Todos
-      </button>
-      <button
-        class="px-3 py-2 rounded-xl border border-white/10 bg-white/[0.02] hover:bg-white/10 transition text-sm text-white/70"
-        (click)="filterByTech('angular')"
-      >
-        Angular
-      </button>
-      <button
-        class="px-3 py-2 rounded-xl border border-white/10 bg-white/[0.02] hover:bg-white/10 transition text-sm text-white/70"
-        (click)="filterByTech('spring')"
-      >
-        Spring
-      </button>
-      <button
-        class="px-3 py-2 rounded-xl border border-white/10 bg-white/[0.02] hover:bg-white/10 transition text-sm text-white/70"
-        (click)="filterByTech('nestjs')"
-      >
-        NestJS
-      </button>
-    </div> -->
-  </div>
+    Proyectos
+  </h2>
+  <p class="mt-3 text-base md:text-lg text-white/70 max-w-prose mb-5">
+    Aquí encontrarás una selección de mis proyectos más destacados, donde aplico
+    mis habilidades y conocimientos en desarrollo web.
+  </p>
 
   <div class="flex flex-col gap-5 md:gap-10">
     @for (project of projects; track $index) {
