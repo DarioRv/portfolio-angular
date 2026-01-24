@@ -390,6 +390,51 @@
           "color": "rgb(0, 134, 232)",
           "backgroundColor": "rgba(0, 134, 232, 0.1)"
         }
+      ],
+      "overview": {
+        "context": "Se deseaba lograr una alta disponibilidad y rendimiento en una base de datos PostgreSQL para una aplicación web que requiere manejar un gran volumen de solicitudes concurrentes. El objetivo era implementar un cluster de bases de datos que permitiera distribuir la carga entre múltiples nodos y garantizar la continuidad del servicio en caso de fallos.",
+        "problem": [
+          "Alta disponibilidad: Garantizar que la base de datos esté siempre disponible, incluso en caso de fallos de nodos individuales.",
+          "Balanceo de carga: Distribuir las solicitudes de los clientes entre múltiples nodos para mejorar el rendimiento y evitar cuellos de botella.",
+          "Monitoreo del rendimiento: Implementar un sistema de monitoreo que permita supervisar el estado del cluster y detectar posibles problemas."
+        ],
+        "solution": "Implementé un cluster de bases de datos PostgreSQL utilizando Docker para crear contenedores que alojaran los nodos del cluster. Configuré HAProxy como balanceador de carga para distribuir las solicitudes entre los nodos disponibles. Además, integré Grafana y Prometheus para monitorear el rendimiento del cluster, permitiendo visualizar métricas clave y detectar posibles problemas de manera proactiva.",
+        "results": "El cluster implementado logró mejorar la disponibilidad y el rendimiento de la base de datos, permitiendo manejar un mayor volumen de solicitudes de manera eficiente. El sistema de monitoreo facilitó la identificación y resolución de problemas, contribuyendo a mantener la estabilidad del cluster a lo largo del tiempo."
+      },
+      "architecture": {
+        "description": "La arquitectura del cluster de bases de datos PostgreSQL se basa en una configuración maestro-esclavo, donde un nodo actúa como maestro y los demás como esclavos. HAProxy se encarga de distribuir las solicitudes entrantes entre los nodos disponibles, mientras que Grafana y Prometheus recopilan y visualizan métricas de rendimiento en tiempo real.",
+        "stack": [
+          {
+            "title": "Base de datos",
+            "description": "PostgreSQL"
+          },
+          {
+            "title": "Balanceo de carga",
+            "description": "HAProxy"
+          },
+          {
+            "title": "Monitoreo",
+            "description": "Grafana + Prometheus"
+          },
+          {
+            "title": "Contenedores",
+            "description": "Docker"
+          }
+        ]
+      },
+      "stats": [
+        {
+          "label": "Disponibilidad",
+          "value": "99.9%"
+        },
+        {
+          "label": "Rendimiento",
+          "value": "+50%"
+        },
+        {
+          "label": "Escalabilidad",
+          "value": "Alta"
+        }
       ]
     }
   ],
