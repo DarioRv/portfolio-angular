@@ -1,6 +1,6 @@
 <nav class="group">
   <ul
-    class="flex flex-row gap-5 md:gap-3 p-1 md:p-4 rounded-xl backdrop-blur-2xl w-full bg-black/20"
+    class="flex flex-row gap-5 justify-center md:gap-3 p-2 md:p-4 rounded-t-xl md:rounded-xl backdrop-blur-2xl w-full bg-black/20"
   >
     @for (item of menuItems; track $index) {
       <li>
@@ -19,7 +19,7 @@
           queryParamsHandling="preserve"
         >
           <div class="p-2 rounded-full bg-white/10">
-            <lucide-icon [name]="item.icon" size="20"></lucide-icon>
+            <lucide-icon [name]="item.icon" size="24"></lucide-icon>
           </div>
         </a>
       </li>

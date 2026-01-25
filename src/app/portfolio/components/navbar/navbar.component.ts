@@ -10,7 +10,8 @@ import { IconsModule } from 'app/icons/icons.module';
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css',
   host: {
-    class: 'fixed bottom-5 md:top-5 -translate-x-1/2 left-1/2 z-10',
+    class:
+      'fixed bottom-0 md:top-5 md:-translate-x-1/2 md:left-1/2 z-10 w-full md:w-fit',
   },
 })
 export class NavbarComponent {
