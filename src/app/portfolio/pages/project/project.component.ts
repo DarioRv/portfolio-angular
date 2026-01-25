@@ -19,6 +19,7 @@ import { TrackSectionVisibilityDirective } from '@directives/track-section-visib
     RouterLink,
     TechChipComponent,
     TrackSectionVisibilityDirective,
+    IconsModule,
   ],
   templateUrl: './project.component.html',
 })
