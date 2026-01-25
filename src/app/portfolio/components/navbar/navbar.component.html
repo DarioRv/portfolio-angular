@@ -1,34 +1,27 @@
 <nav class="group">
-  <button
-    class="md:hidden w-12 h-10 flex flex-col justify-between mb-2 bg-primary-500/90 rounded p-2"
-    (click)="toggleMenu()"
-  >
-    <div
-      class="bg-white h-[2px] w-full rounded transition-transform duration-500 origin-left"
-      [ngClass]="{ 'rotate-45': visible }"
-    ></div>
-    <div
-      class="bg-white h-[2px] w-full rounded transition-opacity duration-500"
-      [ngClass]="{ 'opacity-0': visible }"
-    ></div>
-    <div
-      class="bg-white h-[2px] w-full rounded transition-transform duration-500 origin-left"
-      [ngClass]="{ '-rotate-45': visible }"
-    ></div>
-  </button>
   <ul
-    class="hidden md:flex flex-col md:flex-row gap-3 p-4 rounded-xl backdrop-blur-2xl w-full"
-    [ngClass]="{ hidden: !visible }"
+    class="flex flex-row gap-5 md:gap-3 p-1 md:p-4 rounded-xl backdrop-blur-2xl w-full bg-black/20"
   >
     @for (item of menuItems; track $index) {
-      <li class="mb-3 md:mb-0">
+      <li>
         <a
-          class="py-2 px-4 rounded-xl hover:text-white transition-colors"
+          class="hidden md:inline py-2 px-4 rounded-xl hover:text-white transition-colors"
           [routerLink]="item.routerLink"
           [fragment]="item.fragment"
           queryParamsHandling="preserve"
           >{{ item.label }}</a
         >
+        <a
+          class="md:hidden"
+          [routerLink]="item.routerLink"
+          routerLinkActive="text-primary-500"
+          [fragment]="item.fragment"
+          queryParamsHandling="preserve"
+        >
+          <div class="p-2 rounded-full bg-white/10">
+            <lucide-icon [name]="item.icon" size="20"></lucide-icon>
+          </div>
+        </a>
       </li>
     }
   </ul>

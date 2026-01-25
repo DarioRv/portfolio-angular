@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import {
+  BriefcaseBusiness,
   Building,
   CalendarDays,
   Check,
@@ -12,12 +13,16 @@ import {
   ExternalLink,
   FileText,
   Github,
+  GraduationCap,
   Link,
   Linkedin,
   LucideAngularModule,
   Mail,
   MapPin,
+  PencilRuler,
+  Phone,
   University,
+  User,
   X,
 } from 'lucide-angular';
 
@@ -42,7 +47,12 @@ import {
       ChevronUp,
       Expand,
       X,
-      Building
+      Building,
+      User,
+      BriefcaseBusiness,
+      PencilRuler,
+      GraduationCap,
+      Phone,
     }),
   ],
   exports: [LucideAngularModule],
