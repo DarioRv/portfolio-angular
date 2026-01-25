@@ -190,6 +190,7 @@
     {
       "title": "ASIST.IO",
       "key": "asistio",
+      "tags": ["Web App", "Full Stack"],
       "summary": "Sistema de gestión de cursos y control de asistencias a clases.",
       "description": [
         "Aplicación web para controlar asistencia de alumnos, administrar cursos y gestionar asistencias/ausencias desde un panel centralizado."
@@ -311,6 +312,7 @@
     {
       "title": "Kepler Dynamics",
       "key": "kepler-dynamics",
+      "tags": ["Website"],
       "summary": "Sitio web sobre una empresa que ofrece servicios de desarrollo de software a medida.",
       "description": [
         "Sitio web de la empresa Kepler Dynamics, dedicada al desarrollo de software a medida. El sitio cuenta con información sobre la empresa, los servicios que ofrece, formulario de contacto e internacionalización en inglés y español."
@@ -348,6 +350,7 @@
     {
       "title": "PostgreSQL Cluster",
       "key": "postgresql-cluster",
+      "tags": ["DevOps", "Database"],
       "summary": "Monitoreo y balanceo de carga en un cluster de bases de datos PostgreSQL.",
       "description": [
         "Un cluster de bases de datos permite mejorar la disponibilidad y escalabilidad de las aplicaciones que utilizan esta tecnología, garantizando un alto rendimiento y una mayor tolerancia a fallos.",

@@ -8,10 +8,11 @@ export interface Project {
   technologies: Technology[];
   github?: string;
   demo?: string;
-  overview?: OverviewDetails;
+  overview?: Partial<OverviewDetails>;
   features?: Feature[];
   architecture?: Architecture;
   stats?: Stats[];
+  tags?: string[];
 }
 
 export interface Technology {
