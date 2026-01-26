@@ -1,6 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { AnalyticsService } from '@services/analytics.service';
 import { IconsModule } from 'app/icons/icons.module';
+import cv from '@data/cv.json';
 
 @Component({
   selector: 'download-cv-button',
@@ -10,7 +11,7 @@ import { IconsModule } from 'app/icons/icons.module';
   styles: ``,
 })
 export class DownloadCvButtonComponent {
-  url = 'https://drive.google.com/file/d/1SOMJ1ox0gFQpol8NoVcAH-g_qXHRZ98m';
+  url = cv.cvFileUrl;
   private readonly analyticsService = inject(AnalyticsService);
 
   onDownloadClick() {
