@@ -1,0 +1,78 @@
+{
+  "nav": {
+    "about": "About me",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "education": "Education",
+    "contact": "Contact"
+  },
+  "about": {
+    "copyEmail": "Copy email"
+  },
+  "skills": {
+    "title": "Skills",
+    "languages": "Languages",
+    "frameworks": "Frameworks",
+    "databases": "Databases",
+    "others": "Others"
+  },
+  "experience": {
+    "title": "Experience",
+    "yearsOfExperience": "year of experience",
+    "yearsOfExperiencePlural": "years of experience",
+    "responsibilities": "Responsibilities",
+    "technologiesUsed": "Technologies Used",
+    "remote": "Remote",
+    "fullTime": "Full time",
+    "partTime": "Part time",
+    "current": "present"
+  },
+  "projects": {
+    "title": "Projects",
+    "description": "Here you will find a selection of my most outstanding projects, where I apply my skills and knowledge in web development.",
+    "viewDemo": "View demo",
+    "repository": "Repository",
+    "viewDetails": "View details",
+    "viewAllProjects": "View all projects",
+    "breadcrumb": "Projects",
+    "overview": "Overview",
+    "context": "Context",
+    "problem": "Problem",
+    "solution": "Solution",
+    "result": "Result",
+    "mainFeatures": "Main features",
+    "architecture": "Architecture",
+    "viewRepository": "View repository",
+    "interestedInSimilar": "Interested in a similar project?",
+    "contactMe": "Contact me",
+    "backToProjects": "Back to projects"
+  },
+  "education": {
+    "title": "Education",
+    "description": "Here you will find my academic background. My studies and certifications.",
+    "certifications": "Certifications",
+    "viewAllCertifications": "View all my certifications",
+    "viewLess": "View less",
+    "issuedBy": "Issued by",
+    "viewCertificate": "View certificate"
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Do you want us to work together? Tell me what you need and I'll respond within 24-48 hours. • UTC-3 (Argentina)",
+    "sendEmail": "Send me an email",
+    "emailDescription": "You can send me an email to my email address. Write to me for any questions or work proposals and we can schedule a meeting.",
+    "sendEmailButton": "Send email",
+    "visitGithub": "Visit my GitHub profile",
+    "githubDescription": "Discover my projects and collaborations on GitHub.",
+    "viewGithubProfile": "View GitHub profile",
+    "connectLinkedin": "Connect with me on LinkedIn",
+    "linkedinDescription": "Visit my LinkedIn profile and connect with me to stay updated on my posts and projects.",
+    "visitProfile": "Visit profile"
+  },
+  "common": {
+    "downloadCv": "Download CV",
+    "copied": "Copied!",
+    "loading": "Loading..."
+  }
+}

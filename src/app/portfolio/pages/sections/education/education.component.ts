@@ -1,12 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, inject, computed, signal } from '@angular/core';
 import { EducationCardComponent } from '../../../components/education-card/education-card.component';
-import cv from '@data/cv.json';
-import { Education } from '@interfaces/education.interface';
 import { CertificationCardComponent } from '@components/certification-card/certification-card.component';
-import { Certification } from '@interfaces/certification.interface';
 import { IconsModule } from 'app/icons/icons.module';
 import { expandListAnim } from 'app/portfolio/shared/utils/animations';
 import { TrackSectionVisibilityDirective } from '@directives/track-section-visibility.service';
+import { TranslatePipe } from '@ngx-translate/core';
+import { CvService } from '@services/cv.service';
 
 @Component({
   selector: 'dv-education',
@@ -16,29 +15,32 @@ import { TrackSectionVisibilityDirective } from '@directives/track-section-visib
     CertificationCardComponent,
     IconsModule,
     TrackSectionVisibilityDirective,
+    TranslatePipe,
   ],
   templateUrl: './education.component.html',
   animations: [expandListAnim],
 })
 export class EducationComponent {
-  public education: Education[] = cv.education;
-  public certifications: Certification[] = cv.certifications;
+  private readonly cvService = inject(CvService);
 
-  visibleCount = 2;
+  readonly education = this.cvService.education;
+  readonly certifications = this.cvService.certifications;
 
-  get visibleCertifications() {
-    return this.certifications.slice(0, this.visibleCount);
-  }
+  private visibleCount = signal(2);
+
+  readonly visibleCertifications = computed(() =>
+    this.certifications().slice(0, this.visibleCount()),
+  );
+
+  readonly hasMore = computed(
+    () => this.visibleCount() < this.certifications().length,
+  );
 
   showMore() {
-    this.visibleCount = this.certifications.length;
+    this.visibleCount.set(this.certifications().length);
   }
 
   showLess() {
-    this.visibleCount = 2;
-  }
-
-  get hasMore() {
-    return this.visibleCount < this.certifications.length;
+    this.visibleCount.set(2);
   }
 }

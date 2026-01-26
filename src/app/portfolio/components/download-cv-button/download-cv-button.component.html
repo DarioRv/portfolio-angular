@@ -2,7 +2,7 @@
   class="flex gap-2 items-center text-black bg-white shadow-lg shadow-white/20 rounded-xl backdrop-blur-md p-2 px-4 hover:scale-105 transition-transform"
 >
   <i-lucide name="file-text" size="16"></i-lucide>
-  <a class="text-sm" [href]="url" target="_blank" (click)="onDownloadClick()">
-    Descargar CV
+  <a class="text-sm" [href]="url()" target="_blank" (click)="onDownloadClick()">
+    {{ "common.downloadCv" | translate }}
   </a>
 </div>

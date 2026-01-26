@@ -1,0 +1,508 @@
+{
+  "name": "Dario Vidal",
+  "summary": "Full Stack Web Developer",
+  "about": [
+    "I am a full stack web developer with experience in building web applications. I specialize in developing web applications with Angular and Spring Boot, using best practices to ensure optimal performance and exceptional quality.",
+    "I enjoy working in teams and facing new challenges, always seeking to offer the best solution to the problems that arise. My goal is to add value to the projects I participate in and grow professionally in the world of software development."
+  ],
+  "email": "dariorvidal.27@gmail.com",
+  "cvFileUrl": "https://drive.google.com/file/d/13fIAVrKHCUyc-ov7sKnA5BLUbl9WsIJt/view?usp=drive_link",
+  "socialNetworks": [
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/dariovidal9",
+      "icon": "linkedin"
+    },
+    {
+      "name": "GitHub",
+      "url": "https://github.com/DarioRv",
+      "icon": "github"
+    },
+    {
+      "name": "Gmail",
+      "url": "mailto:dariorvidal.27@gmail.com",
+      "icon": "mail"
+    }
+  ],
+  "skills": {
+    "languages": [
+      {
+        "label": "HTML",
+        "icon": "html5",
+        "color": "rgba(255, 99, 71)"
+      },
+      {
+        "label": "CSS",
+        "icon": "css",
+        "color": "rgba(0, 191, 255)"
+      },
+      {
+        "label": "Javascript",
+        "icon": "javascript",
+        "color": "rgba(255, 215, 0)"
+      },
+      {
+        "label": "Typescript",
+        "icon": "typescript",
+        "color": "rgba(33, 107, 255)"
+      },
+      {
+        "label": "Java",
+        "icon": "java",
+        "color": "rgba(222, 135, 0)"
+      }
+    ],
+    "frameworks": [
+      {
+        "label": "Angular",
+        "icon": "angular",
+        "color": "rgba(221, 0, 49)"
+      },
+      {
+        "label": "Spring",
+        "icon": "spring",
+        "color": "rgba(109, 179, 63)"
+      },
+      {
+        "label": "NestJS",
+        "icon": "nestjs",
+        "color": "rgba(221, 0, 49)"
+      },
+      {
+        "label": "Express",
+        "icon": "express",
+        "color": "rgba(0, 0, 0)"
+      },
+      {
+        "label": "Tailwind",
+        "icon": "tailwindcss",
+        "color": "rgba(6, 182, 212)"
+      }
+    ],
+    "databases": [
+      {
+        "label": "MySQL",
+        "icon": "mysql",
+        "color": "rgba(68, 121, 161)"
+      },
+      {
+        "label": "PostgreSQL",
+        "icon": "postgresql",
+        "color": "rgba(29, 142, 248)"
+      },
+      {
+        "label": "MongoDB",
+        "icon": "mongodb",
+        "color": "rgba(0, 205, 25)"
+      }
+    ],
+    "others": [
+      {
+        "label": "Git",
+        "icon": "git",
+        "color": "rgba(255, 87, 51)"
+      },
+      {
+        "label": "Docker",
+        "icon": "docker",
+        "color": "rgba(0, 134, 232)"
+      },
+      {
+        "label": "JWT",
+        "icon": "jwt",
+        "color": "rgba(255, 255, 255, 0.7)"
+      },
+      {
+        "label": "Figma",
+        "icon": "figma",
+        "color": "rgba(0, 0, 0)"
+      }
+    ]
+  },
+  "softSkills": ["UI/UX Design", "Web Applications", "Teamwork", "Creativity"],
+  "experience": [
+    {
+      "title": "Full Stack Web Developer",
+      "company": "Techforb",
+      "companyUrl": "https://techforb.com",
+      "companyLogo": "techforb_logo.webp",
+      "period": "December 2023 - present",
+      "location": "Remote",
+      "type": "Full time",
+      "current": true,
+      "description": [
+        "Full stack web application development using Angular and Spring Boot.",
+        "Implementation of best programming practices and architecture to ensure optimal performance and exceptional quality.",
+        "Collaboration with clients to understand their needs and offer customized solutions."
+      ],
+      "achievements": [
+        "Web application development using Angular.",
+        "REST API development with NestJS, Spring Boot and Express.",
+        "AWS services integrations (S3, SQS, SNS, SES, Lambda).",
+        "Application deployment using Jenkins, Docker and Kubernetes.",
+        "Microservices integration."
+      ],
+      "technologies": [
+        {
+          "label": "Angular",
+          "icon": "angular"
+        },
+        {
+          "label": "Spring Boot",
+          "icon": "spring"
+        },
+        {
+          "label": "Java",
+          "icon": "java"
+        },
+        {
+          "label": "NestJS",
+          "icon": "nestjs"
+        },
+        {
+          "label": "AWS",
+          "icon": "aws"
+        },
+        {
+          "label": "Jenkins",
+          "icon": "jenkins"
+        },
+        {
+          "label": "Kubernetes",
+          "icon": "kubernetes"
+        },
+        {
+          "label": "Bitbucket",
+          "icon": "bitbucket"
+        },
+        {
+          "label": "Jira",
+          "icon": "jira"
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "ASIST.IO",
+      "key": "asistio",
+      "tags": ["Web App", "Full Stack"],
+      "summary": "Course management system and class attendance control.",
+      "description": [
+        "Web application to control student attendance, manage courses and handle attendance/absences from a centralized panel."
+      ],
+      "featured": true,
+      "images": [
+        "proyecto-asistio.webp",
+        "proyecto-asistio-2.webp",
+        "proyecto-asistio-3.webp",
+        "proyecto-asistio-4.webp"
+      ],
+      "github": "https://github.com/DarioRv/sistema-asistencia-angular",
+      "demo": "https://asistio-a77d7.web.app",
+      "technologies": [
+        {
+          "label": "Angular",
+          "icon": "angular",
+          "color": "rgb(221, 0, 49)",
+          "backgroundColor": "rgba(221, 0, 49, 0.1)"
+        },
+        {
+          "label": "Angular Material",
+          "icon": "angular-material",
+          "color": "rgb(241, 167, 8)",
+          "backgroundColor": "rgba(241, 167, 8, 0.1)"
+        },
+        {
+          "label": "Tailwind",
+          "icon": "tailwindcss",
+          "color": "rgb(6, 182, 212)",
+          "backgroundColor": "rgba(6, 182, 212, 0.1)"
+        },
+        {
+          "label": "Java",
+          "icon": "java",
+          "color": "rgb(222, 135, 0)",
+          "backgroundColor": "rgba(222, 135, 0, 0.1)"
+        },
+        {
+          "label": "Spring",
+          "icon": "spring",
+          "color": "rgb(109, 179, 63)",
+          "backgroundColor": "rgba(109, 179, 63, 0.1)"
+        },
+        {
+          "label": "JWT",
+          "icon": "jwt",
+          "color": "rgba(255, 255, 255, 0.7)",
+          "backgroundColor": "rgba(255, 255, 255, 0.1)"
+        },
+        {
+          "label": "MySQL",
+          "icon": "mysql",
+          "color": "rgb(29, 142, 248)",
+          "backgroundColor": "rgba(29, 142, 248, 0.1)"
+        }
+      ],
+      "overview": {
+        "context": "Project developed as part of my academic training at the National University of Jujuy. The goal of the project was to create a system that would allow teachers to manage student attendance efficiently and quickly.",
+        "problem": [
+          "Slow manual registration.",
+          "Lack of historical attendance visibility.",
+          "Difficulty managing multiple courses and students.",
+          "Human errors in attendance registration."
+        ],
+        "solution": "Together with my team, I developed a web application that allows teachers to record student attendance quickly and easily. The application has an administration panel where teachers can manage courses and students, and an attendance registration system that allows marking the presence or absence of each student with a single click.",
+        "results": "The system significantly reduced the time teachers spent on attendance control, allowing them to focus on other academic tasks. Additionally, the application improved the accuracy of attendance records, minimizing human errors."
+      },
+      "features": [
+        {
+          "title": "Administration panel",
+          "description": "Course and student management, with options to add, edit and delete records."
+        },
+        {
+          "title": "Attendance registration",
+          "description": "Attendance/absence control per class with history."
+        },
+        {
+          "title": "Secure authentication",
+          "description": "Login system using JWT to protect application access."
+        },
+        {
+          "title": "Reports",
+          "description": "Quick and exportable visualization."
+        }
+      ],
+      "architecture": {
+        "description": "The application follows a client-server architecture, with a frontend developed in Angular and a backend in Java with Spring Boot. Communication between client and server is done through a RESTful API, using JSON as the data exchange format.",
+        "stack": [
+          {
+            "title": "Frontend",
+            "description": "Angular + Angular Material"
+          },
+          {
+            "title": "Backend",
+            "description": "Java + Spring Boot"
+          },
+          {
+            "title": "Database",
+            "description": "MySQL"
+          }
+        ]
+      },
+      "stats": [
+        {
+          "label": "Operational time",
+          "value": "-40%"
+        },
+        {
+          "label": "Digital",
+          "value": "100%"
+        },
+        {
+          "label": "Efficiency",
+          "value": "+30%"
+        }
+      ]
+    },
+    {
+      "title": "Kepler Dynamics",
+      "key": "kepler-dynamics",
+      "tags": ["Website"],
+      "summary": "Website about a company that offers custom software development services.",
+      "description": [
+        "Website for Kepler Dynamics company, dedicated to custom software development. The site includes information about the company, the services it offers, contact form and internationalization in English and Spanish."
+      ],
+      "featured": true,
+      "images": [
+        "proyecto-kepler.webp",
+        "proyecto-kepler-2.webp",
+        "proyecto-kepler-3.webp",
+        "proyecto-kepler-4.webp",
+        "proyecto-kepler-5.webp"
+      ],
+      "demo": "https://kepler-dynamics.com",
+      "technologies": [
+        {
+          "label": "Astro",
+          "icon": "astro",
+          "color": "rgb(189, 82, 243)",
+          "backgroundColor": "rgba(189, 82, 243, 0.1)"
+        },
+        {
+          "label": "TypeScript",
+          "icon": "typescript",
+          "color": "rgb(29, 142, 248)",
+          "backgroundColor": "rgba(29, 142, 248, 0.1)"
+        },
+        {
+          "label": "Tailwind",
+          "icon": "tailwindcss",
+          "color": "rgb(6, 182, 212)",
+          "backgroundColor": "rgba(6, 182, 212, 0.1)"
+        }
+      ]
+    },
+    {
+      "title": "PostgreSQL Cluster",
+      "key": "postgresql-cluster",
+      "tags": ["DevOps", "Database"],
+      "summary": "Monitoring and load balancing in a PostgreSQL database cluster.",
+      "description": [
+        "A database cluster allows improving the availability and scalability of applications using this technology, ensuring high performance and greater fault tolerance.",
+        "Cluster contains PostgreSQL databases with load balancing and performance monitoring. HAProxy was used for load balancing, Grafana and Prometheus for monitoring, and Docker for container creation."
+      ],
+      "images": [
+        "proyecto-cluster-postgres.webp",
+        "proyecto-cluster-postgres-2.webp",
+        "proyecto-cluster-postgres-3.webp"
+      ],
+      "github": "https://github.com/DarioRv/cluster-postgres",
+      "technologies": [
+        {
+          "label": "PostgreSQL",
+          "icon": "postgresql",
+          "color": "rgb(29, 142, 248)",
+          "backgroundColor": "rgba(29, 142, 248, 0.1)"
+        },
+        {
+          "label": "HAProxy",
+          "icon": "ha-proxy",
+          "color": "rgb(0, 134, 232)",
+          "backgroundColor": "rgba(0, 134, 232, 0.1)"
+        },
+        {
+          "label": "Grafana",
+          "icon": "grafana",
+          "color": "rgb(243, 172, 82)",
+          "backgroundColor": "rgba(243, 172, 82, 0.1)"
+        },
+        {
+          "label": "Prometheus",
+          "icon": "prometheus",
+          "color": "rgb(243, 116, 82)",
+          "backgroundColor": "rgba(243, 116, 82, 0.1)"
+        },
+        {
+          "label": "Docker",
+          "icon": "docker",
+          "color": "rgb(0, 134, 232)",
+          "backgroundColor": "rgba(0, 134, 232, 0.1)"
+        }
+      ],
+      "overview": {
+        "context": "The goal was to achieve high availability and performance in a PostgreSQL database for a web application that needs to handle a large volume of concurrent requests. The objective was to implement a database cluster that would allow distributing the load among multiple nodes and ensure service continuity in case of failures.",
+        "problem": [
+          "High availability: Ensure the database is always available, even in case of individual node failures.",
+          "Load balancing: Distribute client requests among multiple nodes to improve performance and avoid bottlenecks.",
+          "Performance monitoring: Implement a monitoring system to oversee cluster status and detect potential issues."
+        ],
+        "solution": "I implemented a PostgreSQL database cluster using Docker to create containers hosting the cluster nodes. I configured HAProxy as a load balancer to distribute requests among available nodes. Additionally, I integrated Grafana and Prometheus to monitor cluster performance, allowing visualization of key metrics and proactive detection of potential issues.",
+        "results": "The implemented cluster improved database availability and performance, allowing handling of a higher volume of requests efficiently. The monitoring system facilitated issue identification and resolution, contributing to maintaining cluster stability over time."
+      },
+      "architecture": {
+        "description": "The PostgreSQL database cluster architecture is based on a master-slave configuration, where one node acts as master and the others as slaves. HAProxy handles distributing incoming requests among available nodes, while Grafana and Prometheus collect and visualize performance metrics in real-time.",
+        "stack": [
+          {
+            "title": "Database",
+            "description": "PostgreSQL"
+          },
+          {
+            "title": "Load balancing",
+            "description": "HAProxy"
+          },
+          {
+            "title": "Monitoring",
+            "description": "Grafana + Prometheus"
+          },
+          {
+            "title": "Containers",
+            "description": "Docker"
+          }
+        ]
+      },
+      "stats": [
+        {
+          "label": "Availability",
+          "value": "99.9%"
+        },
+        {
+          "label": "Performance",
+          "value": "+50%"
+        },
+        {
+          "label": "Scalability",
+          "value": "High"
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "title": "University Programmer Analyst",
+      "institution": "National University of Jujuy",
+      "period": "2022 - present",
+      "description": [
+        "During my education, I have developed a solid foundation in logic, data structures and object-oriented programming, as well as in the use of essential frameworks such as Spring Boot, Express.js and Angular.",
+        "My projects include a ticket control system and a real estate platform, strengthening my experience in full stack applications."
+      ],
+      "logo": "logo-fi-unju.webp"
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Angular Pro: Take your foundations to the next level",
+      "institution": "DevTalles",
+      "institutionUrl": "https://devtalles.com",
+      "date": "January 2025",
+      "url": "https://cursos.devtalles.com/certificates/fuean1jztq",
+      "description": [
+        "I deepened my knowledge in Angular, learning to develop more complex and scalable applications with good programming and architecture practices.",
+        "I developed applications including zoneless, testing, internationalization, server side rendering, static site generation and TanStack Query for HTTP request handling."
+      ]
+    },
+    {
+      "title": "Microservices with Spring Cloud",
+      "institution": "TodoCode",
+      "institutionUrl": "https://todocodeacademy.com",
+      "date": "January 2025",
+      "url": "https://todocodeacademy.com/certificate/h3t-2/",
+      "description": [
+        "I learned to develop microservices-based applications with Spring Cloud, using tools like Eureka, Feign and Docker to create scalable and fault-tolerant services.",
+        "I applied microservices design best practices and architecture patterns such as Service Registry, Service Discovery, Load Balancing, Circuit Breaker, API Gateway and Configuration Server."
+      ]
+    },
+    {
+      "title": "Object-Oriented Programming with Java",
+      "institution": "TodoCode",
+      "institutionUrl": "https://todocodeacademy.com",
+      "date": "November 2024",
+      "url": "https://todocodeacademy.com/certificate/certificado-curso-poo-con-java-aed",
+      "description": [
+        "I deepened the fundamental concepts of object-oriented programming and its application in Java application development.",
+        "The course included creating classes, objects, inheritance, polymorphism, encapsulation, interfaces and collections, as well as database connection with JPA."
+      ]
+    },
+    {
+      "title": "Nest: Scalable backend development with Node",
+      "institution": "DevTalles",
+      "institutionUrl": "https://devtalles.com",
+      "date": "August 2024",
+      "url": "https://cursos.devtalles.com/certificates/xoxkmm9wae",
+      "description": [
+        "I learned to develop scalable backend applications with Node.js and NestJS, using best practices and design patterns to achieve clean and maintainable code.",
+        "The course included creating a REST API with JWT authentication, implementing unit tests and connecting to SQL and NoSQL databases using ORMs like Prisma and TypeORM."
+      ]
+    },
+    {
+      "title": "Angular: From zero to expert",
+      "institution": "DevTalles",
+      "institutionUrl": "https://devtalles.com",
+      "date": "September 2023",
+      "description": [
+        "I learned the basic fundamentals of Angular, including components, services, routes, reactive forms and REST API communication. Additionally, I delved into advanced concepts like lazy loading, guards, interceptors and animations.",
+        "I developed several applications during the course, applying everything learned and following best practices."
+      ]
+    }
+  ]
+}

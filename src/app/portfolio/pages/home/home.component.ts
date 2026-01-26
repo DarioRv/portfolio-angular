@@ -1,5 +1,4 @@
 import { Component, inject, OnInit } from '@angular/core';
-import cv from '@data/cv.json';
 import { SeoService } from '@services/seo.service';
 import { IconsModule } from 'app/icons/icons.module';
 import { ExperienceComponent } from '@pages/sections/experience/experience.component';
@@ -22,8 +21,6 @@ import { AboutComponent } from '@pages/sections/about/about.component';
   templateUrl: './home.component.html',
 })
 export class HomeComponent implements OnInit {
-  public cv = cv;
-  public projects = cv.projects.filter((project) => project.featured);
   private readonly seoService = inject(SeoService);
 
   ngOnInit(): void {

@@ -1,0 +1,78 @@
+{
+  "nav": {
+    "about": "Sobre mí",
+    "skills": "Habilidades",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "education": "Educación",
+    "contact": "Contacto"
+  },
+  "about": {
+    "copyEmail": "Copiar email"
+  },
+  "skills": {
+    "title": "Habilidades",
+    "languages": "Lenguajes",
+    "frameworks": "Frameworks",
+    "databases": "Bases de datos",
+    "others": "Otros"
+  },
+  "experience": {
+    "title": "Experiencia",
+    "yearsOfExperience": "año de experiencia",
+    "yearsOfExperiencePlural": "años de experiencia",
+    "responsibilities": "Responsabilidades",
+    "technologiesUsed": "Tecnologías Utilizadas",
+    "remote": "Remoto",
+    "fullTime": "Tiempo completo",
+    "partTime": "Medio tiempo",
+    "current": "actualidad"
+  },
+  "projects": {
+    "title": "Proyectos",
+    "description": "Aquí encontrarás una selección de mis proyectos más destacados, donde aplico mis habilidades y conocimientos en desarrollo web.",
+    "viewDemo": "Ver demo",
+    "repository": "Repositorio",
+    "viewDetails": "Ver detalle",
+    "viewAllProjects": "Ver todos los proyectos",
+    "breadcrumb": "Proyectos",
+    "overview": "Overview",
+    "context": "Contexto",
+    "problem": "Problema",
+    "solution": "Solución",
+    "result": "Resultado",
+    "mainFeatures": "Funciones principales",
+    "architecture": "Arquitectura",
+    "viewRepository": "Ver repositorio",
+    "interestedInSimilar": "¿Te interesa un proyecto similar?",
+    "contactMe": "Contactarme",
+    "backToProjects": "Volver a proyectos"
+  },
+  "education": {
+    "title": "Educación",
+    "description": "Aquí encontrarás mi trayectoria académica. Mis estudios y certificaciones.",
+    "certifications": "Certificados",
+    "viewAllCertifications": "Ver todas mis certificaciones",
+    "viewLess": "Ver menos",
+    "issuedBy": "Emitido por",
+    "viewCertificate": "Ver certificado"
+  },
+  "contact": {
+    "title": "Contacto",
+    "description": "¿Querés que trabajemos juntos? Contame qué necesitás y te respondo en 24-48hs. • UTC-3 (Argentina)",
+    "sendEmail": "Enviame un correo",
+    "emailDescription": "Puedes enviarme un correo a mi dirección de correo electrónico. Escríbeme para cualquier duda o propuesta de trabajo y podremos agendar una reunión.",
+    "sendEmailButton": "Enviar correo",
+    "visitGithub": "Visita mi perfil de GitHub",
+    "githubDescription": "Descubre mis proyectos y colaboraciones que he realizado en GitHub.",
+    "viewGithubProfile": "Ver perfil de GitHub",
+    "connectLinkedin": "Conecta conmigo en LinkedIn",
+    "linkedinDescription": "Visita mi perfil de LinkedIn y conecta conmigo para estar al tanto de mis publicaciones y proyectos.",
+    "visitProfile": "Visitar perfil"
+  },
+  "common": {
+    "downloadCv": "Descargar CV",
+    "copied": "¡Copiado!",
+    "loading": "Cargando..."
+  }
+}

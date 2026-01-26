@@ -9,7 +9,7 @@
           [routerLink]="item.routerLink"
           [fragment]="item.fragment"
           queryParamsHandling="preserve"
-          >{{ item.label }}</a
+          >{{ item.label | translate }}</a
         >
         <a
           class="md:hidden"
@@ -24,5 +24,49 @@
         </a>
       </li>
     }
+
+    <!-- Language Selector -->
+    <li class="hidden md:flex items-center border-l border-white/20 pl-3 ml-1">
+      <div class="flex gap-1 text-sm">
+        <button
+          class="px-2 py-1 rounded-lg transition-colors"
+          [class]="
+            currentLanguage() === Language.ES
+              ? 'bg-white/20 text-white'
+              : 'text-white/50 hover:text-white'
+          "
+          (click)="changeLanguage(Language.ES)"
+        >
+          ES
+        </button>
+        <button
+          class="px-2 py-1 rounded-lg transition-colors"
+          [class]="
+            currentLanguage() === Language.EN
+              ? 'bg-white/20 text-white'
+              : 'text-white/50 hover:text-white'
+          "
+          (click)="changeLanguage(Language.EN)"
+        >
+          EN
+        </button>
+      </div>
+    </li>
+
+    <!-- Mobile Language Selector -->
+    <li class="md:hidden">
+      <button
+        class="p-2 rounded-full bg-white/10"
+        (click)="
+          changeLanguage(
+            currentLanguage() === Language.ES ? Language.EN : Language.ES
+          )
+        "
+      >
+        <span class="text-xs font-bold">{{
+          currentLanguage() === Language.ES ? "EN" : "ES"
+        }}</span>
+      </button>
+    </li>
   </ul>
 </nav>

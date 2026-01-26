@@ -3,10 +3,11 @@ import { CopyToClipboardComponent } from '@components/copy-to-clipboard/copy-to-
 import { DownloadCvButtonComponent } from '@components/download-cv-button/download-cv-button.component';
 import { SkillsComponent } from '@components/skills/skills.component';
 import { IconsModule } from 'app/icons/icons.module';
-import cv from '@data/cv.json';
 import { IconPipe } from '@pipes/icon.pipe';
 import { AnalyticsService } from '@services/analytics.service';
 import { TrackSectionVisibilityDirective } from '@directives/track-section-visibility.service';
+import { TranslatePipe } from '@ngx-translate/core';
+import { CvService } from '@services/cv.service';
 
 @Component({
   selector: 'dv-about',
@@ -18,13 +19,16 @@ import { TrackSectionVisibilityDirective } from '@directives/track-section-visib
     IconsModule,
     IconPipe,
     TrackSectionVisibilityDirective,
+    TranslatePipe,
   ],
   templateUrl: './about.component.html',
   styleUrl: './about.component.css',
 })
 export class AboutComponent {
-  public cv = cv;
+  private readonly cvService = inject(CvService);
   private readonly analytics = inject(AnalyticsService);
+
+  readonly cv = this.cvService.cv;
 
   public trackSocialClick(name: string): void {
     this.analytics.event('social_link_click', { social_network: name });

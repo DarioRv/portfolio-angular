@@ -3,10 +3,9 @@
   id="contact"
   trackSection="contact"
 >
-  <h2>Contacto</h2>
+  <h2>{{ "contact.title" | translate }}</h2>
   <p class="mt-3 text-base md:text-lg text-white/70 max-w-prose mb-5">
-    ¿Querés que trabajemos juntos? Contame qué necesitás y te respondo en
-    24-48hs. • UTC-3 (Argentina)
+    {{ "contact.description" | translate }}
   </p>
   <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
     <article
@@ -17,19 +16,19 @@
       >
         <img class="size-8" [src]="'gmail-white' | icon" alt="" />
       </span>
-      <h5 class="font-medium text-xl mb-4">Enviame un correo</h5>
+      <h5 class="font-medium text-xl mb-4">
+        {{ "contact.sendEmail" | translate }}
+      </h5>
       <p class="text-white/70 text-base">
-        Puedes enviarme un correo a mi dirección de correo electrónico.
-        Escríbeme para cualquier duda o propuesta de trabajo y podremos agendar
-        una reunión.
+        {{ "contact.emailDescription" | translate }}
       </p>
       <a
         class="flex items-center gap-1 rounded-xl py-2 px-4 bg-primary-500 mt-8 w-fit"
-        [href]="networks[2].url"
+        [href]="networks()[2].url"
         target="_blank"
         (click)="trackClick('gmail')"
       >
-        Enviar correo
+        {{ "contact.sendEmailButton" | translate }}
         <lucide-icon name="chevron-right"></lucide-icon>
       </a>
     </article>
@@ -42,17 +41,19 @@
         <img class="size-8" [src]="'github' | icon" alt="" />
       </span>
 
-      <h5 class="font-medium text-xl mb-4">Visita mi perfil de GitHub</h5>
+      <h5 class="font-medium text-xl mb-4">
+        {{ "contact.visitGithub" | translate }}
+      </h5>
       <p class="text-white/70 text-base">
-        Descubre mis proyectos y colaboraciones que he realizado en GitHub.
+        {{ "contact.githubDescription" | translate }}
       </p>
       <a
         class="flex items-center gap-1 rounded-xl py-2 px-4 bg-[#fff] text-black mt-8 w-fit"
-        [href]="networks[1].url"
+        [href]="networks()[1].url"
         target="_blank"
         (click)="trackClick('github')"
       >
-        Ver perfil de GitHub
+        {{ "contact.viewGithubProfile" | translate }}
         <lucide-icon name="chevron-right"></lucide-icon>
       </a>
     </article>
@@ -64,18 +65,19 @@
       >
         <img class="size-8 grayscale" [src]="'linkedin-white' | icon" alt="" />
       </span>
-      <h5 class="font-medium text-xl mb-4 z-10">Conecta conmigo en LinkedIn</h5>
+      <h5 class="font-medium text-xl mb-4 z-10">
+        {{ "contact.connectLinkedin" | translate }}
+      </h5>
       <p class="text-white/70 z-10 text-base">
-        Visita mi perfil de LinkedIn y conecta conmigo para estar al tanto de
-        mis publicaciones y proyectos.
+        {{ "contact.linkedinDescription" | translate }}
       </p>
       <a
         class="flex items-center gap-1 rounded-xl py-2 px-4 bg-[#0066c8] mt-8 w-fit"
-        [href]="networks[0].url"
+        [href]="networks()[0].url"
         target="_blank"
         (click)="trackClick('linkedin')"
       >
-        Visitar perfil
+        {{ "contact.visitProfile" | translate }}
         <lucide-icon name="chevron-right"></lucide-icon>
       </a>
     </article>

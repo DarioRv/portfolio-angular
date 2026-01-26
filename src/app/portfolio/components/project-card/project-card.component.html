@@ -42,7 +42,7 @@
             rel="noopener"
             (click)="trackProjectCardInteraction(project().title, 'view_demo')"
           >
-            Ver demo
+            {{ "projects.viewDemo" | translate }}
             <i-lucide name="external-link" size="14"></i-lucide>
           </a>
         }
@@ -56,7 +56,7 @@
               trackProjectCardInteraction(project().title, 'view_repository')
             "
           >
-            Repositorio
+            {{ "projects.repository" | translate }}
             <i-lucide name="external-link" size="14"></i-lucide>
           </a>
         }
@@ -65,7 +65,7 @@
           [routerLink]="['/projects', project().key]"
           (click)="trackProjectCardInteraction(project().title, 'view_details')"
         >
-          Ver detalle
+          {{ "projects.viewDetails" | translate }}
           <i-lucide name="chevron-right" size="14"></i-lucide>
         </a>
       </div>

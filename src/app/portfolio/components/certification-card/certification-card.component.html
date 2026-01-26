@@ -15,7 +15,7 @@
       <strong>{{ certification().title }}</strong>
     </h5>
     <p class="text-white/90 mb-5">
-      Emitido por
+      {{ "education.issuedBy" | translate }}
       @if (certification().institutionUrl) {
         <strong>
           <a
@@ -44,7 +44,7 @@
           [href]="certification().url"
           target="_blank"
         >
-          Ver certificado
+          {{ "education.viewCertificate" | translate }}
           <i-lucide name="external-link" size="16"></i-lucide>
         </a>
       </div>

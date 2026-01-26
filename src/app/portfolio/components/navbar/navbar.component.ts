@@ -1,12 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { MenuItem } from '@interfaces/menu-item.interface';
+import { LanguageService } from '@services/language.service';
 import { IconsModule } from 'app/icons/icons.module';
+import { Language } from 'app/portfolio/shared/enums/language.enum';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [RouterLink, IconsModule],
+  imports: [RouterLink, IconsModule, TranslatePipe],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css',
   host: {
@@ -15,32 +18,37 @@ import { IconsModule } from 'app/icons/icons.module';
   },
 })
 export class NavbarComponent {
+  private languageService = inject(LanguageService);
+
+  readonly currentLanguage = this.languageService.language;
+  readonly Language = Language;
+
   menuItems: MenuItem[] = [
     {
-      label: 'Inicio',
+      label: 'nav.about',
       routerLink: '/',
       icon: 'user',
     },
     {
-      label: 'Experiencia',
+      label: 'nav.experience',
       routerLink: '/',
       fragment: 'experience',
       icon: 'briefcase-business',
     },
     {
-      label: 'Proyectos',
+      label: 'nav.projects',
       routerLink: '/',
       fragment: 'projects',
       icon: 'pencil-ruler',
     },
     {
-      label: 'Educación',
+      label: 'nav.education',
       routerLink: '/',
       fragment: 'education',
       icon: 'graduation-cap',
     },
     {
-      label: 'Contacto',
+      label: 'nav.contact',
       routerLink: '/',
       fragment: 'contact',
       icon: 'phone',
@@ -52,5 +60,9 @@ export class NavbarComponent {
   toggleMenu() {
     this.visible = !this.visible;
     console.log('Menu toggled');
+  }
+
+  changeLanguage(lang: Language) {
+    this.languageService.changeLanguage(lang);
   }
 }

@@ -5,11 +5,18 @@ import { TechChipComponent } from '@components/tech-chip/tech-chip.component';
 import { Project } from '@interfaces/project.interface';
 import { AnalyticsService } from '@services/analytics.service';
 import { IconsModule } from 'app/icons/icons.module';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'project-card',
   standalone: true,
-  imports: [RouterLink, TechChipComponent, IconsModule, ImageGaleryComponent],
+  imports: [
+    RouterLink,
+    TechChipComponent,
+    IconsModule,
+    ImageGaleryComponent,
+    TranslatePipe,
+  ],
   templateUrl: './project-card.component.html',
 })
 export class ProjectCardComponent {
