@@ -11,7 +11,7 @@ import { IconsModule } from 'app/icons/icons.module';
   styleUrl: './navbar.component.css',
   host: {
     class:
-      'fixed bottom-0 md:top-5 md:-translate-x-1/2 md:left-1/2 z-10 w-full md:w-fit',
+      'fixed bottom-0 md:top-5 md:-translate-x-1/2 md:left-1/2 z-10 w-full md:w-fit h-fit',
   },
 })
 export class NavbarComponent {
