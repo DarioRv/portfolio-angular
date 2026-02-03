@@ -1,11 +1,14 @@
 import { DOCUMENT } from '@angular/common';
 import { Inject, Injectable } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
+import { environment } from 'environments/environment';
 
 @Injectable({
   providedIn: 'root',
 })
 export class SeoService {
+  private readonly baseUrl = environment.baseUrl;
+
   constructor(
     private title: Title,
     private meta: Meta,
@@ -20,10 +23,20 @@ export class SeoService {
     this.meta.updateTag({ name: 'description', content: desc });
   }
 
-  updateCanonical(url?: string) {
-    const rawUrl = url || this.doc.location.href;
+  updateCanonical(path?: string) {
+    const origin = this.baseUrl;
 
-    const canonicalUrl = rawUrl.split('#')[0].split('?')[0];
+    let cleanPath = path ? path : this.doc.location.pathname;
+
+    // quitar query y hash si vienen
+    cleanPath = cleanPath.split('?')[0].split('#')[0];
+
+    // asegurar slash final
+    if (!cleanPath.endsWith('/')) {
+      cleanPath += '/';
+    }
+
+    const canonicalUrl = `${origin}${cleanPath}`;
 
     let link = this.doc.querySelector<HTMLLinkElement>("link[rel='canonical']");
 
@@ -33,6 +46,6 @@ export class SeoService {
       this.doc.head.appendChild(link);
     }
 
-    link.setAttribute('href', `${canonicalUrl}/`);
+    link.setAttribute('href', canonicalUrl);
   }
 }
