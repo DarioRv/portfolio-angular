@@ -33,6 +33,6 @@ export class SeoService {
       this.doc.head.appendChild(link);
     }
 
-    link.setAttribute('href', canonicalUrl);
+    link.setAttribute('href', `${canonicalUrl}/`);
   }
 }
