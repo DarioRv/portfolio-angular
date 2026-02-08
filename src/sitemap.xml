@@ -3,25 +3,29 @@
 
   <url>
     <loc>https://dariovidal.dev/</loc>
-    <lastmod>2026-01-03</lastmod>
+    <lastmod>2026-02-08</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://dariovidal.dev/projects/asistio/</loc>
-    <lastmod>2026-01-04</lastmod>
+    <loc>https://dariovidal.dev/projects/asistio</loc>
+    <lastmod>2026-02-08</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://dariovidal.dev/projects/kepler-dynamics/</loc>
-    <lastmod>2026-01-04</lastmod>
+    <loc>https://dariovidal.dev/projects/kepler-dynamics</loc>
+    <lastmod>2026-02-08</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://dariovidal.dev/projects/postgresql-cluster/</loc>
-    <lastmod>2026-01-04</lastmod>
+    <loc>https://dariovidal.dev/projects/postgresql-cluster</loc>
+    <lastmod>2026-02-08</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
 

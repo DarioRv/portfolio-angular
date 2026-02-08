@@ -31,13 +31,14 @@ export class SeoService {
     // quitar query y hash si vienen
     cleanPath = cleanPath.split('?')[0].split('#')[0];
 
-    // asegurar slash final
-    if (!cleanPath.endsWith('/')) {
-      cleanPath += '/';
+    // remover trailing slash (excepto para la raíz "/")
+    if (cleanPath !== '/' && cleanPath.endsWith('/')) {
+      cleanPath = cleanPath.slice(0, -1);
     }
 
     const canonicalUrl = `${origin}${cleanPath}`;
 
+    // Update canonical link
     let link = this.doc.querySelector<HTMLLinkElement>("link[rel='canonical']");
 
     if (!link) {
@@ -47,5 +48,9 @@ export class SeoService {
     }
 
     link.setAttribute('href', canonicalUrl);
+
+    // Update Open Graph and Twitter URLs
+    this.meta.updateTag({ property: 'og:url', content: canonicalUrl });
+    this.meta.updateTag({ property: 'twitter:url', content: canonicalUrl });
   }
 }
