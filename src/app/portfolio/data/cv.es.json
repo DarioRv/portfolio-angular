@@ -1,8 +1,8 @@
 {
-  "name": "Dario Vidal",
+  "name": "Dario <span class=\"text-primary-500\">Vidal</span>",
   "summary": "Desarrollador Web Full Stack",
   "about": [
-    "Soy un desarrollador web full stack con experiencia en el desarrollo de aplicaciones web. Me especializo en el desarrollo de aplicaciones web con Angular y Spring Boot, utilizando las mejores prácticas para garantizar un rendimiento óptimo y una calidad excepcional.",
+    "Soy un desarrollador web full stack con experiencia en el desarrollo de aplicaciones web. Me especializo en el desarrollo de aplicaciones web con <span class=\"text-primary-500 font-bold\">Angular</span> y <span class=\"text-black font-bold\">Spring Boot</span>, utilizando las mejores prácticas para garantizar un rendimiento óptimo y una calidad excepcional.",
     "Me gusta trabajar en equipo y enfrentar nuevos desafíos, siempre busco ofrecer la mejor solución a los problemas que se presentan. Mi objetivo es aportar valor a los proyectos en los que participo y crecer profesionalmente en el mundo del desarrollo de software."
   ],
   "email": "dariorvidal.27@gmail.com",
@@ -49,7 +49,7 @@
       {
         "label": "Java",
         "icon": "java",
-        "color": "rgba(222, 135, 0)"
+        "color": "rgba(222, 135, )"
       }
     ],
     "frameworks": [
@@ -191,7 +191,8 @@
     {
       "title": "ASIST.IO",
       "key": "asistio",
-      "tags": ["Aplicación Web", "Full Stack"],
+      "tags": ["Web App", "Full Stack"],
+      "type": "Full Stack",
       "summary": "Sistema de gestión de cursos y control de asistencias a clases.",
       "description": [
         "Aplicación web para controlar asistencia de alumnos, administrar cursos y gestionar asistencias/ausencias desde un panel centralizado."
@@ -313,7 +314,8 @@
     {
       "title": "Kepler Dynamics",
       "key": "kepler-dynamics",
-      "tags": ["Sitio Web"],
+      "tags": ["Website"],
+      "type": "Frontend",
       "summary": "Sitio web sobre una empresa que ofrece servicios de desarrollo de software a medida.",
       "description": [
         "Sitio web de la empresa Kepler Dynamics, dedicada al desarrollo de software a medida. El sitio cuenta con información sobre la empresa, los servicios que ofrece, formulario de contacto e internacionalización en inglés y español."
@@ -351,7 +353,8 @@
     {
       "title": "PostgreSQL Cluster",
       "key": "postgresql-cluster",
-      "tags": ["DevOps", "Base de datos"],
+      "tags": ["DevOps", "Database"],
+      "type": "DevOps",
       "summary": "Monitoreo y balanceo de carga en un cluster de bases de datos PostgreSQL.",
       "description": [
         "Un cluster de bases de datos permite mejorar la disponibilidad y escalabilidad de las aplicaciones que utilizan esta tecnología, garantizando un alto rendimiento y una mayor tolerancia a fallos.",
@@ -462,9 +465,20 @@
       "date": "Enero de 2025",
       "url": "https://cursos.devtalles.com/certificates/fuean1jztq",
       "description": [
-        "Profundicé mis conocimientos en Angular, aprendiendo a desarrollar aplicaciones más complejas y escalables con buenas prácticas de programación y arquitectura.",
-        "Desarrollé aplicaciones que incluyen zoneless, testing, internacionalización, server side rendering, static site generation y TanStack Query para el manejo de solicitudes HTTP."
-      ]
+        "Profundicé mis conocimientos en Angular, aprendiendo a desarrollar aplicaciones más complejas y escalables con buenas prácticas de programación y arquitectura."
+      ],
+      "knowledgeAcquired": [
+        "Angular",
+        "Testing",
+        "SSR",
+        "SSG",
+        "TanStack Query",
+        "NgxTranslate",
+        "Optimización de rendimiento",
+        "Mejores prácticas de desarrollo",
+        "Arquitectura de aplicaciones Angular"
+      ],
+      "area": "Frontend"
     },
     {
       "title": "Microservicios con Spring Cloud",
@@ -473,9 +487,20 @@
       "date": "Enero de 2025",
       "url": "https://todocodeacademy.com/certificate/h3t-2/",
       "description": [
-        "Aprendí a desarrollar aplicaciones basadas en microservicios con Spring Cloud, utilizando herramientas como Eureka, Feign y Docker para la creación de servicios escalables y tolerantes a fallos.",
-        "Apliqué buenas prácticas de diseño de microservicios y patrones de arquitectura como Service Registry, Service Discovery, Load Balancing, Circuit Breaker, API Gateway y Configuration Server."
-      ]
+        "Curso avanzado de microservicios con Spring Cloud, utilizando herramientas como Eureka, Feign y Docker para la creación de servicios escalables y tolerantes a fallos."
+      ],
+      "knowledgeAcquired": [
+        "Spring Cloud",
+        "Microservicios",
+        "Docker",
+        "Eureka",
+        "Feign",
+        "Circuit Breaker",
+        "API Gateway",
+        "Configuration Server",
+        "Load Balancing"
+      ],
+      "area": "Backend"
     },
     {
       "title": "Programación Orientada a Objetos con Java",
@@ -484,9 +509,19 @@
       "date": "Noviembre de 2024",
       "url": "https://todocodeacademy.com/certificate/certificado-curso-poo-con-java-aed",
       "description": [
-        "Profundicé los conceptos fundamentales de la programación orientada a objetos y su aplicación en el desarrollo de aplicaciones Java.",
-        "El curso incluyó la creación de clases, objetos, herencia, polimorfismo, encapsulamiento, interfaces y colecciones, así como la conexión con bases de datos con JPA."
-      ]
+        "Curso completo sobre conceptos fundamentales de la programación orientada a objetos y su aplicación en el desarrollo de aplicaciones Java."
+      ],
+      "knowledgeAcquired": [
+        "Java",
+        "POO",
+        "JPA",
+        "Hibernate",
+        "Polimorfismo",
+        "Herencia",
+        "Encapsulamiento",
+        "Abstracción"
+      ],
+      "area": "Backend"
     },
     {
       "title": "Nest: Desarrollo backend escalable con Node",
@@ -495,9 +530,19 @@
       "date": "Agosto de 2024",
       "url": "https://cursos.devtalles.com/certificates/xoxkmm9wae",
       "description": [
-        "Aprendí a desarrollar aplicaciones backend escalables con Node.js y NestJS, utilizando buenas prácticas y patrones de diseño para lograr un código limpio y mantenible.",
-        "El curso incluyó la creación de una API REST con autenticación JWT, la implementación de pruebas unitarias y la conexión con bases de datos SQL y NoSQL mediante ORMs como Prisma y TypeORM."
-      ]
+        "Aprendí a desarrollar aplicaciones backend escalables con Node.js y NestJS, utilizando buenas prácticas y patrones de diseño para lograr un código limpio y mantenible."
+      ],
+      "knowledgeAcquired": [
+        "Node.js",
+        "NestJS",
+        "JWT",
+        "Prisma",
+        "TypeORM",
+        "MySQL",
+        "PostgreSQL",
+        "MongoDB"
+      ],
+      "area": "Backend"
     },
     {
       "title": "Angular: De cero a experto",
@@ -505,9 +550,21 @@
       "institutionUrl": "https://devtalles.com",
       "date": "Septiembre de 2023",
       "description": [
-        "Aprendí los fundamentos básicos de Angular, incluyendo componentes, servicios, rutas, formularios reactivos y comunicación con APIs REST. Además, profundicé en conceptos avanzados como lazy loading, guards, interceptors y animaciones.",
-        "Desarrollé varias aplicaciones durante el curso, aplicando todo lo aprendido y siguiendo las mejores prácticas."
-      ]
+        "Curso completo de Angular, desde los conceptos básicos hasta temas avanzados, con un enfoque práctico en el desarrollo de aplicaciones web modernas y escalables."
+      ],
+      "knowledgeAcquired": [
+        "Angular",
+        "Componentes",
+        "Servicios",
+        "Rutas",
+        "Formularios reactivos",
+        "Lazy loading",
+        "Guards",
+        "Interceptors",
+        "Animaciones",
+        "Ciclo de vida de los componentes"
+      ],
+      "area": "Frontend"
     }
   ]
 }

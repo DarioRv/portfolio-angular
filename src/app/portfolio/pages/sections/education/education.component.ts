@@ -26,7 +26,7 @@ export class EducationComponent {
   readonly education = this.cvService.education;
   readonly certifications = this.cvService.certifications;
 
-  private visibleCount = signal(2);
+  protected visibleCount = signal(2);
 
   readonly visibleCertifications = computed(() =>
     this.certifications().slice(0, this.visibleCount()),

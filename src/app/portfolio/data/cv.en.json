@@ -1,8 +1,8 @@
 {
-  "name": "Dario Vidal",
+  "name": "Dario <span class=\"text-primary-500\">Vidal</span>",
   "summary": "Full Stack Web Developer",
   "about": [
-    "I am a full stack web developer with experience in building web applications. I specialize in developing web applications with Angular and Spring Boot, using best practices to ensure optimal performance and exceptional quality.",
+    "I am a full stack web developer with experience in building web applications. I specialize in developing web applications with <span class=\"text-primary-500 font-bold\">Angular</span> and <span class=\"text-black font-bold\">Spring Boot</span>, using best practices to ensure optimal performance and exceptional quality.",
     "I enjoy working in teams and facing new challenges, always seeking to offer the best solution to the problems that arise. My goal is to add value to the projects I participate in and grow professionally in the world of software development."
   ],
   "email": "dariorvidal.27@gmail.com",
@@ -187,6 +187,7 @@
       "title": "ASIST.IO",
       "key": "asistio",
       "tags": ["Web App", "Full Stack"],
+      "type": "Full Stack",
       "summary": "Course management system and class attendance control.",
       "description": [
         "Web application to control student attendance, manage courses and handle attendance/absences from a centralized panel."
@@ -309,6 +310,7 @@
       "title": "Kepler Dynamics",
       "key": "kepler-dynamics",
       "tags": ["Website"],
+      "type": "Frontend",
       "summary": "Website about a company that offers custom software development services.",
       "description": [
         "Website for Kepler Dynamics company, dedicated to custom software development. The site includes information about the company, the services it offers, contact form and internationalization in English and Spanish."
@@ -347,6 +349,7 @@
       "title": "PostgreSQL Cluster",
       "key": "postgresql-cluster",
       "tags": ["DevOps", "Database"],
+      "type": "DevOps",
       "summary": "Monitoring and load balancing in a PostgreSQL database cluster.",
       "description": [
         "A database cluster allows improving the availability and scalability of applications using this technology, ensuring high performance and greater fault tolerance.",
@@ -459,7 +462,19 @@
       "description": [
         "I deepened my knowledge in Angular, learning to develop more complex and scalable applications with good programming and architecture practices.",
         "I developed applications including zoneless, testing, internationalization, server side rendering, static site generation and TanStack Query for HTTP request handling."
-      ]
+      ],
+      "knowledgeAcquired": [
+        "Angular",
+        "Testing",
+        "SSR",
+        "SSG",
+        "TanStack Query",
+        "NgxTranslate",
+        "Performance optimization",
+        "Development best practices",
+        "Angular application architecture"
+      ],
+      "area": "Frontend"
     },
     {
       "title": "Microservices with Spring Cloud",
@@ -470,7 +485,19 @@
       "description": [
         "I learned to develop microservices-based applications with Spring Cloud, using tools like Eureka, Feign and Docker to create scalable and fault-tolerant services.",
         "I applied microservices design best practices and architecture patterns such as Service Registry, Service Discovery, Load Balancing, Circuit Breaker, API Gateway and Configuration Server."
-      ]
+      ],
+      "knowledgeAcquired": [
+        "Spring Cloud",
+        "Microservices",
+        "Docker",
+        "Eureka",
+        "Feign",
+        "Circuit Breaker",
+        "API Gateway",
+        "Configuration Server",
+        "Load Balancing"
+      ],
+      "area": "Backend"
     },
     {
       "title": "Object-Oriented Programming with Java",
@@ -481,7 +508,18 @@
       "description": [
         "I deepened the fundamental concepts of object-oriented programming and its application in Java application development.",
         "The course included creating classes, objects, inheritance, polymorphism, encapsulation, interfaces and collections, as well as database connection with JPA."
-      ]
+      ],
+      "knowledgeAcquired": [
+        "Java",
+        "OOP",
+        "JPA",
+        "Hibernate",
+        "Polymorphism",
+        "Inheritance",
+        "Encapsulation",
+        "Abstraction"
+      ],
+      "area": "Backend"
     },
     {
       "title": "Nest: Scalable backend development with Node",
@@ -492,7 +530,18 @@
       "description": [
         "I learned to develop scalable backend applications with Node.js and NestJS, using best practices and design patterns to achieve clean and maintainable code.",
         "The course included creating a REST API with JWT authentication, implementing unit tests and connecting to SQL and NoSQL databases using ORMs like Prisma and TypeORM."
-      ]
+      ],
+      "knowledgeAcquired": [
+        "Node.js",
+        "NestJS",
+        "JWT",
+        "Prisma",
+        "TypeORM",
+        "MySQL",
+        "PostgreSQL",
+        "MongoDB"
+      ],
+      "area": "Backend"
     },
     {
       "title": "Angular: From zero to expert",
@@ -502,7 +551,20 @@
       "description": [
         "I learned the basic fundamentals of Angular, including components, services, routes, reactive forms and REST API communication. Additionally, I delved into advanced concepts like lazy loading, guards, interceptors and animations.",
         "I developed several applications during the course, applying everything learned and following best practices."
-      ]
+      ],
+      "knowledgeAcquired": [
+        "Angular",
+        "Components",
+        "Services",
+        "Routes",
+        "Reactive forms",
+        "Lazy loading",
+        "Guards",
+        "Interceptors",
+        "Animations",
+        "Component lifecycle"
+      ],
+      "area": "Frontend"
     }
   ]
 }

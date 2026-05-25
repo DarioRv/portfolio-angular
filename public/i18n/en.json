@@ -59,7 +59,8 @@
   },
   "contact": {
     "title": "Contact",
-    "description": "Do you want us to work together? Tell me what you need and I'll respond within 24-48 hours. • UTC-3 (Argentina)",
+    "description": "Interested in working together? Don't hesitate to contact me.",
+    "timezone": "UTC-3 (Argentina)",
     "sendEmail": "Send me an email",
     "emailDescription": "You can send me an email to my email address. Write to me for any questions or work proposals and we can schedule a meeting.",
     "sendEmailButton": "Send email",
