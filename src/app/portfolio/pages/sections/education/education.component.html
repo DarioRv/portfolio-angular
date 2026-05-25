@@ -1,10 +1,15 @@
 <section
-  class="my-10 md:my-20 px-4 max-w-[1200px] mx-auto pt-12 md:pt-26 fade-in"
+  class="my-10 md:my-20 px-4 max-w-[1200px] mx-auto pt-12 md:pt-26 bg-gradient-to-b from-white to-gray-50 fade-in"
   id="education"
   trackSection="education"
 >
   <h2>Educación</h2>
-  <p class="mt-3 text-base md:text-lg text-white/70 max-w-prose mb-5">
+  <div class="flex justify-center">
+    <div
+      class="h-1.5 w-32 bg-gradient-to-r from-[#DD0031] to-black mb-8 rounded-full origin-left"
+    ></div>
+  </div>
+  <p class="mt-3 text-base md:text-xl text-primary text-center mb-5">
     Aquí encontrarás mi trayectoria académica. Mis estudios y certificaciones.
   </p>
   <div class="flex flex-col gap-5">
@@ -18,8 +23,16 @@
   class="my-10 md:my-20 px-4 max-w-[1200px] mx-auto fade-in"
   trackSection="certifications"
 >
-  <h2>Certificados</h2>
-  <div class="grid grid-cols-1" [@expandListAnim]="visibleCount">
+  <h2>Certificaciones <span class="text-primary-500">Profesionales</span></h2>
+  <div class="flex justify-center">
+    <div
+      class="h-1.5 w-32 bg-gradient-to-r from-[#DD0031] to-black mb-8 rounded-full origin-left"
+    ></div>
+  </div>
+  <div
+    class="grid grid-cols-1 md:grid-cols-2 gap-3"
+    [@expandListAnim]="visibleCount"
+  >
     @for (item of visibleCertifications; track $index) {
       <certification-card [certification]="item" />
     }
@@ -28,7 +41,7 @@
     <div class="flex justify-center mt-8 text-sm">
       @if (hasMore) {
         <button
-          class="flex gap-2 items-center px-6 py-2 hover:text-white text-white/70 transition"
+          class="flex gap-2 items-center px-6 py-2 hover:text-white text-primary transition"
           (click)="showMore()"
         >
           Ver todas mis certificaciones
@@ -36,7 +49,7 @@
         </button>
       } @else {
         <button
-          class="flex gap-2 items-center px-6 py-2 hover:text-white text-white/70 transition"
+          class="flex gap-2 items-center px-6 py-2 hover:text-white text-primary transition"
           (click)="showLess()"
         >
           Ver menos

@@ -8,7 +8,9 @@ import {
   ChevronLeft,
   ChevronRight,
   ChevronUp,
+  Code,
   Copy,
+  Database,
   Expand,
   ExternalLink,
   FileText,
@@ -23,6 +25,7 @@ import {
   Phone,
   University,
   User,
+  Waypoints,
   X,
 } from 'lucide-angular';
 
@@ -53,6 +56,9 @@ import {
       PencilRuler,
       GraduationCap,
       Phone,
+      Code,
+      Database,
+      Waypoints,
     }),
   ],
   exports: [LucideAngularModule],

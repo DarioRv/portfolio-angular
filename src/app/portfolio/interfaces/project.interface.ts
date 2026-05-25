@@ -13,6 +13,7 @@ export interface Project {
   architecture?: Architecture;
   stats?: Stats[];
   tags?: string[];
+  type: string;
 }
 
 export interface Technology {

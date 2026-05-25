@@ -3,11 +3,12 @@ import { ProjectCardComponent } from '@components/project-card/project-card.comp
 import cv from '@data/cv.json';
 import { TrackSectionVisibilityDirective } from '@directives/track-section-visibility.service';
 import { Project } from '@interfaces/project.interface';
+import { IconsModule } from 'app/icons/icons.module';
 
 @Component({
   selector: 'dv-projects',
   standalone: true,
-  imports: [ProjectCardComponent, TrackSectionVisibilityDirective],
+  imports: [ProjectCardComponent, TrackSectionVisibilityDirective, IconsModule],
   templateUrl: './projects.component.html',
   styles: ``,
 })

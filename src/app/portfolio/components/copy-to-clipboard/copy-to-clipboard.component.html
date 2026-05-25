@@ -1,15 +1,27 @@
-<div
-  class="border border-white/20 flex gap-3 justify-between items-center rounded-xl py-2 px-4"
+<button
+  class="group border flex gap-3 justify-between items-center rounded-xl p-3 px-8 hover:scale-105 transition-transform"
+  [ngClass]="{
+    'border-green-500 hover:border-green-500': textHasCopied() == true,
+    'border-black hover:border-primary-500': textHasCopied() == false,
+  }"
+  (click)="copyToClipboard()"
 >
-  <p class="text-sm text-white/90">{{ label() ? label() : textToCopy() }}</p>
-  <button
+  <p
+    class="text-base font-semibold text-black"
+    [ngClass]="{
+      'text-green-500 group-hover:text-green-500': textHasCopied() == true,
+      'text-black group-hover:text-primary-500': textHasCopied() == false,
+    }"
+  >
+    {{ label() ? label() : textToCopy() }}
+  </p>
+  <div
     class="cursor-pointer rounded-full grid place-items-center"
     [ngClass]="{
-      'text-green-500 bg-green-500/15': textHasCopied() == true,
-      'text-white': textHasCopied() == false,
+      'text-green-500 group-hover:text-green-500': textHasCopied() == true,
+      'text-black group-hover:text-primary-500': textHasCopied() == false,
     }"
-    (click)="copyToClipboard()"
   >
-    <i-lucide [name]="icon()" [size]="16"></i-lucide>
-  </button>
-</div>
+    <i-lucide [name]="icon()" [size]="20"></i-lucide>
+  </div>
+</button>
