@@ -199,10 +199,10 @@
       ],
       "featured": true,
       "images": [
-        "proyecto-asistio.webp",
-        "proyecto-asistio-2.webp",
-        "proyecto-asistio-3.webp",
-        "proyecto-asistio-4.webp"
+        "projects/asistio/proyecto-asistio.webp",
+        "projects/asistio/proyecto-asistio-2.webp",
+        "projects/asistio/proyecto-asistio-3.webp",
+        "projects/asistio/proyecto-asistio-4.webp"
       ],
       "github": "https://github.com/DarioRv/sistema-asistencia-angular",
       "demo": "https://asistio-a77d7.web.app",
@@ -322,11 +322,11 @@
       ],
       "featured": true,
       "images": [
-        "proyecto-kepler.webp",
-        "proyecto-kepler-2.webp",
-        "proyecto-kepler-3.webp",
-        "proyecto-kepler-4.webp",
-        "proyecto-kepler-5.webp"
+        "projects/kepler-dynamics/proyecto-kepler.webp",
+        "projects/kepler-dynamics/proyecto-kepler-2.webp",
+        "projects/kepler-dynamics/proyecto-kepler-3.webp",
+        "projects/kepler-dynamics/proyecto-kepler-4.webp",
+        "projects/kepler-dynamics/proyecto-kepler-5.webp"
       ],
       "demo": "https://kepler-dynamics.com",
       "technologies": [
@@ -361,9 +361,9 @@
         "Cluster contiente bases de datos PostgreSQL con balanceo de carga y monitoreo de rendimiento. Se utilizó HAProxy para el balanceo de carga, Grafana y Prometheus para el monitoreo, y Docker para la creación de contenedores."
       ],
       "images": [
-        "proyecto-cluster-postgres.webp",
-        "proyecto-cluster-postgres-2.webp",
-        "proyecto-cluster-postgres-3.webp"
+        "projects/postgresql-cluster/proyecto-cluster-postgres.webp",
+        "projects/postgresql-cluster/proyecto-cluster-postgres-2.webp",
+        "projects/postgresql-cluster/proyecto-cluster-postgres-3.webp"
       ],
       "github": "https://github.com/DarioRv/cluster-postgres",
       "technologies": [
