@@ -6,4 +6,6 @@ export interface Certification {
   date: string;
   url?: string;
   logo?: string;
+  area: string;
+  knowledgeAcquired: string[];
 }

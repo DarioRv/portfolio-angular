@@ -3,6 +3,7 @@ import { ProjectCardComponent } from '@components/project-card/project-card.comp
 import { TrackSectionVisibilityDirective } from '@directives/track-section-visibility.service';
 import { TranslatePipe } from '@ngx-translate/core';
 import { CvService } from '@services/cv.service';
+import { IconsModule } from 'app/icons/icons.module';
 
 @Component({
   selector: 'dv-projects',
@@ -10,6 +11,7 @@ import { CvService } from '@services/cv.service';
   imports: [
     ProjectCardComponent,
     TrackSectionVisibilityDirective,
+    IconsModule,
     TranslatePipe,
   ],
   templateUrl: './projects.component.html',

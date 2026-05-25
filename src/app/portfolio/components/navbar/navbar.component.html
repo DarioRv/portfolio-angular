@@ -1,72 +1,85 @@
 <nav class="group">
-  <ul
-    class="flex flex-row gap-5 justify-center md:gap-3 p-2 md:p-4 rounded-t-xl md:rounded-xl backdrop-blur-2xl w-full bg-black/20"
-  >
-    @for (item of menuItems; track $index) {
-      <li>
-        <a
-          class="hidden md:inline py-2 px-4 rounded-xl hover:text-white transition-colors"
-          [routerLink]="item.routerLink"
-          [fragment]="item.fragment"
-          queryParamsHandling="preserve"
-          >{{ item.label | translate }}</a
-        >
-        <a
-          class="md:hidden"
-          [routerLink]="item.routerLink"
-          routerLinkActive="text-primary-500"
-          [fragment]="item.fragment"
-          queryParamsHandling="preserve"
-        >
-          <div class="p-2 rounded-full bg-white/10">
-            <lucide-icon [name]="item.icon" size="24"></lucide-icon>
-          </div>
-        </a>
-      </li>
-    }
+  <div class="absolute inset-0 opacity-10">
+    <div
+      class="absolute inset-0"
+      style="
+        background-image: radial-gradient(circle, white 1px, transparent 1px);
+        background-size: 20px 20px;
+      "
+    ></div>
+  </div>
+  <div>
+    <ul
+      class="flex flex-row gap-5 justify-center md:gap-3 p-2 md:p-4 rounded-t-xl md:rounded-xl backdrop-blur-2xl w-full"
+    >
+      @for (item of menuItems; track $index) {
+        <li>
+          <a
+            class="hidden md:inline py-2 px-4 rounded-xl text-white hover:text-primary-500 font-medium transition-colors"
+            [routerLink]="item.routerLink"
+            [fragment]="item.fragment"
+            queryParamsHandling="preserve"
+            >{{ item.label | translate }}</a
+          >
+          <a
+            class="md:hidden"
+            [routerLink]="item.routerLink"
+            routerLinkActive="text-primary-500"
+            [fragment]="item.fragment"
+            queryParamsHandling="preserve"
+          >
+            <div class="p-2 rounded-full bg-white/10">
+              <lucide-icon [name]="item.icon" size="24"></lucide-icon>
+            </div>
+          </a>
+        </li>
+      }
 
-    <!-- Language Selector -->
-    <li class="hidden md:flex items-center border-l border-white/20 pl-3 ml-1">
-      <div class="flex gap-1 text-sm">
-        <button
-          class="px-2 py-1 rounded-lg transition-colors"
-          [class]="
-            currentLanguage() === Language.ES
-              ? 'bg-white/20 text-white'
-              : 'text-white/50 hover:text-white'
-          "
-          (click)="changeLanguage(Language.ES)"
-        >
-          ES
-        </button>
-        <button
-          class="px-2 py-1 rounded-lg transition-colors"
-          [class]="
-            currentLanguage() === Language.EN
-              ? 'bg-white/20 text-white'
-              : 'text-white/50 hover:text-white'
-          "
-          (click)="changeLanguage(Language.EN)"
-        >
-          EN
-        </button>
-      </div>
-    </li>
-
-    <!-- Mobile Language Selector -->
-    <li class="md:hidden">
-      <button
-        class="p-2 rounded-full bg-white/10"
-        (click)="
-          changeLanguage(
-            currentLanguage() === Language.ES ? Language.EN : Language.ES
-          )
-        "
+      <!-- Language Selector -->
+      <li
+        class="hidden md:flex items-center border-l border-white/20 pl-3 ml-1"
       >
-        <span class="text-xs font-bold">{{
-          currentLanguage() === Language.ES ? "EN" : "ES"
-        }}</span>
-      </button>
-    </li>
-  </ul>
+        <div class="flex gap-1 text-sm">
+          <button
+            class="px-2 py-1 rounded-lg transition-colors"
+            [class]="
+              currentLanguage() === Language.ES
+                ? 'bg-white/20 text-white'
+                : 'text-white/50 hover:text-white'
+            "
+            (click)="changeLanguage(Language.ES)"
+          >
+            ES
+          </button>
+          <button
+            class="px-2 py-1 rounded-lg transition-colors"
+            [class]="
+              currentLanguage() === Language.EN
+                ? 'bg-white/20 text-white'
+                : 'text-white/50 hover:text-white'
+            "
+            (click)="changeLanguage(Language.EN)"
+          >
+            EN
+          </button>
+        </div>
+      </li>
+
+      <!-- Mobile Language Selector -->
+      <li class="md:hidden">
+        <button
+          class="p-2 rounded-full bg-white/10"
+          (click)="
+            changeLanguage(
+              currentLanguage() === Language.ES ? Language.EN : Language.ES
+            )
+          "
+        >
+          <span class="text-xs font-bold">{{
+            currentLanguage() === Language.ES ? "EN" : "ES"
+          }}</span>
+        </button>
+      </li>
+    </ul>
+  </div>
 </nav>

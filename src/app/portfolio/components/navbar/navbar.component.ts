@@ -13,8 +13,7 @@ import { TranslatePipe } from '@ngx-translate/core';
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css',
   host: {
-    class:
-      'fixed bottom-0 md:top-5 md:-translate-x-1/2 md:left-1/2 z-10 w-full md:w-fit',
+    class: 'fixed bg-black top-0 left-0 right-0 z-50',
   },
 })
 export class NavbarComponent {

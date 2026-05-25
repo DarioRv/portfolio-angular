@@ -1,0 +1,133 @@
+[build]
+  publish = "dist/portfolio-angular/browser"
+  command = "npm run build"
+
+# ============================================
+# SEO: Force HTTPS and remove www
+# ============================================
+[[redirects]]
+  from = "https://www.dariovidal.dev/*"
+  to = "https://dariovidal.dev/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.dariovidal.dev/*"
+  to = "https://dariovidal.dev/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://dariovidal.dev/*"
+  to = "https://dariovidal.dev/:splat"
+  status = 301
+  force = true
+
+# ============================================
+# SEO: Normalize trailing slashes on projects
+# ============================================
+[[redirects]]
+  from = "/projects/asistio/"
+  to = "/projects/asistio"
+  status = 301
+
+[[redirects]]
+  from = "/projects/kepler-dynamics/"
+  to = "/projects/kepler-dynamics"
+  status = 301
+
+[[redirects]]
+  from = "/projects/postgresql-cluster/"
+  to = "/projects/postgresql-cluster"
+  status = 301
+
+# ============================================
+# SEO: Old routes redirects (301 Permanent)
+# ============================================
+[[redirects]]
+  from = "/home"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/home/"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/projects"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/projects/"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/education"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/education/"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/contact"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/contact/"
+  to = "/"
+  status = 301
+
+# ============================================
+# SPA fallback - must be last
+# ============================================
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# ============================================
+# Headers for SEO and performance
+# ============================================
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Content-Type = "application/xml; charset=utf-8"
+
+[[headers]]
+  for = "/robots.txt"
+  [headers.values]
+    Content-Type = "text/plain; charset=utf-8"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.webp"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.woff2"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

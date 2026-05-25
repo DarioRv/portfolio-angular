@@ -1,3 +1,4 @@
+import { UpperCasePipe } from '@angular/common';
 import { Component, inject, input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { ImageGaleryComponent } from '@components/image-galery/image-galery.component';
@@ -15,6 +16,7 @@ import { TranslatePipe } from '@ngx-translate/core';
     TechChipComponent,
     IconsModule,
     ImageGaleryComponent,
+    UpperCasePipe,
     TranslatePipe,
   ],
   templateUrl: './project-card.component.html',
