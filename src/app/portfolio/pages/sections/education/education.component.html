@@ -23,7 +23,7 @@
   class="my-10 md:my-20 px-4 max-w-[1200px] mx-auto fade-in"
   trackSection="certifications"
 >
-  <h2>{{ "education.certifications" | translate }}</h2>
+  <h2 [innerHTML]="'education.certifications' | translate"></h2>
   <div class="flex justify-center">
     <div
       class="h-1.5 w-32 bg-gradient-to-r from-[#DD0031] to-black mb-8 rounded-full origin-left"
@@ -38,22 +38,22 @@
     }
   </div>
   @if (certifications().length > 2) {
-    <div class="flex justify-center mt-8 text-sm">
+    <div class="flex justify-center mt-8 text-base">
       @if (hasMore()) {
         <button
-          class="flex gap-2 items-center px-6 py-2 hover:text-white text-primary transition"
+          class="flex gap-2 items-center px-8 py-4 text-black border border-black rounded-xl w-fit mx-auto transition-all duration-300 hover:bg-black hover:text-white cursor-pointer"
           (click)="showMore()"
         >
           {{ "education.viewAllCertifications" | translate }}
-          <i-lucide name="chevron-down" size="16"></i-lucide>
+          <i-lucide name="chevron-down" size="20"></i-lucide>
         </button>
       } @else {
         <button
-          class="flex gap-2 items-center px-6 py-2 hover:text-white text-primary transition"
+          class="flex gap-2 items-center px-8 py-4 text-black border border-black rounded-xl w-fit mx-auto transition-all duration-300 hover:bg-black hover:text-white cursor-pointer"
           (click)="showLess()"
         >
           {{ "education.viewLess" | translate }}
-          <i-lucide name="chevron-up" size="16"></i-lucide>
+          <i-lucide name="chevron-up" size="20"></i-lucide>
         </button>
       }
     </div>

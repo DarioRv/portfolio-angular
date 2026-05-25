@@ -46,16 +46,19 @@
     "viewRepository": "Ver repositorio",
     "interestedInSimilar": "¿Te interesa un proyecto similar?",
     "contactMe": "Contactarme",
-    "backToProjects": "Volver a proyectos"
+    "backToProjects": "Volver a proyectos",
+    "seeMoreTxt": "¿Quieres ver más proyectos?",
+    "seeMoreBtn": "Explorar más en GitHub"
   },
   "education": {
     "title": "Educación",
     "description": "Aquí encontrarás mi trayectoria académica. Mis estudios y certificaciones.",
-    "certifications": "Certificados",
+    "certifications": "Certificados <span class=\"text-primary-500\">Profesionales</span>",
     "viewAllCertifications": "Ver todas mis certificaciones",
     "viewLess": "Ver menos",
     "issuedBy": "Emitido por",
-    "viewCertificate": "Ver certificado"
+    "viewCertificate": "Ver certificado",
+    "knowledgeAcquired": "Conocimientos adquiridos"
   },
   "contact": {
     "title": "Contacto",

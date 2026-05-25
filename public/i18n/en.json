@@ -46,7 +46,9 @@
     "viewRepository": "View repository",
     "interestedInSimilar": "Interested in a similar project?",
     "contactMe": "Contact me",
-    "backToProjects": "Back to projects"
+    "backToProjects": "Back to projects",
+    "seeMoreTxt": "Want to see more projects?",
+    "seeMoreBtn": "Explore more on GitHub"
   },
   "education": {
     "title": "Education",
@@ -55,7 +57,8 @@
     "viewAllCertifications": "View all my certifications",
     "viewLess": "View less",
     "issuedBy": "Issued by",
-    "viewCertificate": "View certificate"
+    "viewCertificate": "View certificate",
+    "knowledgeAcquired": "Knowledge acquired"
   },
   "contact": {
     "title": "Contact",
