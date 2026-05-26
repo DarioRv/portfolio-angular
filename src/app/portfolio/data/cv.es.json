@@ -70,7 +70,7 @@
       },
       {
         "label": "Express",
-        "icon": "express",
+        "icon": "expressjs",
         "color": "rgba(0, 0, 0)"
       },
       {
@@ -202,7 +202,12 @@
         "projects/asistio/proyecto-asistio.webp",
         "projects/asistio/proyecto-asistio-2.webp",
         "projects/asistio/proyecto-asistio-3.webp",
-        "projects/asistio/proyecto-asistio-4.webp"
+        "projects/asistio/proyecto-asistio-4.webp",
+        "projects/asistio/proyecto-asistio-5.webp",
+        "projects/asistio/proyecto-asistio-6.webp",
+        "projects/asistio/proyecto-asistio-7.webp",
+        "projects/asistio/proyecto-asistio-8.webp",
+        "projects/asistio/proyecto-asistio-9.webp"
       ],
       "github": "https://github.com/DarioRv/sistema-asistencia-angular",
       "demo": "https://asistio-a77d7.web.app",
@@ -238,6 +243,10 @@
           "backgroundColor": "rgba(109, 179, 63, 0.1)"
         },
         {
+          "label": "Spring Security",
+          "icon": "spring-security"
+        },
+        {
           "label": "JWT",
           "icon": "jwt",
           "color": "rgba(255, 255, 255, 0.7)",
@@ -248,6 +257,22 @@
           "icon": "mysql",
           "color": "rgb(29, 142, 248)",
           "backgroundColor": "rgba(29, 142, 248, 0.1)"
+        },
+        {
+          "label": "Docker",
+          "icon": "docker"
+        },
+        {
+          "label": "Netlify",
+          "icon": "netlify"
+        },
+        {
+          "label": "Railway",
+          "icon": "railway"
+        },
+        {
+          "label": "Analytics",
+          "icon": "google-analytics"
         }
       ],
       "overview": {
