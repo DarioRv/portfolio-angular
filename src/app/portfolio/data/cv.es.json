@@ -328,7 +328,7 @@
         "projects/kepler-dynamics/proyecto-kepler-4.webp",
         "projects/kepler-dynamics/proyecto-kepler-5.webp"
       ],
-      "demo": "https://kepler-dynamics.com",
+      "demo": "https://kepler-dynamics.netlify.app",
       "technologies": [
         {
           "label": "Astro",
