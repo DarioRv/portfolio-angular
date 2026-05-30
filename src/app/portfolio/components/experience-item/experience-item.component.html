@@ -42,6 +42,12 @@
     </div>
 
     <div class="pb-6">
+      @for (item of experience().description; track $index) {
+        <p class="text-base text-primary mb-2">{{ item }}</p>
+      }
+    </div>
+
+    <div class="pb-6">
       <div class="text-base tracking-wider uppercase font-semibold text-black">
         {{ "experience.responsibilities" | translate }}
       </div>

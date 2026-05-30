@@ -136,16 +136,14 @@
       "type": "Tiempo completo",
       "current": true,
       "description": [
-        "Desarrollo de aplicaciones web full stack utilizando Angular y Spring Boot.",
-        "Implementación de buenas prácticas de programación y arquitectura para garantizar un rendimiento óptimo y una calidad excepcional.",
-        "Colaboración con clientes para entender sus necesidades y ofrecer soluciones personalizadas."
+        "Desarrollo y mantenimiento de aplicaciones empresariales orientadas al rubro asegurador, participando en soluciones backend y frontend para sistemas críticos del negocio."
       ],
       "achievements": [
-        "Desarrollo de aplicaciones web utilizando Angular.",
-        "Desarrollo de APIs REST con NestJS, Spring Boot y Express.",
-        "Integraciones de servicios AWS (S3, SQS, SNS, SES, Lambda).",
-        "Despliegue de aplicaciones mediante Jenkins, Docker y Kubernetes.",
-        "Integración de microservicios."
+        "Desarrollo de APIs REST y microservicios con NestJS y Spring Boot.",
+        "Construcción de aplicaciones frontend con Angular.",
+        "Optimización de consultas y mejora de performance.",
+        "Resolución de incidencias productivas.",
+        "Participación en mejoras continuas y mantenimiento evolutivo."
       ],
       "technologies": [
         {
@@ -165,12 +163,24 @@
           "icon": "nestjs"
         },
         {
+          "label": "PostgreSQL",
+          "icon": "postgresql"
+        },
+        {
+          "label": "MongoDB",
+          "icon": "mongodb"
+        },
+        {
           "label": "AWS",
           "icon": "aws"
         },
         {
           "label": "Jenkins",
           "icon": "jenkins"
+        },
+        {
+          "label": "Argo CD",
+          "icon": "argo"
         },
         {
           "label": "Kubernetes",
@@ -183,6 +193,14 @@
         {
           "label": "Jira",
           "icon": "jira"
+        },
+        {
+          "label": "Datadog",
+          "icon": "datadog"
+        },
+        {
+          "label": "Kibana",
+          "icon": "kibana"
         }
       ]
     }
@@ -269,10 +287,6 @@
         {
           "label": "Railway",
           "icon": "railway"
-        },
-        {
-          "label": "Analytics",
-          "icon": "google-analytics"
         }
       ],
       "overview": {
@@ -357,7 +371,7 @@
       "technologies": [
         {
           "label": "Astro",
-          "icon": "astro",
+          "icon": "astro-icon-light",
           "color": "rgb(189, 82, 243)",
           "backgroundColor": "rgba(189, 82, 243, 0.1)"
         },
@@ -372,6 +386,10 @@
           "icon": "tailwindcss",
           "color": "rgb(6, 182, 212)",
           "backgroundColor": "rgba(6, 182, 212, 0.1)"
+        },
+        {
+          "label": "Analytics",
+          "icon": "google-analytics"
         }
       ]
     },
@@ -493,15 +511,18 @@
         "Profundicé mis conocimientos en Angular, aprendiendo a desarrollar aplicaciones más complejas y escalables con buenas prácticas de programación y arquitectura."
       ],
       "knowledgeAcquired": [
-        "Angular",
+        "Angular avanzado",
         "Testing",
+        "Karma",
+        "Jasmine",
         "SSR",
         "SSG",
         "TanStack Query",
         "NgxTranslate",
         "Optimización de rendimiento",
         "Mejores prácticas de desarrollo",
-        "Arquitectura de aplicaciones Angular"
+        "Arquitectura de aplicaciones Angular",
+        "Creación de paquetes NPM"
       ],
       "area": "Frontend"
     },
