@@ -48,9 +48,13 @@ export class ProjectComponent implements OnInit {
   ngOnInit(): void {
     const proj = this.project();
     if (proj) {
-      this.seoService.updateCanonical();
+      this.seoService.updateCanonical(`/projects/${proj.key}/`);
       this.seoService.updateTitle(`${proj.title} - Darío Vidal`);
       this.seoService.updateDescription(proj.summary);
+      this.seoService.updateOgUrl(`/projects/${proj.key}/`);
+      this.seoService.updateOgImage(
+        '/images/projects/project-image-default.webp',
+      );
     }
   }
 

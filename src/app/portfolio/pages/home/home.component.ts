@@ -28,6 +28,6 @@ export class HomeComponent implements OnInit {
     this.seoService.updateDescription(
       'Desarrollador con +1 año de experiencia en tecnologías como Angular, NestJS, Spring, Node.js, MongoDB, MySQL, entre otras.',
     );
-    this.seoService.updateCanonical();
+    this.seoService.updateCanonical('/');
   }
 }
