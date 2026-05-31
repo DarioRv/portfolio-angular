@@ -285,15 +285,43 @@
         }
       ],
       "overview": {
-        "context": "Project developed as part of my academic training at the National University of Jujuy. The goal of the project was to create a system that would allow teachers to manage student attendance efficiently and quickly.",
-        "problem": [
-          "Slow manual registration.",
-          "Lack of historical attendance visibility.",
-          "Difficulty managing multiple courses and students.",
-          "Human errors in attendance registration."
-        ],
-        "solution": "Together with my team, I developed a web application that allows teachers to record student attendance quickly and easily. The application has an administration panel where teachers can manage courses and students, and an attendance registration system that allows marking the presence or absence of each student with a single click.",
-        "results": "The system significantly reduced the time teachers spent on attendance control, allowing them to focus on other academic tasks. Additionally, the application improved the accuracy of attendance records, minimizing human errors."
+        "sections": [
+          {
+            "order": 1,
+            "title": "Context",
+            "type": "text",
+            "content": [
+              "Project developed as part of my academic training at the National University of Jujuy. The goal of the project was to create a system that would allow teachers to manage student attendance efficiently and quickly."
+            ]
+          },
+          {
+            "order": 2,
+            "title": "Problem",
+            "type": "list",
+            "content": [
+              "Slow manual registration.",
+              "Lack of historical attendance visibility.",
+              "Difficulty managing multiple courses and students.",
+              "Human errors in attendance registration."
+            ]
+          },
+          {
+            "order": 3,
+            "title": "Solution",
+            "type": "text",
+            "content": [
+              "Together with my team, I developed a web application that allows teachers to record student attendance quickly and easily. The application has an administration panel where teachers can manage courses and students, and an attendance registration system that allows marking the presence or absence of each student with a single click."
+            ]
+          },
+          {
+            "order": 4,
+            "title": "Results",
+            "type": "text",
+            "content": [
+              "The system significantly reduced the time teachers spent on attendance control, allowing them to focus on other academic tasks. Additionally, the application improved the accuracy of attendance records, minimizing human errors."
+            ]
+          }
+        ]
       },
       "features": [
         {
@@ -437,14 +465,36 @@
         }
       ],
       "overview": {
-        "context": "The goal was to achieve high availability and performance in a PostgreSQL database for a web application that needs to handle a large volume of concurrent requests. The objective was to implement a database cluster that would allow distributing the load among multiple nodes and ensure service continuity in case of failures.",
-        "problem": [
-          "High availability: Ensure the database is always available, even in case of individual node failures.",
-          "Load balancing: Distribute client requests among multiple nodes to improve performance and avoid bottlenecks.",
-          "Performance monitoring: Implement a monitoring system to oversee cluster status and detect potential issues."
-        ],
-        "solution": "I implemented a PostgreSQL database cluster using Docker to create containers hosting the cluster nodes. I configured HAProxy as a load balancer to distribute requests among available nodes. Additionally, I integrated Grafana and Prometheus to monitor cluster performance, allowing visualization of key metrics and proactive detection of potential issues.",
-        "results": "The implemented cluster improved database availability and performance, allowing handling of a higher volume of requests efficiently. The monitoring system facilitated issue identification and resolution, contributing to maintaining cluster stability over time."
+        "sections": [
+          {
+            "order": 1,
+            "title": "Context",
+            "type": "text",
+            "content": "The goal was to achieve high availability and performance in a PostgreSQL database for a web application that needs to handle a large volume of concurrent requests. The objective was to implement a database cluster that would allow distributing the load among multiple nodes and ensure service continuity in case of failures."
+          },
+          {
+            "order": 2,
+            "title": "Problem",
+            "type": "list",
+            "content": [
+              "High availability: Ensure the database is always available, even in case of individual node failures.",
+              "Load balancing: Distribute client requests among multiple nodes to improve performance and avoid bottlenecks.",
+              "Performance monitoring: Implement a monitoring system to oversee cluster status and detect potential issues."
+            ]
+          },
+          {
+            "order": 3,
+            "title": "Solution",
+            "type": "text",
+            "content": "I implemented a PostgreSQL database cluster using Docker to create containers hosting the cluster nodes. I configured HAProxy as a load balancer to distribute requests among available nodes. Additionally, I integrated Grafana and Prometheus to monitor cluster performance, allowing visualization of key metrics and proactive detection of potential issues."
+          },
+          {
+            "order": 4,
+            "title": "Results",
+            "type": "text",
+            "content": "The implemented cluster improved database availability and performance, allowing handling of a higher volume of requests efficiently. The monitoring system facilitated issue identification and resolution, contributing to maintaining cluster stability over time."
+          }
+        ]
       },
       "architecture": {
         "description": "The PostgreSQL database cluster architecture is based on a master-slave configuration, where one node acts as master and the others as slaves. HAProxy handles distributing incoming requests among available nodes, while Grafana and Prometheus collect and visualize performance metrics in real-time.",

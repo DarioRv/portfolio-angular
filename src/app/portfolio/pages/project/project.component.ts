@@ -35,6 +35,16 @@ export class ProjectComponent implements OnInit {
     return this.cvService.projects().find((p) => p.key === key);
   });
 
+  readonly overviewSections = computed(() => {
+    const sections = this.project()?.overview?.sections ?? [];
+
+    return [...sections].sort(
+      (left, right) =>
+        (left.order ?? Number.MAX_SAFE_INTEGER) -
+        (right.order ?? Number.MAX_SAFE_INTEGER),
+    );
+  });
+
   ngOnInit(): void {
     const proj = this.project();
     if (proj) {
@@ -42,6 +52,10 @@ export class ProjectComponent implements OnInit {
       this.seoService.updateTitle(`${proj.title} - Darío Vidal`);
       this.seoService.updateDescription(proj.summary);
     }
+  }
+
+  isStringArray(value: string | string[]): value is string[] {
+    return Array.isArray(value);
   }
 
   public trackOutboundLink(linkType: string): void {

@@ -8,12 +8,22 @@ export interface Project {
   technologies: Technology[];
   github?: string;
   demo?: string;
-  overview?: Partial<OverviewDetails>;
+  overview?: Overview;
   features?: Feature[];
   architecture?: Architecture;
   stats?: Stats[];
   tags?: string[];
   type: string;
+}
+
+export interface Overview {
+  sections: OverviewSection[];
+}
+
+interface OverviewSection {
+  title: string;
+  order?: number;
+  content: string | string[];
 }
 
 export interface Technology {

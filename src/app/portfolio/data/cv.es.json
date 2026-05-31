@@ -290,15 +290,43 @@
         }
       ],
       "overview": {
-        "context": "Proyecto desarrollado como parte de mi formación académica en la Universidad Nacional de Jujuy. El objetivo del proyecto era crear un sistema que permitiera a los profesores gestionar la asistencia de los alumnos a clases de manera eficiente y rápida.",
-        "problem": [
-          "Registro manual lento.",
-          "Falta de visibilidad histórica de asistencias.",
-          "Dificultad para gestionar múltiples cursos y alumnos.",
-          "Errores humanos en el registro de asistencias."
-        ],
-        "solution": "Desarrollé junto a mi equipo una aplicación web que permite a los profesores registrar la asistencia de los alumnos de manera rápida y sencilla. La aplicación cuenta con un panel de administración donde los profesores pueden gestionar los cursos y los alumnos, y un sistema de registro de asistencias que permite marcar la presencia o ausencia de cada alumno con un solo clic.",
-        "results": "El sistema logró reducir significativamente el tiempo que los profesores dedicaban al control de asistencia, permitiéndoles enfocarse en otras tareas académicas. Además, la aplicación mejoró la precisión de los registros de asistencia, minimizando los errores humanos."
+        "sections": [
+          {
+            "order": 1,
+            "title": "Contexto",
+            "type": "text",
+            "content": [
+              "Proyecto desarrollado como parte de mi formación académica en la Universidad Nacional de Jujuy. El objetivo del proyecto era crear un sistema que permitiera a los profesores gestionar la asistencia de los alumnos a clases de manera eficiente y rápida."
+            ]
+          },
+          {
+            "order": 2,
+            "title": "Problema",
+            "type": "list",
+            "content": [
+              "Registro manual lento.",
+              "Falta de visibilidad histórica de asistencias.",
+              "Dificultad para gestionar múltiples cursos y alumnos.",
+              "Errores humanos en el registro de asistencias."
+            ]
+          },
+          {
+            "order": 3,
+            "title": "Solución",
+            "type": "text",
+            "content": [
+              "Desarrollé junto a mi equipo una aplicación web que permite a los profesores registrar la asistencia de los alumnos de manera rápida y sencilla. La aplicación cuenta con un panel de administración donde los profesores pueden gestionar los cursos y los alumnos, y un sistema de registro de asistencias que permite marcar la presencia o ausencia de cada alumno con un solo clic."
+            ]
+          },
+          {
+            "order": 4,
+            "title": "Resultados",
+            "type": "text",
+            "content": [
+              "El sistema logró reducir significativamente el tiempo que los profesores dedicaban al control de asistencia, permitiéndoles enfocarse en otras tareas académicas. Además, la aplicación mejoró la precisión de los registros de asistencia, minimizando los errores humanos."
+            ]
+          }
+        ]
       },
       "features": [
         {
@@ -359,6 +387,44 @@
       "description": [
         "Sitio web de la empresa Kepler Dynamics, dedicada al desarrollo de software a medida. El sitio cuenta con información sobre la empresa, los servicios que ofrece, formulario de contacto e internacionalización en inglés y español."
       ],
+      "overview": {
+        "sections": [
+          {
+            "order": 1,
+            "title": "Contexto",
+            "type": "text",
+            "content": [
+              "Proyecto personal desarrollado para practicar mis habilidades en el desarrollo frontend con Angular y Tailwind CSS, y para crear un sitio web atractivo y funcional que represente los servicios de una empresa ficticia de desarrollo de software."
+            ]
+          },
+          {
+            "order": 2,
+            "title": "Problema",
+            "type": "list",
+            "content": [
+              "Diseñar un sitio web atractivo y profesional que represente los servicios de la empresa.",
+              "Implementar una experiencia de usuario fluida y responsiva.",
+              "Incorporar funcionalidades como formulario de contacto e internacionalización."
+            ]
+          },
+          {
+            "order": 3,
+            "title": "Solución",
+            "type": "text",
+            "content": [
+              "Desarrollé un sitio web utilizando Angular para la estructura y lógica del frontend, y Tailwind CSS para el diseño y estilo. El sitio cuenta con secciones informativas sobre la empresa, los servicios que ofrece, un formulario de contacto funcional y soporte para múltiples idiomas (inglés y español) utilizando ngx-translate."
+            ]
+          },
+          {
+            "order": 4,
+            "title": "Resultados",
+            "type": "text",
+            "content": [
+              "El sitio web logró cumplir con los objetivos establecidos, ofreciendo una experiencia de usuario atractiva y funcional. La incorporación de internacionalización permitió ampliar el alcance del sitio a una audiencia más amplia, y el formulario de contacto facilitó la comunicación con potenciales clientes."
+            ]
+          }
+        ]
+      },
       "featured": true,
       "images": [
         "projects/kepler-dynamics/proyecto-kepler.webp",
@@ -442,14 +508,36 @@
         }
       ],
       "overview": {
-        "context": "Se deseaba lograr una alta disponibilidad y rendimiento en una base de datos PostgreSQL para una aplicación web que requiere manejar un gran volumen de solicitudes concurrentes. El objetivo era implementar un cluster de bases de datos que permitiera distribuir la carga entre múltiples nodos y garantizar la continuidad del servicio en caso de fallos.",
-        "problem": [
-          "Alta disponibilidad: Garantizar que la base de datos esté siempre disponible, incluso en caso de fallos de nodos individuales.",
-          "Balanceo de carga: Distribuir las solicitudes de los clientes entre múltiples nodos para mejorar el rendimiento y evitar cuellos de botella.",
-          "Monitoreo del rendimiento: Implementar un sistema de monitoreo que permita supervisar el estado del cluster y detectar posibles problemas."
-        ],
-        "solution": "Implementé un cluster de bases de datos PostgreSQL utilizando Docker para crear contenedores que alojaran los nodos del cluster. Configuré HAProxy como balanceador de carga para distribuir las solicitudes entre los nodos disponibles. Además, integré Grafana y Prometheus para monitorear el rendimiento del cluster, permitiendo visualizar métricas clave y detectar posibles problemas de manera proactiva.",
-        "results": "El cluster implementado logró mejorar la disponibilidad y el rendimiento de la base de datos, permitiendo manejar un mayor volumen de solicitudes de manera eficiente. El sistema de monitoreo facilitó la identificación y resolución de problemas, contribuyendo a mantener la estabilidad del cluster a lo largo del tiempo."
+        "sections": [
+          {
+            "order": 1,
+            "title": "Contexto",
+            "type": "text",
+            "content": "Se deseaba lograr una alta disponibilidad y rendimiento en una base de datos PostgreSQL para una aplicación web que requiere manejar un gran volumen de solicitudes concurrentes. El objetivo era implementar un cluster de bases de datos que permitiera distribuir la carga entre múltiples nodos y garantizar la continuidad del servicio en caso de fallos."
+          },
+          {
+            "order": 2,
+            "title": "Problema",
+            "type": "list",
+            "content": [
+              "Alta disponibilidad: Garantizar que la base de datos esté siempre disponible, incluso en caso de fallos de nodos individuales.",
+              "Balanceo de carga: Distribuir las solicitudes de los clientes entre múltiples nodos para mejorar el rendimiento y evitar cuellos de botella.",
+              "Monitoreo del rendimiento: Implementar un sistema de monitoreo que permita supervisar el estado del cluster y detectar posibles problemas."
+            ]
+          },
+          {
+            "order": 3,
+            "title": "Solución",
+            "type": "text",
+            "content": "Implementé un cluster de bases de datos PostgreSQL utilizando Docker para crear contenedores que alojaran los nodos del cluster. Configuré HAProxy como balanceador de carga para distribuir las solicitudes entre los nodos disponibles. Además, integré Grafana y Prometheus para monitorear el rendimiento del cluster, permitiendo visualizar métricas clave y detectar posibles problemas de manera proactiva."
+          },
+          {
+            "order": 4,
+            "title": "Resultados",
+            "type": "text",
+            "content": "El cluster implementado logró mejorar la disponibilidad y el rendimiento de la base de datos, permitiendo manejar un mayor volumen de solicitudes de manera eficiente. El sistema de monitoreo facilitó la identificación y resolución de problemas, contribuyendo a mantener la estabilidad del cluster a lo largo del tiempo."
+          }
+        ]
       },
       "architecture": {
         "description": "La arquitectura del cluster de bases de datos PostgreSQL se basa en una configuración maestro-esclavo, donde un nodo actúa como maestro y los demás como esclavos. HAProxy se encarga de distribuir las solicitudes entrantes entre los nodos disponibles, mientras que Grafana y Prometheus recopilan y visualizan métricas de rendimiento en tiempo real.",

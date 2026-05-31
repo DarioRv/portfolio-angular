@@ -82,7 +82,7 @@
 
   <div class="mt-14">
     <div class="space-y-12">
-      @if (project()?.overview) {
+      @if (overviewSections().length) {
         <section>
           <h2 class="text-xl md:text-4xl font-semibold mb-0 pb-1">
             {{ "projects.overview" | translate }}
@@ -93,62 +93,33 @@
             ></div>
           </div>
           <div class="space-y-24">
-            @if (project()?.overview?.context) {
+            @for (section of overviewSections(); track section.order) {
               <section class="grid md:grid-cols-[200px_1fr] gap-6">
                 <h3
                   class="text-sm uppercase tracking-wide text-black border-b border-black/10 pb-1 h-fit font-bold"
                 >
-                  {{ "projects.context" | translate }}
+                  {{ section.title }}
                 </h3>
-                <p class="text-primary leading-relaxed">
-                  {{ project()?.overview?.context }}
-                </p>
-              </section>
-            }
 
-            @if (project()?.overview?.problem) {
-              <section class="grid md:grid-cols-[200px_1fr] gap-6">
-                <h3
-                  class="text-sm uppercase tracking-wide text-black border-b border-black/10 pb-1 h-fit font-bold"
-                >
-                  {{ "projects.problem" | translate }}
-                </h3>
-                <ul class="space-y-3 text-primary">
-                  @for (item of project()?.overview?.problem; track $index) {
-                    <li>
-                      <span class="font-bold text-black">-</span>
-                      {{ item }}
-                    </li>
+                @switch (section.type) {
+                  @case ("list") {
+                    <ul class="space-y-3 text-primary">
+                      @for (item of section.content; track $index) {
+                        <li>
+                          <span class="font-bold text-black">-</span>
+                          {{ item }}
+                        </li>
+                      }
+                    </ul>
                   }
-                </ul>
-              </section>
-            }
-
-            @if (project()?.overview?.solution) {
-              <section class="grid md:grid-cols-[200px_1fr] gap-6">
-                <h3
-                  class="text-sm uppercase tracking-wide text-black border-b border-black/10 pb-1 h-fit font-bold"
-                >
-                  {{ "projects.solution" | translate }}
-                </h3>
-                <div class="space-y-4 text-primary">
-                  <p>{{ project()?.overview?.solution }}</p>
-                </div>
-              </section>
-            }
-
-            @if (project()?.overview?.results) {
-              <section class="grid md:grid-cols-[200px_1fr] gap-6">
-                <h3
-                  class="text-sm uppercase tracking-wide text-black border-b border-black/10 pb-1 h-fit font-bold"
-                >
-                  {{ "projects.result" | translate }}
-                </h3>
-                <div class="space-y-3 text-primary">
-                  <p>
-                    {{ project()?.overview?.results }}
-                  </p>
-                </div>
+                  @case ("text") {
+                    <div class="space-y-4 text-primary">
+                      @for (paragraph of section.content; track $index) {
+                        <p class="mb-2">{{ paragraph }}</p>
+                      }
+                    </div>
+                  }
+                }
               </section>
             }
           </div>
