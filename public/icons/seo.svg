@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 110" id="seo">
+  <g>
+    <circle cx="55" cy="55" r="50" fill="#e7efff"></circle>
+    <path fill="#4e6aff" d="M83.88,76.12l-7.76,7.76a3,3,0,0,1-4.24,0L69,81,81,69l2.88,2.88A3,3,0,0,1,83.88,76.12Z"></path>
+    <circle cx="4" cy="10" r="3" fill="#00c99f"></circle>
+    <circle cx="101" cy="4" r="3" fill="#ffa100"></circle>
+    <circle cx="106" cy="101" r="3" fill="#00c99f"></circle>
+    <circle cx="8" cy="106" r="3" fill="#ff4d69"></circle>
+    <circle cx="51" cy="51" r="36" fill="#8fa2ff"></circle>
+    <circle cx="51" cy="51" r="30" fill="#fff"></circle>
+    <path fill="#323fd4" d="M94.12,86.12a48.83,48.83,0,0,1-8,8L76,84l8-8Z"></path>
+    <path fill="#4e6aff" d="M105,66H57a2,2,0,0,1-1.56-.75l-12-15a2,2,0,0,1,0-2.5l12-15A2,2,0,0,1,57,32h48a2,2,0,0,1,2,2V64A2,2,0,0,1,105,66Z"></path>
+    <circle cx="52" cy="49" r="4" fill="#fff"></circle>
+    <path fill="#323fd4" d="M52,51H41a2,2,0,0,1,0-4H52a2,2,0,0,1,0,4Z"></path>
+    <path fill="#fff" d="M65.5 44H70a2 2 0 000-4H65.5a5.5 5.5 0 000 11h1a1.5 1.5 0 010 3H62a2 2 0 000 4h4.5a5.5 5.5 0 000-11h-1a1.5 1.5 0 010-3zM85 44a2 2 0 000-4H77a2 2 0 00-2 2V56a2 2 0 002 2h8a2 2 0 000-4H79V51h5a2 2 0 000-4H79V44zM96 40a6 6 0 00-6 6v6a6 6 0 0012 0V46A6 6 0 0096 40zm2 12a2 2 0 01-4 0V46a2 2 0 014 0z"></path>
+    <circle cx="32" cy="82" r="18" fill="#4e6aff"></circle>
+    <circle cx="32" cy="82" r="14" fill="#fff"></circle>
+    <path fill="#323fd4" d="M32,83h7a1,1,0,0,0,0-2H32Z"></path>
+    <path fill="#00c99f" d="M23.88,87.83a2,2,0,0,1-.24,2.53L22.1,91.9a14,14,0,0,1,0-19.8l2.83,2.83A10,10,0,0,0,23.88,87.83Z"></path>
+    <path fill="#ff4d69" d="M41.9,91.9l-1.54-1.54a2,2,0,0,1-.24-2.53,10,10,0,0,0-1-12.9L41.9,72.1A14,14,0,0,1,41.9,91.9Z"></path>
+    <path fill="#ffa100" d="M41.9,72.1l-2.83,2.83a10,10,0,0,0-14.14,0L22.1,72.1A14,14,0,0,1,41.9,72.1Z"></path>
+    <circle cx="32" cy="82" r="3" fill="#323fd4"></circle>
+  </g>
+</svg>

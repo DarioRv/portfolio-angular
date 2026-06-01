@@ -434,7 +434,7 @@
       "technologies": [
         {
           "label": "Astro",
-          "icon": "astro-icon-light",
+          "icon": "astro-icon-dark",
           "color": "rgb(189, 82, 243)",
           "backgroundColor": "rgba(189, 82, 243, 0.1)"
         },
@@ -524,7 +524,7 @@
           },
           {
             "order": 2,
-            "title": "Problem",
+            "title": "Requirements",
             "type": "list",
             "content": [
               "High availability: Ensure the database is always available, even in case of individual node failures.",
@@ -583,6 +583,95 @@
         {
           "label": "Scalability",
           "value": "High"
+        }
+      ]
+    },
+    {
+      "title": "Pastelería Luna",
+      "key": "pasteleria-luna",
+      "tags": ["Landing Page", "Frontend"],
+      "type": "Frontend",
+      "summary": "Landing page for a local bakery, with an attractive design and contact functionality.",
+      "description": [
+        "Landing page for the local bakery 'Luna', designed to improve their online presence and attract more customers. ",
+        "The site features product showcase sections, photo gallery, testimonials, FAQ section, and contact information, along with SEO optimization to enhance visibility in search engines."
+      ],
+      "featured": false,
+      "images": [
+        "projects/pasteleria-luna/pasteleria-1.webp",
+        "projects/pasteleria-luna/pasteleria-2.webp",
+        "projects/pasteleria-luna/pasteleria-3.webp",
+        "projects/pasteleria-luna/pasteleria-4.webp",
+        "projects/pasteleria-luna/pasteleria-5.webp",
+        "projects/pasteleria-luna/pasteleria-6.webp",
+        "projects/pasteleria-luna/pasteleria-7.webp"
+      ],
+      "demo": "https://lunadiazpasteleria.com/",
+      "technologies": [
+        {
+          "label": "Next.js",
+          "icon": "nextjs_icon_dark"
+        },
+        {
+          "label": "React",
+          "icon": "react"
+        },
+        {
+          "label": "Tailwind CSS",
+          "icon": "tailwindcss"
+        },
+        {
+          "label": "Advanced SEO",
+          "icon": "seo"
+        },
+        {
+          "label": "Analytics",
+          "icon": "google-analytics"
+        }
+      ],
+      "overview": {
+        "sections": [
+          {
+            "order": 1,
+            "title": "Requirements",
+            "type": "list",
+            "content": [
+              "Design an attractive website that represents the bakery's brand.",
+              "Showcase the product catalog.",
+              "Provide a frequently asked questions section.",
+              "Optimize the site for search engines (SEO) to increase online visibility."
+            ]
+          },
+          {
+            "order": 2,
+            "title": "Solution",
+            "type": "text",
+            "content": [
+              "I developed a landing page using Next.js for the frontend and Tailwind CSS for the design. The site features sections that describe the bakery's products, a contact form to facilitate communication with customers, and SEO optimization to improve visibility in search engines."
+            ]
+          },
+          {
+            "order": 3,
+            "title": "Results",
+            "type": "text",
+            "content": [
+              "The website improved the bakery's online presence, attracting more customers and facilitating communication through social media. The SEO optimization contributed to increasing organic traffic to the site, improving its positioning in search engines."
+            ]
+          }
+        ]
+      },
+      "stats": [
+        {
+          "label": "Search Engine Positioning",
+          "value": "2nd"
+        },
+        {
+          "label": "Received Queries",
+          "value": "+25%"
+        },
+        {
+          "label": "Online Visibility",
+          "value": "+30%"
         }
       ]
     }

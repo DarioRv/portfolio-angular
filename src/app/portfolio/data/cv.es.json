@@ -439,7 +439,7 @@
       "technologies": [
         {
           "label": "Astro",
-          "icon": "astro-icon-light",
+          "icon": "astro-icon-dark",
           "color": "rgb(189, 82, 243)",
           "backgroundColor": "rgba(189, 82, 243, 0.1)"
         },
@@ -529,7 +529,7 @@
           },
           {
             "order": 2,
-            "title": "Problema",
+            "title": "Requerimientos",
             "type": "list",
             "content": [
               "Alta disponibilidad: Garantizar que la base de datos esté siempre disponible, incluso en caso de fallos de nodos individuales.",
@@ -588,6 +588,95 @@
         {
           "label": "Escalabilidad",
           "value": "Alta"
+        }
+      ]
+    },
+    {
+      "title": "Pastelería Luna",
+      "key": "pasteleria-luna",
+      "tags": ["Landing Page", "Frontend"],
+      "type": "Frontend",
+      "summary": "Landing page para una pastelería local, con diseño atractivo y funcionalidad de contacto.",
+      "description": [
+        "Landing page para la pastelería local 'Luna', diseñada para mejorar su presencia en línea y atraer a más clientes. ",
+        "El sitio cuenta con secciones de cartelera de productos, galería de fotos, testimonios, sección de preguntas frecuentes e información de contacto, y optimización SEO para mejorar la visibilidad en motores de búsqueda."
+      ],
+      "featured": false,
+      "images": [
+        "projects/pasteleria-luna/pasteleria-1.webp",
+        "projects/pasteleria-luna/pasteleria-2.webp",
+        "projects/pasteleria-luna/pasteleria-3.webp",
+        "projects/pasteleria-luna/pasteleria-4.webp",
+        "projects/pasteleria-luna/pasteleria-5.webp",
+        "projects/pasteleria-luna/pasteleria-6.webp",
+        "projects/pasteleria-luna/pasteleria-7.webp"
+      ],
+      "demo": "https://lunadiazpasteleria.com/",
+      "technologies": [
+        {
+          "label": "Next.js",
+          "icon": "nextjs_icon_dark"
+        },
+        {
+          "label": "React",
+          "icon": "react"
+        },
+        {
+          "label": "Tailwind CSS",
+          "icon": "tailwindcss"
+        },
+        {
+          "label": "SEO Avanzado",
+          "icon": "seo"
+        },
+        {
+          "label": "Analytics",
+          "icon": "google-analytics"
+        }
+      ],
+      "overview": {
+        "sections": [
+          {
+            "order": 1,
+            "title": "Requerimientos",
+            "type": "list",
+            "content": [
+              "Diseñar un sitio web atractivo que represente la marca de la pastelería.",
+              "Mostrar cartelera de productos.",
+              "Ofrecer sección de preguntas frecuentes.",
+              "Optimizar el sitio para motores de búsqueda (SEO) para aumentar la visibilidad en línea."
+            ]
+          },
+          {
+            "order": 2,
+            "title": "Solución",
+            "type": "text",
+            "content": [
+              "Desarrollé una landing page utilizando Next.js para el frontend y Tailwind CSS para el diseño. El sitio cuenta con secciones que describen los productos de la pastelería, un formulario de contacto para facilitar la comunicación con los clientes, y optimización SEO para mejorar la visibilidad en motores de búsqueda."
+            ]
+          },
+          {
+            "order": 3,
+            "title": "Resultados",
+            "type": "text",
+            "content": [
+              "El sitio web logró mejorar la presencia en línea de la pastelería, atrayendo a más clientes y facilitando la comunicación a través de redes sociales. La optimización SEO contribuyó a aumentar el tráfico orgánico al sitio, mejorando su posicionamiento en motores de búsqueda."
+            ]
+          }
+        ]
+      },
+      "stats": [
+        {
+          "label": "Posicionamiento en busquedas",
+          "value": "2do"
+        },
+        {
+          "label": "Consultas recibidas",
+          "value": "+25%"
+        },
+        {
+          "label": "Visibilidad en línea",
+          "value": "+30%"
         }
       ]
     }
