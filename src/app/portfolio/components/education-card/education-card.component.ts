@@ -1,3 +1,4 @@
+import { UpperCasePipe } from '@angular/common';
 import { Component, input } from '@angular/core';
 import { Education } from '@interfaces/education.interface';
 import { IconsModule } from 'app/icons/icons.module';
@@ -5,7 +6,7 @@ import { IconsModule } from 'app/icons/icons.module';
 @Component({
   selector: 'education-card',
   standalone: true,
-  imports: [IconsModule],
+  imports: [IconsModule, UpperCasePipe],
   templateUrl: './education-card.component.html',
   styles: ``,
 })

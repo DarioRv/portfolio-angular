@@ -683,9 +683,10 @@
   ],
   "education": [
     {
+      "type": "Educación universitaria",
       "title": "Analista Programador Universitario",
       "institution": "Universidad Nacional de Jujuy",
-      "period": "2022 - actualidad",
+      "period": "2022 - 2025",
       "description": [
         "Durante mi formación, he desarrollado una sólida base en lógica, estructuras de datos y programación orientada a objetos, así como en el uso de frameworks esenciales como Spring Boot, Express.js y Angular.",
         "Mis proyectos incluyen un sistema de control de tickets y una plataforma inmobiliaria, fortaleciendo mi experiencia en aplicaciones full stack."

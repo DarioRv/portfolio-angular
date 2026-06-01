@@ -678,9 +678,10 @@
   ],
   "education": [
     {
+      "type": "University Degree",
       "title": "University Programmer Analyst",
       "institution": "National University of Jujuy",
-      "period": "2022 - present",
+      "period": "2022 - 2025",
       "description": [
         "During my education, I have developed a solid foundation in logic, data structures and object-oriented programming, as well as in the use of essential frameworks such as Spring Boot, Express.js and Angular.",
         "My projects include a ticket control system and a real estate platform, strengthening my experience in full stack applications."
