@@ -21,7 +21,7 @@
             <img
               [@imageFade]="selectedImage"
               [src]="selectedImage | image"
-              class="absolute inset-0 w-full h-full object-cover"
+              class="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-300"
             />
           }
         </div>
@@ -71,7 +71,7 @@
           <img
             [@imageFade]="selectedImage"
             [src]="selectedImage | image"
-            class="absolute inset-0 w-full h-full object-cover"
+            class="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-300"
           />
         }
       </div>
@@ -88,7 +88,7 @@
   }
   @case ("with-dots") {
     <div
-      class="relative rounded-2xl shadow-xl"
+      class="relative rounded-2xl"
       (mouseenter)="pause()"
       (mouseleave)="resume()"
     >
@@ -103,12 +103,12 @@
           ></div>
         </div>
 
-        <div class="absolute inset-0">
+        <div class="absolute inset-0 shadow-xl">
           @if (selectedImage) {
             <img
               [@imageFade]="selectedImage"
               [src]="selectedImage | image"
-              class="absolute inset-0 w-full h-full object-cover"
+              class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
             />
           }
         </div>
@@ -123,16 +123,14 @@
         }
       </div>
 
-      <!-- Thumbs -->
-      <div
-        class="absolute bottom-3 left-0 right-0 mt-3 flex gap-3 justify-center overflow-x-auto pb-2 scrollbar-thin scrollbar-thumb-white/20 scrollbar-track-transparent"
-      >
+      <!-- Dots indicadores -->
+      <div class="mt-4 flex gap-3 justify-center pb-2">
         @for (image of images(); track $index) {
           <button
             class="size-4 rounded-full"
             [ngClass]="{
-              'bg-primary-500': selectedImage === image,
-              'bg-white/50': selectedImage !== image,
+              'bg-primary-500 scale-110': selectedImage === image,
+              'bg-gray-500/15 hover:bg-gray-500/60': selectedImage !== image,
             }"
             (click)="selectImage(image)"
           ></button>
