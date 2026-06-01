@@ -404,7 +404,8 @@
             "content": [
               "Diseñar un sitio web atractivo y profesional que represente los servicios de la empresa.",
               "Implementar una experiencia de usuario fluida y responsiva.",
-              "Incorporar funcionalidades como formulario de contacto e internacionalización."
+              "Incorporar funcionalidades como formulario de contacto",
+              "Permitir la internacionalización para llegar a una audiencia más amplia."
             ]
           },
           {
@@ -412,7 +413,8 @@
             "title": "Solución",
             "type": "text",
             "content": [
-              "Desarrollé un sitio web utilizando Angular para la estructura y lógica del frontend, y Tailwind CSS para el diseño y estilo. El sitio cuenta con secciones informativas sobre la empresa, los servicios que ofrece, un formulario de contacto funcional y soporte para múltiples idiomas (inglés y español) utilizando ngx-translate."
+              "Desarrollé un sitio web utilizando Astro para el frontend y Tailwind CSS para el diseño. El sitio cuenta con secciones que describen los servicios de la empresa, un formulario de contacto para facilitar la comunicación con potenciales clientes, y soporte para internacionalización en inglés y español.",
+              "Además, implementé Google Analytics para monitorear el tráfico del sitio y obtener insights sobre el comportamiento de los usuarios."
             ]
           },
           {
@@ -454,8 +456,16 @@
           "backgroundColor": "rgba(6, 182, 212, 0.1)"
         },
         {
+          "label": "i18n",
+          "icon": "i18n"
+        },
+        {
           "label": "Analytics",
           "icon": "google-analytics"
+        },
+        {
+          "label": "Netlify",
+          "icon": "netlify"
         }
       ]
     },
@@ -513,7 +523,9 @@
             "order": 1,
             "title": "Contexto",
             "type": "text",
-            "content": "Se deseaba lograr una alta disponibilidad y rendimiento en una base de datos PostgreSQL para una aplicación web que requiere manejar un gran volumen de solicitudes concurrentes. El objetivo era implementar un cluster de bases de datos que permitiera distribuir la carga entre múltiples nodos y garantizar la continuidad del servicio en caso de fallos."
+            "content": [
+              "Se deseaba lograr una alta disponibilidad y rendimiento en una base de datos PostgreSQL para una aplicación web que requiere manejar un gran volumen de solicitudes concurrentes. El objetivo era implementar un cluster de bases de datos que permitiera distribuir la carga entre múltiples nodos y garantizar la continuidad del servicio en caso de fallos."
+            ]
           },
           {
             "order": 2,
@@ -529,13 +541,17 @@
             "order": 3,
             "title": "Solución",
             "type": "text",
-            "content": "Implementé un cluster de bases de datos PostgreSQL utilizando Docker para crear contenedores que alojaran los nodos del cluster. Configuré HAProxy como balanceador de carga para distribuir las solicitudes entre los nodos disponibles. Además, integré Grafana y Prometheus para monitorear el rendimiento del cluster, permitiendo visualizar métricas clave y detectar posibles problemas de manera proactiva."
+            "content": [
+              "Implementé un cluster de bases de datos PostgreSQL utilizando Docker para crear contenedores que alojaran los nodos del cluster. Configuré HAProxy como balanceador de carga para distribuir las solicitudes entre los nodos disponibles. Además, integré Grafana y Prometheus para monitorear el rendimiento del cluster, permitiendo visualizar métricas clave y detectar posibles problemas de manera proactiva."
+            ]
           },
           {
             "order": 4,
             "title": "Resultados",
             "type": "text",
-            "content": "El cluster implementado logró mejorar la disponibilidad y el rendimiento de la base de datos, permitiendo manejar un mayor volumen de solicitudes de manera eficiente. El sistema de monitoreo facilitó la identificación y resolución de problemas, contribuyendo a mantener la estabilidad del cluster a lo largo del tiempo."
+            "content": [
+              "El cluster implementado logró mejorar la disponibilidad y el rendimiento de la base de datos, permitiendo manejar un mayor volumen de solicitudes de manera eficiente. El sistema de monitoreo facilitó la identificación y resolución de problemas, contribuyendo a mantener la estabilidad del cluster a lo largo del tiempo."
+            ]
           }
         ]
       },

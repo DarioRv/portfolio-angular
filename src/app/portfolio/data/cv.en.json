@@ -382,6 +382,46 @@
       "description": [
         "Website for Kepler Dynamics company, dedicated to custom software development. The site includes information about the company, the services it offers, contact form and internationalization in English and Spanish."
       ],
+      "overview": {
+        "sections": [
+          {
+            "order": 1,
+            "title": "Context",
+            "type": "text",
+            "content": [
+              "Personal project developed to practice my skills in frontend development with Angular and Tailwind CSS, and to create an attractive and functional website that represents the services of a fictional software development company."
+            ]
+          },
+          {
+            "order": 2,
+            "title": "Problem",
+            "type": "list",
+            "content": [
+              "Design an attractive and professional website that represents the company's services.",
+              "Implement a smooth and responsive user experience.",
+              "Incorporate features like a contact form.",
+              "Enable internationalization to reach a broader audience."
+            ]
+          },
+          {
+            "order": 3,
+            "title": "Solution",
+            "type": "text",
+            "content": [
+              "Developed a website using Astro for the frontend and Tailwind CSS for the design. The site includes sections that describe the company's services, a contact form to facilitate communication with potential clients, and support for internationalization in English and Spanish.",
+              "Additionally, implemented Google Analytics to monitor site traffic and obtain insights about user behavior."
+            ]
+          },
+          {
+            "order": 4,
+            "title": "Results",
+            "type": "text",
+            "content": [
+              "The website achieved the established goals, offering an attractive and functional user experience. The integration of internationalization allowed expanding the site's reach to a broader audience, and the contact form facilitated communication with potential clients."
+            ]
+          }
+        ]
+      },
       "featured": true,
       "images": [
         "projects/kepler-dynamics/proyecto-kepler.webp",
@@ -411,8 +451,16 @@
           "backgroundColor": "rgba(6, 182, 212, 0.1)"
         },
         {
+          "label": "i18n",
+          "icon": "i18n"
+        },
+        {
           "label": "Analytics",
           "icon": "google-analytics"
+        },
+        {
+          "label": "Netlify",
+          "icon": "netlify"
         }
       ]
     },
@@ -470,7 +518,9 @@
             "order": 1,
             "title": "Context",
             "type": "text",
-            "content": "The goal was to achieve high availability and performance in a PostgreSQL database for a web application that needs to handle a large volume of concurrent requests. The objective was to implement a database cluster that would allow distributing the load among multiple nodes and ensure service continuity in case of failures."
+            "content": [
+              "The goal was to achieve high availability and performance in a PostgreSQL database for a web application that needs to handle a large volume of concurrent requests. The objective was to implement a database cluster that would allow distributing the load among multiple nodes and ensure service continuity in case of failures."
+            ]
           },
           {
             "order": 2,
@@ -486,13 +536,17 @@
             "order": 3,
             "title": "Solution",
             "type": "text",
-            "content": "I implemented a PostgreSQL database cluster using Docker to create containers hosting the cluster nodes. I configured HAProxy as a load balancer to distribute requests among available nodes. Additionally, I integrated Grafana and Prometheus to monitor cluster performance, allowing visualization of key metrics and proactive detection of potential issues."
+            "content": [
+              "I implemented a PostgreSQL database cluster using Docker to create containers hosting the cluster nodes. I configured HAProxy as a load balancer to distribute requests among available nodes. Additionally, I integrated Grafana and Prometheus to monitor cluster performance, allowing visualization of key metrics and proactive detection of potential issues."
+            ]
           },
           {
             "order": 4,
             "title": "Results",
             "type": "text",
-            "content": "The implemented cluster improved database availability and performance, allowing handling of a higher volume of requests efficiently. The monitoring system facilitated issue identification and resolution, contributing to maintaining cluster stability over time."
+            "content": [
+              "The implemented cluster improved database availability and performance, allowing handling of a higher volume of requests efficiently. The monitoring system facilitated issue identification and resolution, contributing to maintaining cluster stability over time."
+            ]
           }
         ]
       },
