@@ -43,7 +43,9 @@
         }
       </div>
 
-      <div class="mt-7 flex flex-wrap gap-2 gap-y-2">
+      <div
+        class="mt-7 flex justify-center md:justify-start flex-wrap gap-2 gap-y-2"
+      >
         @for (item of project()?.technologies; track $index) {
           <tech-chip [tech]="item" design="badge-horizontal"></tech-chip>
         }
@@ -206,10 +208,10 @@
     <div
       class="flex flex-col md:flex-row md:items-center md:justify-between gap-6"
     >
-      <p class="text-primary text-sm">
+      <p class="text-primary text-sm text-center md:text-left">
         {{ "projects.interestedInSimilar" | translate }}
       </p>
-      <div class="flex gap-3">
+      <div class="flex justify-center md:justify-start gap-3">
         <a
           class="px-5 py-2.5 rounded-lg bg-primary-500 text-white text-sm font-medium hover:bg-black/90 transition"
           routerLink="/"

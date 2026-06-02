@@ -6,11 +6,11 @@
   ></lucide-icon>
 }
 <h4
-  class="relative z-10 mb-4 text-black font-semibold uppercase tracking-wider text-sm"
+  class="relative z-10 mb-4 text-black font-semibold uppercase tracking-wider text-sm text-center md:text-left"
 >
   {{ header() }}
 </h4>
-<div class="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+<div class="relative z-10 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4">
   @for (item of skills(); track $index) {
     <div
       class="flex flex-col justify-center items-center gap-3 p-3 rounded-lg transition-all duration-300 hover:bg-black/5 hover:shadow-md active:scale-95"
