@@ -1,21 +1,40 @@
-<article class="h-full flex flex-row gap-4 rounded-lg">
-  <div class="flex flex-col items-center relative px-4">
+<article
+  class="h-full flex flex-row gap-4 rounded-xl shadow-xl border-2 border-transparent hover:border-primary-500 transition duration-300"
+>
+  <!-- <div class="flex flex-col items-center relative px-4">
     <span
       class="size-5 rounded-full bg-primary-500/30 absolute top-5 flex items-center justify-center"
     >
       <span class="block size-3 rounded-full bg-primary-500 relative"></span>
     </span>
     <span class="block w-[2px] h-full bg-[#333]"></span>
-  </div>
-  <div class="flex flex-col p-4 flex-grow">
+  </div> -->
+  <!-- <div class="absolute inset-0 opacity-10">
+    <div
+      class="absolute inset-0"
+      style="
+        background-image: radial-gradient(circle, white 1px, transparent 1px);
+        background-size: 20px 20px;
+      "
+    ></div>
+  </div> -->
+  <div class="flex flex-col p-8 flex-grow">
     <!-- <strong class="w-fit self-start mb-5 bg-white/70 text-black rounded px-2">
       {{ certification().date }}
     </strong> -->
-    <h5 class="text-lg md:text-xl text-balance text-primary-500">
+    <div class="flex items-center gap-2">
+      <div
+        class="h-1 w-12 bg-gradient-to-r from-[#DD0031] to-black rounded-full origin-left"
+      ></div>
+      <h5 class="text-sm font-bold tracking-wide text-primary-500">
+        {{ certification().area | uppercase }}
+      </h5>
+    </div>
+    <h5 class="text-2xl md:text-3xl text-balance text-black">
       <strong>{{ certification().title }}</strong>
     </h5>
-    <p class="text-white/90 mb-5">
-      Emitido por
+    <p class="text-primary mb-5">
+      {{ "education.issuedBy" | translate }}
       @if (certification().institutionUrl) {
         <strong>
           <a
@@ -34,17 +53,31 @@
     </p>
     @if (certification().description) {
       @for (p of certification().description; track $index) {
-        <p class="mb-3 text-white/70 text-base">{{ p }}</p>
+        <p class="mb-3 text-primary text-base">{{ p }}</p>
       }
     }
+
+    <h5 class="text-base font-semibold text-black mb-2 mt-2">
+      {{ "education.knowledgeAcquired" | translate }}
+    </h5>
+    <div class="flex flex-wrap gap-2 text-primary mb-5">
+      @for (knowledge of certification().knowledgeAcquired; track $index) {
+        <span
+          class="bg-gray-50 text-black border border-gray-200 px-3 py-1 rounded-xl text-sm hover:bg-primary-500 hover:text-white transition-colors duration-300 hover:border-primary-500"
+        >
+          {{ knowledge }}
+        </span>
+      }
+    </div>
+
     @if (certification().url) {
-      <div class="mt-4">
+      <div class="mt-4 flex-grow flex items-end">
         <a
-          class="text-white/70 rounded-md px-4 py-2 border border-white/10 flex items-center gap-2 w-fit hover:bg-white/10 hover:text-white transition-colors"
+          class="w-fit flex items-center gap-2 text-primary rounded-md px-4 py-2 border text-primary-500 border-primary-500 hover:bg-primary-500 hover:text-white transition-colors"
           [href]="certification().url"
           target="_blank"
         >
-          Ver certificado
+          {{ "education.viewCertificate" | translate }}
           <i-lucide name="external-link" size="16"></i-lucide>
         </a>
       </div>

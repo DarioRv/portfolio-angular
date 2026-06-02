@@ -1,15 +1,21 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { ExperienceItemComponent } from '@components/experience-item/experience-item.component';
-import cv from '@data/cv.json';
 import { TrackSectionVisibilityDirective } from '@directives/track-section-visibility.service';
+import { TranslatePipe } from '@ngx-translate/core';
+import { CvService } from '@services/cv.service';
 
 @Component({
   selector: 'dv-experience',
   standalone: true,
-  imports: [ExperienceItemComponent, TrackSectionVisibilityDirective],
+  imports: [
+    ExperienceItemComponent,
+    TrackSectionVisibilityDirective,
+    TranslatePipe,
+  ],
   templateUrl: './experience.component.html',
   styles: ``,
 })
 export class ExperienceComponent {
-  public experiences = cv.experience;
+  private readonly cvService = inject(CvService);
+  readonly experiences = this.cvService.experience;
 }

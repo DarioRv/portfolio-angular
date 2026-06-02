@@ -1,40 +1,57 @@
-<main class="my-10 md:my-20 px-4 fade-in" trackSection="about">
+<main class="my-10 md:my-20 px-4 fade-in relative" trackSection="about">
+  <div
+    class="absolute top-20 left-20 w-72 h-72 bg-[#DD0031]/20 rounded-full blur-3xl animate-pulse"
+  ></div>
+  <div
+    class="absolute bottom-20 right-20 w-96 h-96 bg-[#DD0031]/10 rounded-full blur-3xl -z-10 animate-pulse"
+  ></div>
+
   <div class="max-w-[1200px] mx-auto pt-12 md:pt-26">
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
       <div class="col-span-2">
         <h1
-          class="text-5xl md:text-6xl font-bold text-primary-500 text-center md:text-left"
+          class="text-5xl md:text-7xl font-bold text-black text-center md:text-left"
+          [innerHTML]="cv().name"
+        ></h1>
+        <div class="flex justify-center md:justify-start">
+          <div
+            class="h-1.5 w-32 bg-gradient-to-r from-[#DD0031] to-black mb-6 rounded-full origin-left my-6"
+            style="transform: none"
+          ></div>
+        </div>
+        <p
+          class="text-lg md:text-3xl text-black font-bold text-center md:text-left"
         >
-          {{ cv.name }}
-        </h1>
-        <p class="text-lg md:text-xl text-white/90 text-center md:text-left">
-          {{ cv.summary }}
+          {{ cv().summary }}
         </p>
-        <div class="mt-10">
-          @for (p of cv.about; track $index) {
-            <p class="mb-3 text-white/70 text-center md:text-left md:text-lg">
-              {{ p }}
-            </p>
+        <div class="mt-5">
+          @for (p of cv().about; track $index) {
+            <p
+              class="mb-3 text-primary text-center md:text-left md:text-lg leading-relaxed"
+              [innerHTML]="p"
+            ></p>
           }
         </div>
         <div class="flex gap-3 justify-center md:justify-start mt-5">
           <download-cv-button />
-          <copy-to-clipboard [textToCopy]="cv.email" label="Copiar email" />
+          <copy-to-clipboard
+            [textToCopy]="cv().email"
+            [label]="'about.copyEmail' | translate"
+          />
         </div>
         <div class="flex justify-center md:justify-start gap-3 mt-5">
-          @for (item of cv.socialNetworks; track $index) {
+          @for (item of cv().socialNetworks; track $index) {
             <div
-              class="border border-white/20 rounded-full p-1 px-4 hover:scale-110 transition-transform"
+              class="flex items-center justify-center bg-black hover:bg-primary-500 size-14 rounded-2xl p-1 px-4 hover:scale-110 transition-transform"
             >
               <a
-                class="flex items-center gap-2"
+                class="text-white"
                 [href]="item.url"
                 target="_blank"
                 rel="noopener noreferrer"
                 (click)="trackSocialClick(item.name)"
               >
-                <i-lucide [name]="item.icon" [size]="16"></i-lucide>
-                <span class="text-white/90 text-sm">{{ item.name }}</span>
+                <i-lucide [name]="item.icon" [size]="24"></i-lucide>
               </a>
             </div>
           }
@@ -65,12 +82,33 @@
   class="max-w-[1200px] mx-auto my-10 md:my-20 px-4 slide-in-bottom"
   trackSection="skills"
 >
-  <h2>Habilidades</h2>
+  <h2>{{ "skills.title" | translate }}</h2>
+  <div class="flex justify-center">
+    <div
+      class="h-1.5 w-32 bg-gradient-to-r from-[#DD0031] to-black mb-8 rounded-full origin-left"
+    ></div>
+  </div>
   <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
-    <skills header="Lenguajes" [skills]="cv.skills.languages"></skills>
-    <skills header="Frameworks" [skills]="cv.skills.frameworks"></skills>
-    <skills header="Bases de datos" [skills]="cv.skills.databases"></skills>
-    <skills header="Otros" [skills]="cv.skills.others"></skills>
+    <skills
+      [header]="'skills.languages' | translate"
+      bgIcon="code"
+      [skills]="cv().skills.languages"
+    ></skills>
+    <skills
+      [header]="'skills.frameworks' | translate"
+      bgIcon="square-library"
+      [skills]="cv().skills.frameworks"
+    ></skills>
+    <skills
+      [header]="'skills.databases' | translate"
+      bgIcon="database"
+      [skills]="cv().skills.databases"
+    ></skills>
+    <skills
+      [header]="'skills.others' | translate"
+      bgIcon="waypoints"
+      [skills]="cv().skills.others"
+    ></skills>
   </div>
 </section>
 

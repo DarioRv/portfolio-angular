@@ -1,14 +1,19 @@
 <section
-  class="my-10 md:my-20 px-4 max-w-[1200px] mx-auto pt-12 md:pt-26 fade-in"
+  class="my-10 md:my-20 px-4 max-w-[1200px] mx-auto pt-12 md:pt-26 bg-gradient-to-b from-white to-gray-50"
   id="education"
   trackSection="education"
 >
-  <h2>Educación</h2>
-  <p class="mt-3 text-base md:text-lg text-white/70 max-w-prose mb-5">
-    Aquí encontrarás mi trayectoria académica. Mis estudios y certificaciones.
+  <h2>{{ "education.title" | translate }}</h2>
+  <div class="flex justify-center">
+    <div
+      class="h-1.5 w-32 bg-gradient-to-r from-[#DD0031] to-black mb-8 rounded-full origin-left"
+    ></div>
+  </div>
+  <p class="mt-3 text-base md:text-xl text-primary text-center mb-5">
+    {{ "education.description" | translate }}
   </p>
   <div class="flex flex-col gap-5">
-    @for (item of education; track $index) {
+    @for (item of education(); track $index) {
       <education-card [education]="item" />
     }
   </div>
@@ -18,29 +23,37 @@
   class="my-10 md:my-20 px-4 max-w-[1200px] mx-auto fade-in"
   trackSection="certifications"
 >
-  <h2>Certificados</h2>
-  <div class="grid grid-cols-1" [@expandListAnim]="visibleCount">
-    @for (item of visibleCertifications; track $index) {
+  <h2 [innerHTML]="'education.certifications' | translate"></h2>
+  <div class="flex justify-center">
+    <div
+      class="h-1.5 w-32 bg-gradient-to-r from-[#DD0031] to-black mb-8 rounded-full origin-left"
+    ></div>
+  </div>
+  <div
+    class="grid grid-cols-1 md:grid-cols-2 gap-3"
+    [@expandListAnim]="visibleCount()"
+  >
+    @for (item of visibleCertifications(); track $index) {
       <certification-card [certification]="item" />
     }
   </div>
-  @if (certifications.length > 2) {
-    <div class="flex justify-center mt-8 text-sm">
-      @if (hasMore) {
+  @if (certifications().length > 2) {
+    <div class="flex justify-center mt-8 text-base">
+      @if (hasMore()) {
         <button
-          class="flex gap-2 items-center px-6 py-2 hover:text-white text-white/70 transition"
+          class="flex gap-2 items-center px-8 py-4 text-black border border-black rounded-xl w-fit mx-auto transition-all duration-300 hover:bg-black hover:text-white cursor-pointer"
           (click)="showMore()"
         >
-          Ver todas mis certificaciones
-          <i-lucide name="chevron-down" size="16"></i-lucide>
+          {{ "education.viewAllCertifications" | translate }}
+          <i-lucide name="chevron-down" size="20"></i-lucide>
         </button>
       } @else {
         <button
-          class="flex gap-2 items-center px-6 py-2 hover:text-white text-white/70 transition"
+          class="flex gap-2 items-center px-8 py-4 text-black border border-black rounded-xl w-fit mx-auto transition-all duration-300 hover:bg-black hover:text-white cursor-pointer"
           (click)="showLess()"
         >
-          Ver menos
-          <i-lucide name="chevron-up" size="16"></i-lucide>
+          {{ "education.viewLess" | translate }}
+          <i-lucide name="chevron-up" size="20"></i-lucide>
         </button>
       }
     </div>

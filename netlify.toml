@@ -27,18 +27,18 @@
 # SEO: Normalize trailing slashes on projects
 # ============================================
 [[redirects]]
-  from = "/projects/asistio/"
-  to = "/projects/asistio"
+  from = "/projects/asistio"
+  to = "/projects/asistio/"
   status = 301
 
 [[redirects]]
-  from = "/projects/kepler-dynamics/"
-  to = "/projects/kepler-dynamics"
+  from = "/projects/kepler-dynamics"
+  to = "/projects/kepler-dynamics/"
   status = 301
 
 [[redirects]]
-  from = "/projects/postgresql-cluster/"
-  to = "/projects/postgresql-cluster"
+  from = "/projects/postgresql-cluster"
+  to = "/projects/postgresql-cluster/"
   status = 301
 
 # ============================================

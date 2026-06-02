@@ -3,22 +3,25 @@
   id="experience"
   trackSection="experience"
 >
-  <!-- Header -->
-  <div class="mb-14">
-    <h2>Experiencia</h2>
+  <h2>{{ "experience.title" | translate }}</h2>
+
+  <div class="flex justify-center">
+    <div
+      class="h-1.5 w-32 bg-gradient-to-r from-[#DD0031] to-black mb-8 rounded-full origin-left"
+    ></div>
   </div>
 
   <div class="flex justify-center mb-20">
     <p
-      class="flex gap-3 items-center bg-white text-black text-base font-bold px-4 py-2 rounded-md w-fit shadow-lg shadow-white/20 backdrop-blur-md"
+      class="flex gap-3 items-center bg-primary-500/15 text-primary-500 text-base font-bold px-6 py-2 rounded-full w-fit"
     >
       <span class="text-3xl">+ 1</span>
-      <span>año de experiencia</span>
+      <span>{{ "experience.yearsOfExperience" | translate }}</span>
     </p>
   </div>
 
   <div class="space-y-16">
-    @for (experience of experiences; track $index) {
+    @for (experience of experiences(); track $index) {
       <experience-item [experience]="experience"></experience-item>
     }
   </div>

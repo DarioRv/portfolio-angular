@@ -23,7 +23,7 @@ import { IconsModule } from 'app/icons/icons.module';
 })
 export class ImageGaleryComponent implements OnInit, OnDestroy {
   public images = input.required<string[]>();
-  public design = input<'default' | 'simple'>('default');
+  public design = input<'default' | 'simple' | 'with-dots'>('default');
   public allowFullScreen = input(true);
   public selectedImage: string = '';
   public progress = 0;
