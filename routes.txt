@@ -3,5 +3,6 @@
 /projects/asistio
 /projects/kepler-dynamics
 /projects/postgresql-cluster
+/projects/pasteleria-luna
 /education
 /contact
